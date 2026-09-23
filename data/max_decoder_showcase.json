@@ -1,0 +1,519 @@
+{
+  "suite": "max_decoder_showcase",
+  "version": "3.7.5",
+  "timestamp": "2026-09-23T14:06:46.757319+00:00",
+  "rows": [
+    {
+      "decoder": "BPOSDDecoder",
+      "shots": 72,
+      "faithful": 72,
+      "faith_pct": 100.0,
+      "mean_latency_us": 64.39490277780162,
+      "thr_syn_per_s": 15529.179435996022,
+      "status": "ok"
+    },
+    {
+      "decoder": "UnionFindDecoder",
+      "shots": 72,
+      "faithful": 72,
+      "faith_pct": 100.0,
+      "mean_latency_us": 8.385930555397811,
+      "thr_syn_per_s": 119247.35047517478,
+      "status": "ok"
+    },
+    {
+      "decoder": "FastUnionFindDecoder",
+      "shots": 72,
+      "faithful": 72,
+      "faith_pct": 100.0,
+      "mean_latency_us": 5.02187499999233,
+      "thr_syn_per_s": 199128.8114502108,
+      "status": "ok"
+    },
+    {
+      "decoder": "BlossomDecoder",
+      "shots": 72,
+      "faithful": 72,
+      "faith_pct": 100.0,
+      "mean_latency_us": 7.639666666787233,
+      "thr_syn_per_s": 130895.76333839414,
+      "status": "ok"
+    },
+    {
+      "decoder": "SparseBlossomDecoder",
+      "shots": 72,
+      "faithful": 72,
+      "faith_pct": 100.0,
+      "mean_latency_us": 6.477125000101422,
+      "thr_syn_per_s": 154389.48607358072,
+      "status": "ok"
+    },
+    {
+      "decoder": "BeamSearchDecoder",
+      "shots": 72,
+      "faithful": 72,
+      "faith_pct": 100.0,
+      "mean_latency_us": 7.4755000001560905,
+      "thr_syn_per_s": 133770.31636400506,
+      "status": "ok"
+    },
+    {
+      "decoder": "TensorNetworkDecoder",
+      "shots": 72,
+      "faithful": 72,
+      "faith_pct": 100.0,
+      "mean_latency_us": 10.660291666890013,
+      "thr_syn_per_s": 93806.06377834085,
+      "status": "ok"
+    },
+    {
+      "decoder": "LookupTableDecoder",
+      "shots": 72,
+      "faithful": 72,
+      "faith_pct": 100.0,
+      "mean_latency_us": 5.4032916665391895,
+      "thr_syn_per_s": 185072.3710127794,
+      "status": "ok"
+    },
+    {
+      "decoder": "TwoStageDecoder",
+      "shots": 72,
+      "faithful": 72,
+      "faith_pct": 100.0,
+      "mean_latency_us": 6.558013888972407,
+      "thr_syn_per_s": 152485.19093281348,
+      "status": "ok"
+    },
+    {
+      "decoder": "AmbiguityClusterDecoder",
+      "shots": 72,
+      "faithful": 72,
+      "faith_pct": 100.0,
+      "mean_latency_us": 6.023125000038161,
+      "thr_syn_per_s": 166026.7718159036,
+      "status": "ok"
+    },
+    {
+      "decoder": "BatchDecoder",
+      "shots": 72,
+      "faithful": 72,
+      "faith_pct": 100.0,
+      "mean_latency_us": 7.082486111266285,
+      "thr_syn_per_s": 141193.35841820788,
+      "status": "ok"
+    },
+    {
+      "decoder": "CPUBatchDecoder",
+      "shots": 72,
+      "faithful": 72,
+      "faith_pct": 100.0,
+      "mean_latency_us": 6.2371388891177855,
+      "thr_syn_per_s": 160329.92334750548,
+      "status": "ok"
+    },
+    {
+      "decoder": "StreamingDecoder",
+      "shots": 72,
+      "faithful": 72,
+      "faith_pct": 100.0,
+      "mean_latency_us": 9.635388888935065,
+      "thr_syn_per_s": 103784.08298064275,
+      "status": "ok"
+    },
+    {
+      "decoder": "HybridCascadeDecoder",
+      "shots": 72,
+      "faithful": 72,
+      "faith_pct": 100.0,
+      "mean_latency_us": 5.840305555516857,
+      "thr_syn_per_s": 171223.9180800022,
+      "status": "ok"
+    },
+    {
+      "decoder": "SlidingWindowDecoder",
+      "shots": 16,
+      "faithful": 16,
+      "faith_pct": 100.0,
+      "mean_latency_us": 8.25431249928954,
+      "thr_syn_per_s": 121148.79344416283,
+      "status": "ok"
+    },
+    {
+      "decoder": "SpaceTimeDecoder",
+      "faithful": 8,
+      "shots": 8,
+      "faith_pct": 100.0
+    },
+    {
+      "decoder": "HybridDecoder",
+      "shots": 16,
+      "faithful": 16,
+      "faith_pct": 100.0,
+      "mean_latency_us": 106.99837499927867,
+      "thr_syn_per_s": 9345.936328535285,
+      "status": "ok"
+    }
+  ],
+  "gates": [
+    {
+      "name": "version",
+      "passed": true,
+      "detail": "version=3.7.5",
+      "critical": true
+    },
+    {
+      "name": "distance_q70",
+      "passed": true,
+      "detail": "d=9 max_t=4",
+      "critical": true
+    },
+    {
+      "name": "distance_q102",
+      "passed": true,
+      "detail": "d=9 max_t=4",
+      "critical": true
+    },
+    {
+      "name": "distance_gross",
+      "passed": true,
+      "detail": "d=12 max_t=5",
+      "critical": true
+    },
+    {
+      "name": "distance_q54",
+      "passed": true,
+      "detail": "d=10 max_t=4",
+      "critical": true
+    },
+    {
+      "name": "faith_BPOSDDecoder",
+      "passed": true,
+      "detail": "72/72 faith=100.0% thr=15529/s",
+      "critical": true
+    },
+    {
+      "name": "faith_UnionFindDecoder",
+      "passed": true,
+      "detail": "72/72 faith=100.0% thr=119247/s",
+      "critical": true
+    },
+    {
+      "name": "faith_FastUnionFindDecoder",
+      "passed": true,
+      "detail": "72/72 faith=100.0% thr=199129/s",
+      "critical": true
+    },
+    {
+      "name": "faith_BlossomDecoder",
+      "passed": true,
+      "detail": "72/72 faith=100.0% thr=130896/s",
+      "critical": true
+    },
+    {
+      "name": "faith_SparseBlossomDecoder",
+      "passed": true,
+      "detail": "72/72 faith=100.0% thr=154389/s",
+      "critical": true
+    },
+    {
+      "name": "faith_BeamSearchDecoder",
+      "passed": true,
+      "detail": "72/72 faith=100.0% thr=133770/s",
+      "critical": true
+    },
+    {
+      "name": "faith_TensorNetworkDecoder",
+      "passed": true,
+      "detail": "72/72 faith=100.0% thr=93806/s",
+      "critical": true
+    },
+    {
+      "name": "faith_LookupTableDecoder",
+      "passed": true,
+      "detail": "72/72 faith=100.0% thr=185072/s",
+      "critical": true
+    },
+    {
+      "name": "faith_TwoStageDecoder",
+      "passed": true,
+      "detail": "72/72 faith=100.0% thr=152485/s",
+      "critical": true
+    },
+    {
+      "name": "faith_AmbiguityClusterDecoder",
+      "passed": true,
+      "detail": "72/72 faith=100.0% thr=166027/s",
+      "critical": true
+    },
+    {
+      "name": "faith_BatchDecoder",
+      "passed": true,
+      "detail": "72/72 faith=100.0% thr=141193/s",
+      "critical": true
+    },
+    {
+      "name": "faith_CPUBatchDecoder",
+      "passed": true,
+      "detail": "72/72 faith=100.0% thr=160330/s",
+      "critical": true
+    },
+    {
+      "name": "faith_StreamingDecoder",
+      "passed": true,
+      "detail": "72/72 faith=100.0% thr=103784/s",
+      "critical": true
+    },
+    {
+      "name": "faith_HybridCascadeDecoder",
+      "passed": true,
+      "detail": "72/72 faith=100.0% thr=171224/s",
+      "critical": true
+    },
+    {
+      "name": "faith_SlidingWindowDecoder",
+      "passed": true,
+      "detail": "16/16 faith=100.0% thr=121149/s",
+      "critical": true
+    },
+    {
+      "name": "faith_SpaceTimeDecoder",
+      "passed": true,
+      "detail": "8/8 rounds",
+      "critical": true
+    },
+    {
+      "name": "faith_NeuralPredecoder",
+      "passed": true,
+      "detail": "16/16",
+      "critical": true
+    },
+    {
+      "name": "faith_GNNPredecoder",
+      "passed": true,
+      "detail": "16/16 (GF2 cross-proof allowed)",
+      "critical": true
+    },
+    {
+      "name": "faith_HybridDecoder",
+      "passed": true,
+      "detail": "16/16 faith=100.0% thr=9346/s",
+      "critical": true
+    },
+    {
+      "name": "beam_cfg_beam8_230iters",
+      "passed": true,
+      "detail": "faith=True",
+      "critical": true
+    },
+    {
+      "name": "beam_cfg_beam32_340iters",
+      "passed": true,
+      "detail": "faith=True",
+      "critical": true
+    },
+    {
+      "name": "beam_cfg_beam64_640iters",
+      "passed": true,
+      "detail": "faith=True",
+      "critical": true
+    },
+    {
+      "name": "ionq_q70_cpu_bposd",
+      "passed": true,
+      "detail": "25/25",
+      "critical": true
+    },
+    {
+      "name": "ionq_q70_cascade",
+      "passed": true,
+      "detail": "25/25",
+      "critical": true
+    },
+    {
+      "name": "ionq_q70_beam",
+      "passed": true,
+      "detail": "25/25",
+      "critical": true
+    },
+    {
+      "name": "ionq_q70_ultra_beam",
+      "passed": true,
+      "detail": "25/25",
+      "critical": false
+    },
+    {
+      "name": "ionq_q70_cuda",
+      "passed": true,
+      "detail": "NOT_AVAILABLE: ValueError",
+      "critical": false
+    },
+    {
+      "name": "ionq_q70_opencl",
+      "passed": true,
+      "detail": "NOT_AVAILABLE: ValueError",
+      "critical": false
+    },
+    {
+      "name": "ionq_q70_fpga",
+      "passed": true,
+      "detail": "NOT_AVAILABLE exclusive-access",
+      "critical": false
+    },
+    {
+      "name": "ionq_q102_cpu_bposd",
+      "passed": true,
+      "detail": "25/25",
+      "critical": true
+    },
+    {
+      "name": "ionq_q102_cascade",
+      "passed": true,
+      "detail": "25/25",
+      "critical": true
+    },
+    {
+      "name": "ionq_q102_beam",
+      "passed": true,
+      "detail": "25/25",
+      "critical": true
+    },
+    {
+      "name": "ionq_q102_ultra_beam",
+      "passed": true,
+      "detail": "25/25",
+      "critical": false
+    },
+    {
+      "name": "ionq_q102_cuda",
+      "passed": true,
+      "detail": "NOT_AVAILABLE: ValueError",
+      "critical": false
+    },
+    {
+      "name": "ionq_q102_opencl",
+      "passed": true,
+      "detail": "NOT_AVAILABLE: ValueError",
+      "critical": false
+    },
+    {
+      "name": "ionq_q102_fpga",
+      "passed": true,
+      "detail": "NOT_AVAILABLE exclusive-access",
+      "critical": false
+    },
+    {
+      "name": "ionq_gross_cpu_bposd",
+      "passed": true,
+      "detail": "25/25",
+      "critical": true
+    },
+    {
+      "name": "ionq_gross_cascade",
+      "passed": true,
+      "detail": "25/25",
+      "critical": true
+    },
+    {
+      "name": "ionq_gross_beam",
+      "passed": true,
+      "detail": "25/25",
+      "critical": true
+    },
+    {
+      "name": "ionq_gross_ultra_beam",
+      "passed": true,
+      "detail": "25/25",
+      "critical": false
+    },
+    {
+      "name": "ionq_gross_cuda",
+      "passed": true,
+      "detail": "NOT_AVAILABLE: ValueError",
+      "critical": false
+    },
+    {
+      "name": "ionq_gross_opencl",
+      "passed": true,
+      "detail": "NOT_AVAILABLE: ValueError",
+      "critical": false
+    },
+    {
+      "name": "ionq_gross_fpga",
+      "passed": true,
+      "detail": "NOT_AVAILABLE exclusive-access",
+      "critical": false
+    },
+    {
+      "name": "AutoDecoder_q102",
+      "passed": true,
+      "detail": "shape=(102,)",
+      "critical": true
+    },
+    {
+      "name": "residual_ok_api",
+      "passed": true,
+      "detail": "zero",
+      "critical": true
+    },
+    {
+      "name": "gf2_solve",
+      "passed": true,
+      "detail": "ok",
+      "critical": true
+    },
+    {
+      "name": "cuda_probe",
+      "passed": true,
+      "detail": "cuda=False",
+      "critical": false
+    },
+    {
+      "name": "opencl_probe",
+      "passed": true,
+      "detail": "opencl=False",
+      "critical": false
+    },
+    {
+      "name": "simd",
+      "passed": true,
+      "detail": "SimdLevel.Avx512",
+      "critical": false
+    },
+    {
+      "name": "gen_py_generate_surface_code_checks",
+      "passed": true,
+      "detail": "checks=8 n=9",
+      "critical": true
+    },
+    {
+      "name": "gen_py_generate_toric_code_checks",
+      "passed": true,
+      "detail": "checks=18 n=18",
+      "critical": true
+    },
+    {
+      "name": "gen_py_generate_ring_code_checks",
+      "passed": true,
+      "detail": "checks=64 n=64",
+      "critical": true
+    },
+    {
+      "name": "gen_py_generate_toy_code_checks",
+      "passed": true,
+      "detail": "checks=50 n=25",
+      "critical": true
+    }
+  ],
+  "summary": {
+    "n_gates": 58,
+    "n_passed": 58,
+    "n_critical": 43,
+    "n_critical_passed": 43,
+    "critical_pass": true,
+    "all_pass": true,
+    "wall_s": 40.071956911,
+    "package": "3.7.5",
+    "platform": "Linux-6.12.8+-x86_64-with-glibc2.39",
+    "cpu_count": 2
+  }
+}

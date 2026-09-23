@@ -1,0 +1,318 @@
+{
+  "suite": "wheel_acceptance",
+  "version": "3.7.5",
+  "timestamp": "2026-09-23T14:54:25Z",
+  "gates": [
+    {
+      "name": "wheel version is 3.7.5",
+      "passed": true,
+      "detail": "version=3.7.5"
+    },
+    {
+      "name": "mega_version()",
+      "passed": true,
+      "detail": "3.7.5"
+    },
+    {
+      "name": "DECODER_VERSION",
+      "passed": true,
+      "detail": "3.7.5"
+    },
+    {
+      "name": "repetition code generator",
+      "passed": true,
+      "detail": "4 checks, nq=5"
+    },
+    {
+      "name": "ring/surface/toric/toy generators",
+      "passed": true,
+      "detail": "py_generate_ring_code_checks:25x25, py_generate_surface_code_checks:8x9, py_generate_toric_code_checks:18x18, py_generate_toy_code_checks:18x9"
+    },
+    {
+      "name": "BPOSDDecoder single errors",
+      "passed": true,
+      "detail": "bposd: 6/6 single-error shots faithful"
+    },
+    {
+      "name": "UnionFindDecoder single errors",
+      "passed": true,
+      "detail": "uf: 6/6 single-error shots faithful"
+    },
+    {
+      "name": "FastUnionFindDecoder single errors",
+      "passed": true,
+      "detail": "fast-uf: 6/6 single-error shots faithful"
+    },
+    {
+      "name": "BlossomDecoder single errors",
+      "passed": true,
+      "detail": "blossom: 6/6 single-error shots faithful"
+    },
+    {
+      "name": "SparseBlossomDecoder single errors",
+      "passed": true,
+      "detail": "sparse-blossom: 6/6 single-error shots faithful"
+    },
+    {
+      "name": "BeamSearchDecoder single errors",
+      "passed": true,
+      "detail": "beam: 6/6 single-error shots faithful"
+    },
+    {
+      "name": "TensorNetworkDecoder.decode single errors (fixed path)",
+      "passed": true,
+      "detail": "tn: 6/6 single-error shots faithful"
+    },
+    {
+      "name": "LookupTableDecoder single errors",
+      "passed": true,
+      "detail": "lut: 6/6 single-error shots faithful"
+    },
+    {
+      "name": "TwoStageDecoder single errors",
+      "passed": true,
+      "detail": "twostage: 6/6 single-error shots faithful"
+    },
+    {
+      "name": "BatchDecoder batch_decode",
+      "passed": true,
+      "detail": "batchdec: 6/6 shots faithful"
+    },
+    {
+      "name": "SlidingWindowDecoder single errors",
+      "passed": true,
+      "detail": "sliding: 6/6 single-error shots faithful"
+    },
+    {
+      "name": "SpaceTimeDecoder decode_rounds_flat",
+      "passed": true,
+      "detail": "spacetime: 6/6 shots faithful"
+    },
+    {
+      "name": "StreamingDecoder.update single errors",
+      "passed": true,
+      "detail": "streaming: 6/6 single-error shots faithful"
+    },
+    {
+      "name": "HybridDecoder decode_hybrid single errors",
+      "passed": true,
+      "detail": "hybrid: 6/6 single-error shots faithful"
+    },
+    {
+      "name": "TensorNetworkDecoder.batch_decode (fixed path)",
+      "passed": true,
+      "detail": "6 shots faithful, out shape (30,)"
+    },
+    {
+      "name": "BPOSDDecoder batch decode",
+      "passed": true,
+      "detail": "6 shots faithful, out shape (30,)"
+    },
+    {
+      "name": "IonQSuperionDecoder gross/q70/q102 zero-syndrome",
+      "passed": true,
+      "detail": "gross:144q/144s, q70:70q/70s, q102:102q/102s"
+    },
+    {
+      "name": "AutoDecoder zero-syndrome",
+      "passed": true,
+      "detail": "corr shape (102,)"
+    },
+    {
+      "name": "gf2_solve / decode_gf2",
+      "passed": true,
+      "detail": "gf2_solve + decode_gf2 faithful"
+    },
+    {
+      "name": "probe_backends",
+      "passed": true,
+      "detail": "[('cutlass_tensor_core', False, 'CUTLASS_PATH / cutlass/cutlass.h not found; using reference GEMM'), ('cuda_nvrtc', True, 'cooperative_groups.h via /usr/local/cuda/include'), ('open_cl', True, 'opencl available devices=1 gpu=1 preferred=\"Tesla T4\"'), ('fpga_relay', False, 'no FPGA PCI function (set QECTOR_FPGA_PCI_ADDR)'), ('avx512', True, 'avx512f'), ('avx2', True, 'avx2'), ('gf2_simd', True, 'xor_rows avx512f'), ('cpu_scalar', True, 'gemm_f32 2x2 identity')]"
+    },
+    {
+      "name": "cuda_is_available/opencl_is_available",
+      "passed": true,
+      "detail": "cuda=True opencl=True"
+    },
+    {
+      "name": "py_detect_simd/gf2_xor_tier",
+      "passed": true,
+      "detail": "SimdLevel.Avx512 / gf2_xor_tier=avx512f"
+    },
+    {
+      "name": "DetectorGraph enriched",
+      "passed": true,
+      "detail": "<builtins.DetectorGraph object at 0x7eaa68394630>"
+    },
+    {
+      "name": "latency stats reset/read",
+      "passed": true,
+      "detail": "(0, 0.0, 0.0, 0.0, 0.0, 0.0)"
+    },
+    {
+      "name": "license status",
+      "passed": true,
+      "detail": "('none', True, 'open evaluation (no key set)')"
+    },
+    {
+      "name": "AmbiguityClusterDecoder single errors",
+      "passed": true,
+      "detail": "ambig: 6/6 single-error shots faithful"
+    },
+    {
+      "name": "CPUBatchDecoder batch_decode",
+      "passed": true,
+      "detail": "6/6 shots faithful"
+    },
+    {
+      "name": "CUDA decoder path (live or fail-closed)",
+      "passed": true,
+      "detail": "CUDA live; both decoders 12/12 shots faithful"
+    },
+    {
+      "name": "UltraBeamDecoder via IonQ backend",
+      "passed": true,
+      "detail": "UltraBeam backend live, corr shape (70,)"
+    },
+    {
+      "name": "LogicalCode commutation proofs",
+      "passed": true,
+      "detail": "repetition(5):n=5, rotated_surface(3):n=9, toric(3):n=18"
+    },
+    {
+      "name": "FtGateSynthesizer invariants",
+      "passed": true,
+      "detail": "rotated_surface(3):d=3,k=1,transH=False, toric(3):d=3,k=2,transH=False"
+    },
+    {
+      "name": "New API namespace presence",
+      "passed": true,
+      "detail": "7/7 names present, LERBenchmark constructs"
+    },
+    {
+      "name": "GNNPredecoder direct train+decode",
+      "passed": true,
+      "detail": "GNN direct decode 6/6 (GF2 cross-proof)"
+    },
+    {
+      "name": "NeuralPredecoder decode_faithful",
+      "passed": true,
+      "detail": "neural faithful 6/6 + weight export"
+    },
+    {
+      "name": "HybridDecoder direct train+decode",
+      "passed": true,
+      "detail": "hybrid 6/6 shots faithful"
+    },
+    {
+      "name": "HybridCascadeDecoder batch_decode",
+      "passed": true,
+      "detail": "cascade 6/6 shots faithful"
+    },
+    {
+      "name": "CodeDistance table",
+      "passed": true,
+      "detail": "q70:d=9,t=4, q102:d=9,t=4, gross:d=12,t=5 + table(4)"
+    },
+    {
+      "name": "Helper value proofs",
+      "passed": true,
+      "detail": "llr/wilson/edges/DEM/pool/demo/scopes proven"
+    },
+    {
+      "name": "Version/target constants",
+      "passed": true,
+      "detail": "3.7.5/IonQ Superion 256"
+    },
+    {
+      "name": "gRPC serve/stop cycle",
+      "passed": true,
+      "detail": "serve + stop clean"
+    },
+    {
+      "name": "BenchmarkSuite presence",
+      "passed": true,
+      "detail": "BenchmarkSuite.run present"
+    },
+    {
+      "name": "BPOSDDecoder bp_decode/decode_timed",
+      "passed": true,
+      "detail": "bp_decode soft scores + decode_timed faithful"
+    },
+    {
+      "name": "BenchmarkSuite.run executed",
+      "passed": true,
+      "detail": "decoder=Blossom samples=8"
+    },
+    {
+      "name": "LERBenchmark.run_all interface",
+      "passed": true,
+      "detail": "run_all(seed=None) present, full run out of gate budget"
+    },
+    {
+      "name": "DetectorGraph full surface",
+      "passed": true,
+      "detail": "nodes=4 edges=3 update+enrich ok"
+    },
+    {
+      "name": "TwoStageDecoder batch/timed/constructors",
+      "passed": true,
+      "detail": "batch 6 faithful + timed + {'gross': (144, 144), 'q70': (70, 70), 'q102': (102, 102)}"
+    },
+    {
+      "name": "BlossomDecoder edges/weighted batch",
+      "passed": true,
+      "detail": "3 edges + weighted batch 5/5 faithful"
+    },
+    {
+      "name": "LookupTableDecoder build/batch",
+      "passed": true,
+      "detail": "table_size=16 + batch 6 faithful"
+    },
+    {
+      "name": "HybridDecoder standard/heuristic/weights",
+      "passed": true,
+      "detail": "standard+heuristic 18/18 faithful + weights IO"
+    },
+    {
+      "name": "TensorNetwork chi / BeamSearch priors",
+      "passed": true,
+      "detail": "chi=8 + beam priors + faithful"
+    },
+    {
+      "name": "IonQSuperionDecoder full surface",
+      "passed": true,
+      "detail": "gross:144q, q70:70q, q102:102q, from_checks ok, batch_flat ok, update/flush/attrs/priors ok"
+    },
+    {
+      "name": "IonQ prefer_opencl (live or fail-closed)",
+      "passed": true,
+      "detail": "OpenCL live via OpenClBpOsd, corr shape (70,)"
+    },
+    {
+      "name": "OpenCLBatchDecoder batch (live or fail-closed)",
+      "passed": true,
+      "detail": "live on Tesla T4, 6/6 faithful"
+    },
+    {
+      "name": "MCP/gRPC server interfaces",
+      "passed": true,
+      "detail": "mcp()/grpc(host,port) interfaces asserted (blocking, not started)"
+    },
+    {
+      "name": "latency scoped stats / DEM tuple",
+      "passed": true,
+      "detail": "scoped stats 6-tuple + DEM tuple len=3"
+    },
+    {
+      "name": "No-constructor types fail closed",
+      "passed": true,
+      "detail": "4/4 fail closed with TypeError"
+    }
+  ],
+  "summary": {
+    "n_checks": 61,
+    "n_passed": 61,
+    "n_failed": 0,
+    "all_pass": true
+  }
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "topology": "CSS planar surface d=3",
+    "n_qubits": 12,
+    "n_checks": 13,
+    "batch": 4096,
+    "backend": "numpy",
+    "wall_s_mean": 0.0006498640001761183,
+    "throughput_mean": 6302857.211493406,
+    "throughput_std": 164972.9365208858,
+    "n_runs": 3
+  },
+  {
+    "topology": "CSS planar surface d=3",
+    "n_qubits": 12,
+    "n_checks": 13,
+    "batch": 16384,
+    "backend": "numpy",
+    "wall_s_mean": 0.002518973999940499,
+    "throughput_mean": 6504235.4547474515,
+    "throughput_std": 20995.250152522698,
+    "n_runs": 2
+  },
+  {
+    "topology": "CSS planar surface d=4",
+    "n_qubits": 24,
+    "n_checks": 25,
+    "batch": 4096,
+    "backend": "numpy",
+    "wall_s_mean": 0.002062740333409844,
+    "throughput_mean": 1985708.0087385722,
+    "throughput_std": 133287.10626414395,
+    "n_runs": 3
+  },
+  {
+    "topology": "CSS planar surface d=4",
+    "n_qubits": 24,
+    "n_checks": 25,
+    "batch": 16384,
+    "backend": "numpy",
+    "wall_s_mean": 0.007930933500119863,
+    "throughput_mean": 2065834.9990896257,
+    "throughput_std": 20847.79957647808,
+    "n_runs": 2
+  },
+  {
+    "topology": "CSS planar surface d=5",
+    "n_qubits": 40,
+    "n_checks": 41,
+    "batch": 4096,
+    "backend": "numpy",
+    "wall_s_mean": 0.005949403000158782,
+    "throughput_mean": 688472.4399894718,
+    "throughput_std": 16142.287356600174,
+    "n_runs": 3
+  },
+  {
+    "topology": "CSS planar surface d=5",
+    "n_qubits": 40,
+    "n_checks": 41,
+    "batch": 16384,
+    "backend": "numpy",
+    "wall_s_mean": 0.02343129949986178,
+    "throughput_mean": 699235.6527258187,
+    "throughput_std": 987.2184173766873,
+    "n_runs": 2
+  },
+  {
+    "topology": "CSS bicycle-like l=6 m=6",
+    "n_qubits": 72,
+    "n_checks": 72,
+    "batch": 4096,
+    "backend": "numpy",
+    "wall_s_mean": 0.014693628666464065,
+    "throughput_mean": 278760.27719064977,
+    "throughput_std": 5205.989060868597,
+    "n_runs": 3
+  },
+  {
+    "topology": "CSS bicycle-like l=6 m=6",
+    "n_qubits": 72,
+    "n_checks": 72,
+    "batch": 16384,
+    "backend": "numpy",
+    "wall_s_mean": 0.0592842794999342,
+    "throughput_mean": 276363.3148315176,
+    "throughput_std": 2123.743515110167,
+    "n_runs": 2
+  },
+  {
+    "topology": "Classical Gallager (2,4) n=64",
+    "n_qubits": 64,
+    "n_checks": 32,
+    "batch": 4096,
+    "backend": "numpy",
+    "wall_s_mean": 0.005901937332964735,
+    "throughput_mean": 694009.4021537917,
+    "throughput_std": 18228.6242041576,
+    "n_runs": 3
+  },
+  {
+    "topology": "Classical Gallager (2,4) n=64",
+    "n_qubits": 64,
+    "n_checks": 32,
+    "batch": 16384,
+    "backend": "numpy",
+    "wall_s_mean": 0.025142152000171336,
+    "throughput_mean": 651654.6395824967,
+    "throughput_std": 6396.963714122889,
+    "n_runs": 2
+  }
+]

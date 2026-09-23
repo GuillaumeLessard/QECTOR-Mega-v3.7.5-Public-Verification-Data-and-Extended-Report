@@ -1,0 +1,23 @@
+code,variant,faith,thr,loss
+CSS repetition Z d=7,GNN_optimized,100.0,44884.87729430407,nan
+CSS repetition Z d=7,GNN_twostage,100.0,31656.24483850843,
+CSS repetition Z d=7,Hybrid_GNN,100.0,30605.81338179648,0.1072918826595956
+CSS repetition Z d=7,Hybrid_batch,100.0,30605.81338179648,
+CSS repetition Z d=7,Neural_faithful,100.0,77066.18659543995,
+CSS repetition Z d=7,Neural_decode,100.0,73559.0754264575,
+CSS repetition Z d=7,Neural_predict,76.5625,88678.27796552703,
+CSS repetition Z d=7,Neural_twostage,100.0,56395.26734560947,
+CSS repetition Z d=7,Cascade_plus_w4,100.0,701331.4310470663,
+CSS repetition Z d=7,BPOSD_min_sum_osd4,100.0,240556.28688090417,
+CSS repetition Z d=7,Factory_qector_CPUBatchDecoder,100.0,524947.3006963363,
+HP surface d=3,GNN_optimized,100.0,76481.37855033993,nan
+HP surface d=3,GNN_twostage,100.0,56901.02774984564,
+HP surface d=3,Hybrid_GNN,100.0,9860.579114168098,0.6065192651047505
+HP surface d=3,Hybrid_batch,100.0,9860.579114168098,
+HP surface d=3,Neural_faithful,100.0,42932.93674008921,
+HP surface d=3,Neural_decode,100.0,42126.13222116827,
+HP surface d=3,Neural_predict,56.25,91865.85285227487,
+HP surface d=3,Neural_twostage,100.0,34263.443052575334,
+HP surface d=3,Cascade_plus_w4,100.0,178925.38515975577,
+HP surface d=3,BPOSD_min_sum_osd4,100.0,189205.8081935326,
+HP surface d=3,Factory_qector_HybridCascade_w8_autopick,100.0,241269.98481571092,

@@ -1,0 +1,375 @@
+{
+  "suite": "neural_benchmark_standards",
+  "version": "1.0",
+  "timestamp": "2026-09-23T14:53:48Z",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "standard": "latency_percentiles + throughput_median_p99 + residual_faithfulness + model_size",
+  "rows": [
+    {
+      "code": "CSS repetition Z d=7",
+      "engine": "ReferenceGF2",
+      "family": "baseline",
+      "faithful_pct": 100.0,
+      "lat_mean_us": 52.342101547253606,
+      "lat_p50_us": 59.935000535915606,
+      "lat_p90_us": 68.77000032545766,
+      "lat_p99_us": 104.48200009705033,
+      "lat_min_us": 33.7249994117883,
+      "lat_max_us": 105.96900028758682,
+      "n_latency_samples": 128,
+      "thr_median": 19105.079284927375,
+      "thr_p99": 0,
+      "thr_min": 0,
+      "thr_max": 0,
+      "shots": 256
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "engine": "qector_BPOSD_min_sum_osd4",
+      "family": "bposd_plus",
+      "faithful_pct": 100.0,
+      "lat_mean_us": 1.4957890428490828,
+      "lat_p50_us": 1.041999894368928,
+      "lat_p90_us": 1.903999873320572,
+      "lat_p99_us": 6.321000000752974,
+      "lat_min_us": 0.9949999366654083,
+      "lat_max_us": 33.87400010979036,
+      "n_latency_samples": 128,
+      "thr_median": 1281217.158315849,
+      "thr_p99": 1284250.8695466414,
+      "thr_min": 1096965.7758912395,
+      "thr_max": 1284250.8695466414,
+      "shots": 256
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "engine": "Cascade_w4",
+      "family": "cascade",
+      "faithful_pct": 100.0,
+      "lat_mean_us": 0.893609403362916,
+      "lat_p50_us": 0.5840001904289238,
+      "lat_p90_us": 1.4890001693856902,
+      "lat_p99_us": 2.599999788799323,
+      "lat_min_us": 0.535999788553454,
+      "lat_max_us": 4.8269994294969365,
+      "n_latency_samples": 128,
+      "thr_median": 3077810.912104416,
+      "thr_p99": 3519045.4758937084,
+      "thr_min": 2008709.6452136838,
+      "thr_max": 3519045.4758937084,
+      "shots": 256
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "engine": "qector_Neural_residual_safe",
+      "family": "neural",
+      "faithful_pct": 100.0,
+      "lat_mean_us": 16.36538274851773,
+      "lat_p50_us": 11.291999726381619,
+      "lat_p90_us": 25.035999897227157,
+      "lat_p99_us": 49.27000009047333,
+      "lat_min_us": 10.497999937797431,
+      "lat_max_us": 67.64499994460493,
+      "n_latency_samples": 128,
+      "thr_median": 70853.83297080081,
+      "thr_p99": 74258.7540513347,
+      "thr_min": 56245.107383006245,
+      "thr_max": 74258.7540513347,
+      "shots": 256
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "engine": "qector_GNN_residual_safe",
+      "family": "gnn",
+      "faithful_pct": 100.0,
+      "lat_mean_us": 11.098875013715315,
+      "lat_p50_us": 10.409999958937988,
+      "lat_p90_us": 12.046999472659081,
+      "lat_p99_us": 16.910000340430997,
+      "lat_min_us": 10.214000212727115,
+      "lat_max_us": 31.87200036336435,
+      "n_latency_samples": 128,
+      "thr_median": 84642.06163444398,
+      "thr_p99": 86411.83951407578,
+      "thr_min": 83917.9452998832,
+      "thr_max": 86411.83951407578,
+      "shots": 256
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "engine": "Hybrid_GNN",
+      "family": "hybrid",
+      "faithful_pct": 100.0,
+      "lat_mean_us": 72.09000000329979,
+      "lat_p50_us": 69.23099954292411,
+      "lat_p90_us": 85.96799943916267,
+      "lat_p99_us": 100.86299971590051,
+      "lat_min_us": 55.00900078914128,
+      "lat_max_us": 101.64699961023871,
+      "n_latency_samples": 128,
+      "thr_median": 43587.60000617299,
+      "thr_p99": 44666.98841066454,
+      "thr_min": 42794.272054354944,
+      "thr_max": 44666.98841066454,
+      "shots": 256
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "engine": "Neural_weights",
+      "family": "meta",
+      "export_bytes": 1549
+    },
+    {
+      "code": "HP surface d=3",
+      "engine": "ReferenceGF2",
+      "family": "baseline",
+      "faithful_pct": 100.0,
+      "lat_mean_us": 92.14629689324738,
+      "lat_p50_us": 86.95600081409793,
+      "lat_p90_us": 104.07900026621064,
+      "lat_p99_us": 156.04899999743793,
+      "lat_min_us": 85.64500058128033,
+      "lat_max_us": 157.7180000822409,
+      "n_latency_samples": 128,
+      "thr_median": 10852.308054858811,
+      "thr_p99": 0,
+      "thr_min": 0,
+      "thr_max": 0,
+      "shots": 256
+    },
+    {
+      "code": "HP surface d=3",
+      "engine": "qector_BPOSD_min_sum_osd4",
+      "family": "bposd_plus",
+      "faithful_pct": 100.0,
+      "lat_mean_us": 5.469218748999083,
+      "lat_p50_us": 1.9509998310240917,
+      "lat_p90_us": 6.107000444899313,
+      "lat_p99_us": 119.26900060643675,
+      "lat_min_us": 1.6669991964590736,
+      "lat_max_us": 128.98200020572403,
+      "n_latency_samples": 128,
+      "thr_median": 241988.84583167863,
+      "thr_p99": 273770.14657572284,
+      "thr_min": 217018.67197941476,
+      "thr_max": 273770.14657572284,
+      "shots": 256
+    },
+    {
+      "code": "HP surface d=3",
+      "engine": "Cascade_w4",
+      "family": "cascade",
+      "faithful_pct": 100.0,
+      "lat_mean_us": 4.836515650197271,
+      "lat_p50_us": 0.7200005711638369,
+      "lat_p90_us": 11.023000297427643,
+      "lat_p99_us": 49.89000080968253,
+      "lat_min_us": 0.5439997039502487,
+      "lat_max_us": 74.62400026270188,
+      "n_latency_samples": 128,
+      "thr_median": 287043.4637558757,
+      "thr_p99": 310196.2476691154,
+      "thr_min": 201443.78536324098,
+      "thr_max": 310196.2476691154,
+      "shots": 256
+    },
+    {
+      "code": "HP surface d=3",
+      "engine": "qector_Neural_residual_safe",
+      "family": "neural",
+      "faithful_pct": 100.0,
+      "lat_mean_us": 21.525484392270755,
+      "lat_p50_us": 21.06099964294117,
+      "lat_p90_us": 21.488000129465945,
+      "lat_p99_us": 34.68100021564169,
+      "lat_min_us": 20.645999939006288,
+      "lat_max_us": 38.09899953921558,
+      "n_latency_samples": 128,
+      "thr_median": 39712.96831708437,
+      "thr_p99": 41617.48299044441,
+      "thr_min": 38100.641356213935,
+      "thr_max": 41617.48299044441,
+      "shots": 256
+    },
+    {
+      "code": "HP surface d=3",
+      "engine": "Hybrid_GNN",
+      "family": "hybrid",
+      "faithful_pct": 100.0,
+      "lat_mean_us": 228.172437516605,
+      "lat_p50_us": 216.2729997507995,
+      "lat_p90_us": 284.27699999156175,
+      "lat_p99_us": 366.95100061479025,
+      "lat_min_us": 171.64099972433178,
+      "lat_max_us": 439.69099988316884,
+      "n_latency_samples": 128,
+      "thr_median": 10659.484394973695,
+      "thr_p99": 10811.208469748226,
+      "thr_min": 5948.328404776651,
+      "thr_max": 10811.208469748226,
+      "shots": 256
+    },
+    {
+      "code": "HP surface d=3",
+      "engine": "Neural_weights",
+      "family": "meta",
+      "export_bytes": 5545
+    }
+  ],
+  "gates": [
+    {
+      "name": "faith_baseline_CSS repetition Z d=7",
+      "passed": true,
+      "detail": "faith=100.00%",
+      "critical": true
+    },
+    {
+      "name": "latency_baseline_CSS repetition Z d=7",
+      "passed": true,
+      "detail": "p50=59.94us",
+      "critical": false
+    },
+    {
+      "name": "faith_bposd_plus_CSS repetition Z d=7",
+      "passed": true,
+      "detail": "faith=100.00%",
+      "critical": true
+    },
+    {
+      "name": "latency_bposd_plus_CSS repetition Z d=7",
+      "passed": true,
+      "detail": "p50=1.04us",
+      "critical": false
+    },
+    {
+      "name": "faith_cascade_CSS repetition Z d=7",
+      "passed": true,
+      "detail": "faith=100.00%",
+      "critical": true
+    },
+    {
+      "name": "latency_cascade_CSS repetition Z d=7",
+      "passed": true,
+      "detail": "p50=0.58us",
+      "critical": false
+    },
+    {
+      "name": "faith_neural_CSS repetition Z d=7",
+      "passed": true,
+      "detail": "faith=100.00%",
+      "critical": true
+    },
+    {
+      "name": "latency_neural_CSS repetition Z d=7",
+      "passed": true,
+      "detail": "p50=11.29us",
+      "critical": false
+    },
+    {
+      "name": "faith_gnn_CSS repetition Z d=7",
+      "passed": true,
+      "detail": "faith=100.00%",
+      "critical": true
+    },
+    {
+      "name": "latency_gnn_CSS repetition Z d=7",
+      "passed": true,
+      "detail": "p50=10.41us",
+      "critical": false
+    },
+    {
+      "name": "latency_hybrid_CSS repetition Z d=7",
+      "passed": true,
+      "detail": "p50=69.23us",
+      "critical": false
+    },
+    {
+      "name": "model_size_neural_CSS repetition Z d=7",
+      "passed": true,
+      "detail": "export_bytes=1549",
+      "critical": false
+    },
+    {
+      "name": "faith_baseline_HP surface d=3",
+      "passed": true,
+      "detail": "faith=100.00%",
+      "critical": true
+    },
+    {
+      "name": "latency_baseline_HP surface d=3",
+      "passed": true,
+      "detail": "p50=86.96us",
+      "critical": false
+    },
+    {
+      "name": "faith_bposd_plus_HP surface d=3",
+      "passed": true,
+      "detail": "faith=100.00%",
+      "critical": true
+    },
+    {
+      "name": "latency_bposd_plus_HP surface d=3",
+      "passed": true,
+      "detail": "p50=1.95us",
+      "critical": false
+    },
+    {
+      "name": "faith_cascade_HP surface d=3",
+      "passed": true,
+      "detail": "faith=100.00%",
+      "critical": true
+    },
+    {
+      "name": "latency_cascade_HP surface d=3",
+      "passed": true,
+      "detail": "p50=0.72us",
+      "critical": false
+    },
+    {
+      "name": "faith_neural_HP surface d=3",
+      "passed": true,
+      "detail": "faith=100.00%",
+      "critical": true
+    },
+    {
+      "name": "latency_neural_HP surface d=3",
+      "passed": true,
+      "detail": "p50=21.06us",
+      "critical": false
+    },
+    {
+      "name": "latency_hybrid_HP surface d=3",
+      "passed": true,
+      "detail": "p50=216.27us",
+      "critical": false
+    },
+    {
+      "name": "model_size_neural_HP surface d=3",
+      "passed": true,
+      "detail": "export_bytes=5545",
+      "critical": false
+    }
+  ],
+  "summary": {
+    "n_gates": 22,
+    "n_passed": 22,
+    "critical_pass": true,
+    "all_pass": true,
+    "metrics": [
+      "lat_p50_us",
+      "lat_p90_us",
+      "lat_p99_us",
+      "thr_median",
+      "faithful_pct"
+    ],
+    "families": [
+      "baseline",
+      "bposd_plus",
+      "cascade",
+      "gnn",
+      "hybrid",
+      "meta",
+      "neural"
+    ]
+  }
+}

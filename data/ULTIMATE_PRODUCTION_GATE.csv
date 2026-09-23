@@ -1,0 +1,11 @@
+category,pass,returncode,artifact,detail
+wheel_acceptance,True,0,wheel_acceptance.json,wheel_acceptance.json gate true
+master_certify,True,0,master_certify_report.json,master_certify_report.json gate true
+decoder_matrix,True,0,decoder_matrix_v2_results.json,decoder_matrix_v2_results.json gate true; benchmark: all_decoders_benchmark_results.json gate true
+logical_error,True,0,logical_error_report.json,logical_error_report.json gate true
+maths_physics,True,0,maths_physics_report_v2.json,maths_physics_report_v2.json gate true; base report: maths_physics_report.json gate true
+neural,True,0,multiple,neural_plus_report.json gate true; production_neural_bposd.json gate true; neural_benchmark_standards.json gate true; gnn_optimization_report.json gate true
+performance,True,0,speed_max_report.json,speed_max_report.json gate true; cpu_gpu_benchmark.json: present; family_speed_report.json: present
+ionq,True,0,ionq_showcase.json,ionq_showcase.json gate true
+validation,True,0,extended_validation.json,extended_validation.json gate true
+framework,True,0,framework_report.json,framework_report.json gate true

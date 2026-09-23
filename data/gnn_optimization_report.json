@@ -1,0 +1,315 @@
+{
+  "suite": "gnn_optimization",
+  "version": "1.0",
+  "timestamp": "2026-09-23T14:53:44Z",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "rows": [
+    {
+      "tech": "lr_l2_grid",
+      "lr": 0.001,
+      "l2": 0.0,
+      "hidden": 16,
+      "faith": 100.0,
+      "thr": 30721.33207673028,
+      "loss": NaN,
+      "loss_bp": null,
+      "wall_s": 0.00177139600054943
+    },
+    {
+      "tech": "lr_l2_grid",
+      "lr": 0.001,
+      "l2": 1e-05,
+      "hidden": 16,
+      "faith": 100.0,
+      "thr": 53475.75710660317,
+      "loss": NaN,
+      "loss_bp": null,
+      "wall_s": 0.0013547039998229593
+    },
+    {
+      "tech": "lr_l2_grid",
+      "lr": 0.001,
+      "l2": 0.001,
+      "hidden": 16,
+      "faith": 100.0,
+      "thr": 53460.8820692004,
+      "loss": NaN,
+      "loss_bp": null,
+      "wall_s": 0.0018315609995624982
+    },
+    {
+      "tech": "lr_l2_grid",
+      "lr": 0.01,
+      "l2": 0.0,
+      "hidden": 16,
+      "faith": 100.0,
+      "thr": 50075.15183887729,
+      "loss": NaN,
+      "loss_bp": null,
+      "wall_s": 0.0010959840001305565
+    },
+    {
+      "tech": "lr_l2_grid",
+      "lr": 0.01,
+      "l2": 1e-05,
+      "hidden": 16,
+      "faith": 100.0,
+      "thr": 51883.534445017875,
+      "loss": NaN,
+      "loss_bp": null,
+      "wall_s": 0.0013756389998889063
+    },
+    {
+      "tech": "lr_l2_grid",
+      "lr": 0.01,
+      "l2": 0.001,
+      "hidden": 16,
+      "faith": 100.0,
+      "thr": 34153.5340050243,
+      "loss": NaN,
+      "loss_bp": null,
+      "wall_s": 0.002072969999971974
+    },
+    {
+      "tech": "lr_l2_grid",
+      "lr": 0.05,
+      "l2": 0.0,
+      "hidden": 16,
+      "faith": 100.0,
+      "thr": 53051.849058784144,
+      "loss": NaN,
+      "loss_bp": null,
+      "wall_s": 0.0011930580003536306
+    },
+    {
+      "tech": "lr_l2_grid",
+      "lr": 0.05,
+      "l2": 1e-05,
+      "hidden": 16,
+      "faith": 100.0,
+      "thr": 51207.82455555836,
+      "loss": NaN,
+      "loss_bp": null,
+      "wall_s": 0.0010518709996176767
+    },
+    {
+      "tech": "lr_l2_grid",
+      "lr": 0.05,
+      "l2": 0.001,
+      "hidden": 16,
+      "faith": 100.0,
+      "thr": 57043.69280624416,
+      "loss": NaN,
+      "loss_bp": null,
+      "wall_s": 0.0010167270002057194
+    },
+    {
+      "tech": "train_bp",
+      "lr": 0.05,
+      "l2": 0.001,
+      "hidden": 32,
+      "faith": 100.0,
+      "thr": 40021.28632271762,
+      "loss": NaN,
+      "loss_bp": NaN,
+      "wall_s": 0.012760265999531839
+    },
+    {
+      "tech": "early_stop",
+      "epochs": 2,
+      "faith": 100.0,
+      "thr": 49414.553371547416,
+      "loss": NaN,
+      "loss_bp": null,
+      "wall_s": 0.0007636660002390272,
+      "hidden": 16,
+      "lr": 0.05,
+      "l2": 0.001
+    },
+    {
+      "tech": "early_stop",
+      "epochs": 4,
+      "faith": 100.0,
+      "thr": 54562.722404470376,
+      "loss": NaN,
+      "loss_bp": null,
+      "wall_s": 0.0008139379997373908,
+      "hidden": 16,
+      "lr": 0.05,
+      "l2": 0.001
+    },
+    {
+      "tech": "early_stop",
+      "epochs": 6,
+      "faith": 100.0,
+      "thr": 51522.157741829025,
+      "loss": NaN,
+      "loss_bp": null,
+      "wall_s": 0.0012015250003969413,
+      "hidden": 16,
+      "lr": 0.05,
+      "l2": 0.001
+    },
+    {
+      "tech": "early_stop",
+      "epochs": 10,
+      "faith": 100.0,
+      "thr": 56303.97812384426,
+      "loss": NaN,
+      "loss_bp": null,
+      "wall_s": 0.0007281430007424206,
+      "hidden": 16,
+      "lr": 0.05,
+      "l2": 0.001
+    },
+    {
+      "tech": "multiseed",
+      "seed": 0,
+      "faith": 100.0,
+      "thr": 50422.72364064632,
+      "loss": NaN,
+      "loss_bp": null,
+      "wall_s": 0.00103723899974284,
+      "hidden": 16,
+      "lr": 0.05,
+      "l2": 0.001
+    },
+    {
+      "tech": "multiseed",
+      "seed": 1,
+      "faith": 100.0,
+      "thr": 54819.11406097376,
+      "loss": NaN,
+      "loss_bp": null,
+      "wall_s": 0.0011162700002387282,
+      "hidden": 16,
+      "lr": 0.05,
+      "l2": 0.001
+    },
+    {
+      "tech": "multiseed",
+      "seed": 2,
+      "faith": 100.0,
+      "thr": 55267.36883039536,
+      "loss": NaN,
+      "loss_bp": null,
+      "wall_s": 0.0013365380000323057,
+      "hidden": 16,
+      "lr": 0.05,
+      "l2": 0.001
+    },
+    {
+      "tech": "capacity",
+      "hidden": 8,
+      "faith": 100.0,
+      "thr": 50734.94321470999,
+      "loss": NaN,
+      "loss_bp": null,
+      "wall_s": 0.0013703740005439613,
+      "lr": 0.05,
+      "l2": 0.001
+    },
+    {
+      "tech": "capacity",
+      "hidden": 16,
+      "faith": 100.0,
+      "thr": 46952.73107186551,
+      "loss": NaN,
+      "loss_bp": null,
+      "wall_s": 0.001022436999846832,
+      "lr": 0.05,
+      "l2": 0.001
+    },
+    {
+      "tech": "capacity",
+      "hidden": 32,
+      "faith": 100.0,
+      "thr": 43223.091940362356,
+      "loss": NaN,
+      "loss_bp": null,
+      "wall_s": 0.0011570249998840154,
+      "lr": 0.05,
+      "l2": 0.001
+    },
+    {
+      "tech": "capacity",
+      "hidden": 64,
+      "faith": 100.0,
+      "thr": 46281.030000753366,
+      "loss": NaN,
+      "loss_bp": null,
+      "wall_s": 0.001586886999575654,
+      "lr": 0.05,
+      "l2": 0.001
+    },
+    {
+      "tech": "residual_safe",
+      "faith": 100.0,
+      "thr": 30976.86511724771,
+      "repairs": 0
+    }
+  ],
+  "gates": [
+    {
+      "name": "OPT1_lr_l2_grid",
+      "passed": true,
+      "detail": "best lr=0.05 l2=0.001 faith=100.0% thr=57044/s",
+      "critical": true
+    },
+    {
+      "name": "OPT2_train_bp",
+      "passed": true,
+      "detail": "faith=100.0% thr=40021/s loss=nan loss_bp=nan",
+      "critical": true
+    },
+    {
+      "name": "OPT3_early_stop",
+      "passed": true,
+      "detail": "faiths=[100.0, 100.0, 100.0, 100.0]",
+      "critical": true
+    },
+    {
+      "name": "OPT4_multiseed",
+      "passed": true,
+      "detail": "faiths=[100.0, 100.0, 100.0]",
+      "critical": true
+    },
+    {
+      "name": "OPT5_capacity",
+      "passed": true,
+      "detail": "sweep complete",
+      "critical": true
+    },
+    {
+      "name": "OPT6_weight_io",
+      "passed": true,
+      "detail": "pre=100.0% post_load=100.0%",
+      "critical": true
+    },
+    {
+      "name": "OPT7_residual_safe",
+      "passed": true,
+      "detail": "faith=100.00% thr=30977/s repairs=0/64",
+      "critical": true
+    }
+  ],
+  "summary": {
+    "n_gates": 7,
+    "n_passed": 7,
+    "critical_pass": true,
+    "all_pass": true,
+    "best_lr_l2": {
+      "lr": 0.05,
+      "l2": 0.001,
+      "faith": 100.0
+    },
+    "techniques": [
+      "capacity",
+      "early_stop",
+      "lr_l2_grid",
+      "multiseed",
+      "residual_safe",
+      "train_bp"
+    ]
+  }
+}

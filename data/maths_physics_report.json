@@ -1,0 +1,741 @@
+{
+  "suite": "CSS commutation + syndrome-map + physics",
+  "version": "4.0-css-certified",
+  "timestamp": "2026-09-23T14:53:43Z",
+  "codes": [
+    {
+      "name": "CSS planar surface d=2",
+      "family": "css_surface",
+      "params": {
+        "n": 4,
+        "rank_Hx": 3,
+        "rank_Hz": 1,
+        "k_css": 0,
+        "rate_css": 0.0,
+        "css_commutes": true
+      },
+      "maths_passed": true,
+      "physics_passed": true,
+      "css_certified": true,
+      "maths": [
+        {
+          "test": "css_commutation_Hx_HzT",
+          "passed": true,
+          "odd_entries_in_Hx_HzT": 0,
+          "formula": "Hx @ Hz.T \u2261 0 (mod 2)"
+        },
+        {
+          "test": "zero_error_to_zero_syndrome",
+          "passed": true,
+          "sector_rows": 4
+        },
+        {
+          "test": "zero_error_to_zero_syndrome",
+          "passed": true,
+          "sector_rows": 1
+        },
+        {
+          "test": "gf2_linearity",
+          "passed": true,
+          "trials": 64
+        },
+        {
+          "test": "gf2_linearity",
+          "passed": true,
+          "trials": 64
+        }
+      ],
+      "physics_summary": {
+        "n_points": 6,
+        "all_passed": true
+      }
+    },
+    {
+      "name": "CSS planar surface d=3",
+      "family": "css_surface",
+      "params": {
+        "n": 12,
+        "rank_Hx": 8,
+        "rank_Hz": 4,
+        "k_css": 0,
+        "rate_css": 0.0,
+        "css_commutes": true
+      },
+      "maths_passed": true,
+      "physics_passed": true,
+      "css_certified": true,
+      "maths": [
+        {
+          "test": "css_commutation_Hx_HzT",
+          "passed": true,
+          "odd_entries_in_Hx_HzT": 0,
+          "formula": "Hx @ Hz.T \u2261 0 (mod 2)"
+        },
+        {
+          "test": "zero_error_to_zero_syndrome",
+          "passed": true,
+          "sector_rows": 9
+        },
+        {
+          "test": "zero_error_to_zero_syndrome",
+          "passed": true,
+          "sector_rows": 4
+        },
+        {
+          "test": "gf2_linearity",
+          "passed": true,
+          "trials": 64
+        },
+        {
+          "test": "gf2_linearity",
+          "passed": true,
+          "trials": 64
+        }
+      ],
+      "physics_summary": {
+        "n_points": 6,
+        "all_passed": true
+      }
+    },
+    {
+      "name": "CSS planar surface d=4",
+      "family": "css_surface",
+      "params": {
+        "n": 24,
+        "rank_Hx": 15,
+        "rank_Hz": 9,
+        "k_css": 0,
+        "rate_css": 0.0,
+        "css_commutes": true
+      },
+      "maths_passed": true,
+      "physics_passed": true,
+      "css_certified": true,
+      "maths": [
+        {
+          "test": "css_commutation_Hx_HzT",
+          "passed": true,
+          "odd_entries_in_Hx_HzT": 0,
+          "formula": "Hx @ Hz.T \u2261 0 (mod 2)"
+        },
+        {
+          "test": "zero_error_to_zero_syndrome",
+          "passed": true,
+          "sector_rows": 16
+        },
+        {
+          "test": "zero_error_to_zero_syndrome",
+          "passed": true,
+          "sector_rows": 9
+        },
+        {
+          "test": "gf2_linearity",
+          "passed": true,
+          "trials": 64
+        },
+        {
+          "test": "gf2_linearity",
+          "passed": true,
+          "trials": 64
+        }
+      ],
+      "physics_summary": {
+        "n_points": 6,
+        "all_passed": true
+      }
+    },
+    {
+      "name": "CSS planar surface d=5",
+      "family": "css_surface",
+      "params": {
+        "n": 40,
+        "rank_Hx": 24,
+        "rank_Hz": 16,
+        "k_css": 0,
+        "rate_css": 0.0,
+        "css_commutes": true
+      },
+      "maths_passed": true,
+      "physics_passed": true,
+      "css_certified": true,
+      "maths": [
+        {
+          "test": "css_commutation_Hx_HzT",
+          "passed": true,
+          "odd_entries_in_Hx_HzT": 0,
+          "formula": "Hx @ Hz.T \u2261 0 (mod 2)"
+        },
+        {
+          "test": "zero_error_to_zero_syndrome",
+          "passed": true,
+          "sector_rows": 25
+        },
+        {
+          "test": "zero_error_to_zero_syndrome",
+          "passed": true,
+          "sector_rows": 16
+        },
+        {
+          "test": "gf2_linearity",
+          "passed": true,
+          "trials": 64
+        },
+        {
+          "test": "gf2_linearity",
+          "passed": true,
+          "trials": 64
+        }
+      ],
+      "physics_summary": {
+        "n_points": 6,
+        "all_passed": true
+      }
+    },
+    {
+      "name": "CSS repetition Z d=7",
+      "family": "css_repetition",
+      "params": {
+        "n": 7,
+        "rank_Hx": 0,
+        "rank_Hz": 6,
+        "k_css": 1,
+        "rate_css": 0.14285714285714285,
+        "css_commutes": true
+      },
+      "maths_passed": true,
+      "physics_passed": true,
+      "css_certified": true,
+      "maths": [
+        {
+          "test": "css_commutation_Hx_HzT",
+          "passed": true,
+          "odd_entries_in_Hx_HzT": 0,
+          "formula": "Hx @ Hz.T \u2261 0 (mod 2)"
+        },
+        {
+          "test": "zero_error_to_zero_syndrome",
+          "passed": true,
+          "vacuous": true
+        },
+        {
+          "test": "zero_error_to_zero_syndrome",
+          "passed": true,
+          "sector_rows": 6
+        },
+        {
+          "test": "gf2_linearity",
+          "passed": true,
+          "vacuous": true
+        },
+        {
+          "test": "gf2_linearity",
+          "passed": true,
+          "trials": 64
+        }
+      ],
+      "physics_summary": {
+        "n_points": 6,
+        "all_passed": true
+      }
+    },
+    {
+      "name": "CSS bicycle-like l=6 m=6",
+      "family": "css_bicycle_like",
+      "params": {
+        "n": 72,
+        "rank_Hx": 36,
+        "rank_Hz": 36,
+        "k_css": 0,
+        "rate_css": 0.0,
+        "css_commutes": true
+      },
+      "maths_passed": true,
+      "physics_passed": true,
+      "css_certified": true,
+      "maths": [
+        {
+          "test": "css_commutation_Hx_HzT",
+          "passed": true,
+          "odd_entries_in_Hx_HzT": 0,
+          "formula": "Hx @ Hz.T \u2261 0 (mod 2)"
+        },
+        {
+          "test": "zero_error_to_zero_syndrome",
+          "passed": true,
+          "sector_rows": 36
+        },
+        {
+          "test": "zero_error_to_zero_syndrome",
+          "passed": true,
+          "sector_rows": 36
+        },
+        {
+          "test": "gf2_linearity",
+          "passed": true,
+          "trials": 64
+        },
+        {
+          "test": "gf2_linearity",
+          "passed": true,
+          "trials": 64
+        }
+      ],
+      "physics_summary": {
+        "n_points": 6,
+        "all_passed": true
+      }
+    },
+    {
+      "name": "Classical Gallager (2,4) n=64",
+      "family": "classical_gallager",
+      "params": {
+        "n": 64,
+        "rank_Hx": 31,
+        "rank_Hz": 0,
+        "k_css": 33,
+        "rate_css": 0.515625,
+        "css_commutes": true
+      },
+      "maths_passed": true,
+      "physics_passed": true,
+      "css_certified": true,
+      "maths": [
+        {
+          "test": "css_commutation_Hx_HzT",
+          "passed": true,
+          "odd_entries_in_Hx_HzT": 0,
+          "formula": "Hx @ Hz.T \u2261 0 (mod 2)"
+        },
+        {
+          "test": "zero_error_to_zero_syndrome",
+          "passed": true,
+          "sector_rows": 32
+        },
+        {
+          "test": "zero_error_to_zero_syndrome",
+          "passed": true,
+          "vacuous": true
+        },
+        {
+          "test": "gf2_linearity",
+          "passed": true,
+          "trials": 64
+        },
+        {
+          "test": "gf2_linearity",
+          "passed": true,
+          "vacuous": true
+        }
+      ],
+      "physics_summary": {
+        "n_points": 6,
+        "all_passed": true
+      }
+    }
+  ],
+  "production_gate": {
+    "production_ready_codes_and_invariants": true,
+    "checks": {
+      "all_css_commute": true,
+      "all_maths_pass": true,
+      "all_physics_pass": true,
+      "surface_k_positive": true,
+      "n_css_codes": 6
+    },
+    "note": "Certifies CSS commutation and syndrome-map/physics invariants on constructed codes. Decoder production readiness is gated in decoder_suite."
+  },
+  "physics_full": {
+    "CSS planar surface d=2": [
+      {
+        "p": 0.001,
+        "mean_error_weight": 0.00425,
+        "expected_n_p": 0.004,
+        "relative_error": 0.06250000000000006,
+        "mean_syndrome_weight": 0.01275,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.005,
+        "mean_error_weight": 0.019,
+        "expected_n_p": 0.02,
+        "relative_error": 0.050000000000000044,
+        "mean_syndrome_weight": 0.057,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.01,
+        "mean_error_weight": 0.042,
+        "expected_n_p": 0.04,
+        "relative_error": 0.050000000000000044,
+        "mean_syndrome_weight": 0.124,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.02,
+        "mean_error_weight": 0.0895,
+        "expected_n_p": 0.08,
+        "relative_error": 0.11874999999999993,
+        "mean_syndrome_weight": 0.2635,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.04,
+        "mean_error_weight": 0.15175,
+        "expected_n_p": 0.16,
+        "relative_error": 0.051562500000000046,
+        "mean_syndrome_weight": 0.42675,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.08,
+        "mean_error_weight": 0.3105,
+        "expected_n_p": 0.32,
+        "relative_error": 0.029687500000000026,
+        "mean_syndrome_weight": 0.8165,
+        "within_3sigma": true,
+        "passed": true
+      }
+    ],
+    "CSS planar surface d=3": [
+      {
+        "p": 0.001,
+        "mean_error_weight": 0.01375,
+        "expected_n_p": 0.012,
+        "relative_error": 0.14583333333333331,
+        "mean_syndrome_weight": 0.045,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.005,
+        "mean_error_weight": 0.06225,
+        "expected_n_p": 0.06,
+        "relative_error": 0.03750000000000003,
+        "mean_syndrome_weight": 0.20825,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.01,
+        "mean_error_weight": 0.11625,
+        "expected_n_p": 0.12,
+        "relative_error": 0.031249999999999913,
+        "mean_syndrome_weight": 0.37525,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.02,
+        "mean_error_weight": 0.24,
+        "expected_n_p": 0.24,
+        "relative_error": 0.0,
+        "mean_syndrome_weight": 0.77625,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.04,
+        "mean_error_weight": 0.4795,
+        "expected_n_p": 0.48,
+        "relative_error": 0.0010416666666666677,
+        "mean_syndrome_weight": 1.45375,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.08,
+        "mean_error_weight": 0.941,
+        "expected_n_p": 0.96,
+        "relative_error": 0.019791666666666687,
+        "mean_syndrome_weight": 2.61275,
+        "within_3sigma": true,
+        "passed": true
+      }
+    ],
+    "CSS planar surface d=4": [
+      {
+        "p": 0.001,
+        "mean_error_weight": 0.0235,
+        "expected_n_p": 0.024,
+        "relative_error": 0.020833333333333353,
+        "mean_syndrome_weight": 0.0805,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.005,
+        "mean_error_weight": 0.1155,
+        "expected_n_p": 0.12,
+        "relative_error": 0.03749999999999992,
+        "mean_syndrome_weight": 0.39825,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.01,
+        "mean_error_weight": 0.22525,
+        "expected_n_p": 0.24,
+        "relative_error": 0.061458333333333275,
+        "mean_syndrome_weight": 0.7655,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.02,
+        "mean_error_weight": 0.46875,
+        "expected_n_p": 0.48,
+        "relative_error": 0.023437499999999965,
+        "mean_syndrome_weight": 1.556,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.04,
+        "mean_error_weight": 0.997,
+        "expected_n_p": 0.96,
+        "relative_error": 0.0385416666666667,
+        "mean_syndrome_weight": 3.1465,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.08,
+        "mean_error_weight": 1.91925,
+        "expected_n_p": 1.92,
+        "relative_error": 0.0003906250000000148,
+        "mean_syndrome_weight": 5.49425,
+        "within_3sigma": true,
+        "passed": true
+      }
+    ],
+    "CSS planar surface d=5": [
+      {
+        "p": 0.001,
+        "mean_error_weight": 0.038,
+        "expected_n_p": 0.04,
+        "relative_error": 0.050000000000000044,
+        "mean_syndrome_weight": 0.13875,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.005,
+        "mean_error_weight": 0.18875,
+        "expected_n_p": 0.2,
+        "relative_error": 0.05625000000000005,
+        "mean_syndrome_weight": 0.67075,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.01,
+        "mean_error_weight": 0.4185,
+        "expected_n_p": 0.4,
+        "relative_error": 0.0462499999999999,
+        "mean_syndrome_weight": 1.464,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.02,
+        "mean_error_weight": 0.79925,
+        "expected_n_p": 0.8,
+        "relative_error": 0.0009375000000000355,
+        "mean_syndrome_weight": 2.72775,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.04,
+        "mean_error_weight": 1.60825,
+        "expected_n_p": 1.6,
+        "relative_error": 0.005156249999999918,
+        "mean_syndrome_weight": 5.22925,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.08,
+        "mean_error_weight": 3.17475,
+        "expected_n_p": 3.2,
+        "relative_error": 0.007890625000000068,
+        "mean_syndrome_weight": 9.30575,
+        "within_3sigma": true,
+        "passed": true
+      }
+    ],
+    "CSS repetition Z d=7": [
+      {
+        "p": 0.001,
+        "mean_error_weight": 0.00625,
+        "expected_n_p": 0.007,
+        "relative_error": 0.10714285714285711,
+        "mean_syndrome_weight": 0.01,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.005,
+        "mean_error_weight": 0.039,
+        "expected_n_p": 0.035,
+        "relative_error": 0.11428571428571419,
+        "mean_syndrome_weight": 0.06725,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.01,
+        "mean_error_weight": 0.07325,
+        "expected_n_p": 0.07,
+        "relative_error": 0.04642857142857127,
+        "mean_syndrome_weight": 0.12225,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.02,
+        "mean_error_weight": 0.1405,
+        "expected_n_p": 0.14,
+        "relative_error": 0.0035714285714285744,
+        "mean_syndrome_weight": 0.23475,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.04,
+        "mean_error_weight": 0.2755,
+        "expected_n_p": 0.28,
+        "relative_error": 0.016071428571428584,
+        "mean_syndrome_weight": 0.452,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.08,
+        "mean_error_weight": 0.554,
+        "expected_n_p": 0.56,
+        "relative_error": 0.010714285714285723,
+        "mean_syndrome_weight": 0.878,
+        "within_3sigma": true,
+        "passed": true
+      }
+    ],
+    "CSS bicycle-like l=6 m=6": [
+      {
+        "p": 0.001,
+        "mean_error_weight": 0.06775,
+        "expected_n_p": 0.07200000000000001,
+        "relative_error": 0.059027777777777825,
+        "mean_syndrome_weight": 0.4055,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.005,
+        "mean_error_weight": 0.36875,
+        "expected_n_p": 0.36,
+        "relative_error": 0.024305555555555657,
+        "mean_syndrome_weight": 2.159,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.01,
+        "mean_error_weight": 0.72925,
+        "expected_n_p": 0.72,
+        "relative_error": 0.012847222222222196,
+        "mean_syndrome_weight": 4.1675,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.02,
+        "mean_error_weight": 1.46125,
+        "expected_n_p": 1.44,
+        "relative_error": 0.014756944444444439,
+        "mean_syndrome_weight": 7.9115,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.04,
+        "mean_error_weight": 2.886,
+        "expected_n_p": 2.88,
+        "relative_error": 0.0020833333333334122,
+        "mean_syndrome_weight": 14.248,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.08,
+        "mean_error_weight": 5.76725,
+        "expected_n_p": 5.76,
+        "relative_error": 0.001258680555555552,
+        "mean_syndrome_weight": 23.289,
+        "within_3sigma": true,
+        "passed": true
+      }
+    ],
+    "Classical Gallager (2,4) n=64": [
+      {
+        "p": 0.001,
+        "mean_error_weight": 0.06025,
+        "expected_n_p": 0.064,
+        "relative_error": 0.05859375000000005,
+        "mean_syndrome_weight": 0.1205,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.005,
+        "mean_error_weight": 0.32275,
+        "expected_n_p": 0.32,
+        "relative_error": 0.008593749999999921,
+        "mean_syndrome_weight": 0.632,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.01,
+        "mean_error_weight": 0.651,
+        "expected_n_p": 0.64,
+        "relative_error": 0.017187500000000015,
+        "mean_syndrome_weight": 1.2685,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.02,
+        "mean_error_weight": 1.29,
+        "expected_n_p": 1.28,
+        "relative_error": 0.007812500000000007,
+        "mean_syndrome_weight": 2.4335,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.04,
+        "mean_error_weight": 2.5885,
+        "expected_n_p": 2.56,
+        "relative_error": 0.011132812499999901,
+        "mean_syndrome_weight": 4.588,
+        "within_3sigma": true,
+        "passed": true
+      },
+      {
+        "p": 0.08,
+        "mean_error_weight": 5.11625,
+        "expected_n_p": 5.12,
+        "relative_error": 0.0007324218750000278,
+        "mean_syndrome_weight": 8.0465,
+        "within_3sigma": true,
+        "passed": true
+      }
+    ]
+  }
+}

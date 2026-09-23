@@ -1,0 +1,50 @@
+section,item,metric,value,detail
+gate,A_planar_construct_d3_d15,passed,1,commutation certified d=3..15 (k=0 by generator construction)
+gate,A_hp_k1_d3_d7,passed,1,"HP surface k==1, commutes, d=3/5/7"
+gate,A_toric_k2_l2_l6,passed,1,toric k==2 for l=2..6
+gate,A_zero_unfaithful_scaling,passed,1,unf=0
+gate,A_suppression_d3_to_d7,passed,1,HP LER d=3:0.05054 -> d=7:0.01270 mono~True
+gate,B_rep100k_matches_exact,passed,1,"exact=5.336e-06 in 99% CI=[3.904e-06,1.024e-04] fails=2/100000"
+gate,B_zero_unfaithful_highshot,passed,1,unf=0
+gate,B_oracle_monotone,passed,1,exact tails strictly decrease p=1e-2->1e-4 per distance
+gate,C_probes_recorded,passed,1,9 probe rows; cuda=True opencl=True simd=SimdLevel.Avx512
+gate,D_zero_unfaithful_all,passed,1,"75612 vectors, unf=0"
+gate,D_ionq_weight1_exhaustive,passed,1,weight-1 exhaustive on q70/q102/gross
+gate,F1_depolarizing_faithful,passed,1,X unf=0 Z unf=0 / 4096
+gate,F2_phenomenological_faithful,passed,1,unf=0/4096 on noisy syndromes
+gate,F3_stim_circuit_faithful,passed,1,unf=0/2048 circuit-level detectors
+gate,F4_dynamic_erasure,passed,1,512/512 masked-verified
+A_distance,HP surface d=3,ler,0.050537,"CI=[0.044240,0.057677] shots=4096"
+A_distance,HP surface d=5,ler,0.026611,"CI=[0.022108,0.032001] shots=4096"
+A_distance,HP surface d=7,ler,0.012695,"CI=[0.007434,0.021599] shots=1024"
+B_highshot,CSS repetition Z d=7,ler,0.000020,"CI=[0.000005,0.000073] shots=100000 thr=65725/s"
+B_highshot,HP surface d=3,ler,0.008300,"CI=[0.007134,0.009655] shots=20000 thr=58148/s"
+B_highshot,CSS toric l=3,ler,0.009200,"CI=[0.007508,0.011269] shots=10000 thr=45406/s"
+B_oracle,rep d=5,ler_exact_p0.01,9.851e-06,PROJECTION_exact_binomial
+B_oracle,rep d=5,ler_exact_p0.001,9.985e-09,PROJECTION_exact_binomial
+B_oracle,rep d=5,ler_exact_p0.0001,9.999e-12,PROJECTION_exact_binomial
+B_oracle,rep d=7,ler_exact_p0.01,3.417e-07,PROJECTION_exact_binomial
+B_oracle,rep d=7,ler_exact_p0.001,3.492e-11,PROJECTION_exact_binomial
+B_oracle,rep d=7,ler_exact_p0.0001,3.499e-15,PROJECTION_exact_binomial
+B_oracle,rep d=9,ler_exact_p0.01,1.219e-08,PROJECTION_exact_binomial
+B_oracle,rep d=9,ler_exact_p0.001,1.256e-13,PROJECTION_exact_binomial
+B_oracle,rep d=9,ler_exact_p0.0001,1.260e-18,PROJECTION_exact_binomial
+C_hardware,cuda_is_available,measured,True,
+C_hardware,opencl_is_available,measured,True,
+C_hardware,simd,measured,SimdLevel.Avx512,
+C_hardware,probe_backends,measured,"[('cutlass_tensor_core', False, 'CUTLASS_PATH / cutlass/cutlass.h not found; using reference GEMM'), ('cuda_nvrtc', True",
+C_hardware,opencl_devices,measured,"[('cutlass_tensor_core', False, 'CUTLASS_PATH / cutlass/cutlass.h not found; using reference GEMM'), ('cuda_nvrtc', True",
+C_hardware,CUDABatchDecoder,measured,constructs+decodes faithful=True,
+C_hardware,CUDABpOsdDecoder,measured,constructs+decodes faithful=True,
+C_hardware,fpga,measured,backend=FpgaBpOsd,
+C_hardware,QECTOR_FPGA_PCI_ADDR,measured,unset (expected),
+D_residual,rep_d7,unfaithful,0,tested=20029 exh=29
+D_residual,hp_d3,unfaithful,0,tested=20092 exh=92
+D_residual,toric_l3,unfaithful,0,tested=20172 exh=172
+D_residual,ionq_q70,unfaithful,0,tested=5071 exh=71
+D_residual,ionq_q102,unfaithful,0,tested=5103 exh=103
+D_residual,ionq_gross,unfaithful,0,tested=5145 exh=145
+F_noise,depolarizing,result,"{""p_dep"": 0.03, ""px"": 0.02, ""pz"": 0.02, ""shots"": 4096, ""unfaithful_x"": 0, ""unfaithful_z"": 0, ""code"": ""HP surface d=3""}",
+F_noise,phenomenological,result,"{""p_data"": 0.02, ""q_meas"": 0.01, ""shots"": 4096, ""unfaithful_noisy_syn"": 0}",
+F_noise,stim_circuit,result,"{""status"": ""measured"", ""shots"": 2048, ""n_detectors"": 4, ""unfaithful"": 0, ""backend"": ""qector_BPOSDDecoder""}",
+F_noise,erasure_dynamic,result,"{""code"": ""gross"", ""shots"": 512, ""erasure_rate"": 0.05, ""masked_verified"": 512, ""total"": 512}",

@@ -1,0 +1,20 @@
+{
+  "suite": "framework",
+  "version": "1.1",
+  "timestamp": "2026-09-23T14:21:45Z",
+  "summary": {
+    "n_passed": 66,
+    "n_failed": 0,
+    "n_skipped": 2,
+    "n_errors": 0,
+    "all_pass": true,
+    "elapsed_s": 44.191677438,
+    "import": "import ok version=3.7.5",
+    "targets": [
+      "/home/workdir/artifacts/qector_test/tests"
+    ],
+    "pytest_returncode": 0
+  },
+  "returncode": 0,
+  "output_tail": "...........................................................ss.......     [100%]\n66 passed, 2 skipped in 42.00s\n\n"
+}

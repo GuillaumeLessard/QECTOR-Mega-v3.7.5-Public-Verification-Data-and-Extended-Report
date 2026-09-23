@@ -1,0 +1,366 @@
+{
+  "suite": "neural_plus",
+  "version": "1.0",
+  "timestamp": "2026-09-23T14:53:46Z",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "rows": [
+    {
+      "code": "CSS repetition Z d=7",
+      "variant": "GNN_optimized",
+      "faith": 100.0,
+      "thr": 44884.87729430407,
+      "loss": NaN
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "variant": "GNN_twostage",
+      "faith": 100.0,
+      "thr": 31656.24483850843,
+      "loss": null
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "variant": "Hybrid_GNN",
+      "faith": 100.0,
+      "thr": 30605.81338179648,
+      "loss": 0.1072918826595956
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "variant": "Hybrid_batch",
+      "faith": 100.0,
+      "thr": 30605.81338179648,
+      "loss": null
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "variant": "Neural_faithful",
+      "faith": 100.0,
+      "thr": 77066.18659543995,
+      "loss": null
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "variant": "Neural_decode",
+      "faith": 100.0,
+      "thr": 73559.0754264575,
+      "loss": null
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "variant": "Neural_predict",
+      "faith": 76.5625,
+      "thr": 88678.27796552703,
+      "loss": null
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "variant": "Neural_twostage",
+      "faith": 100.0,
+      "thr": 56395.26734560947,
+      "loss": null
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "variant": "Cascade_plus_w4",
+      "faith": 100.0,
+      "thr": 701331.4310470663,
+      "loss": null
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "variant": "BPOSD_min_sum_osd4",
+      "faith": 100.0,
+      "thr": 240556.28688090417,
+      "loss": null
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "variant": "Factory_qector_CPUBatchDecoder",
+      "faith": 100.0,
+      "thr": 524947.3006963363,
+      "loss": null
+    },
+    {
+      "code": "HP surface d=3",
+      "variant": "GNN_optimized",
+      "faith": 100.0,
+      "thr": 76481.37855033993,
+      "loss": NaN
+    },
+    {
+      "code": "HP surface d=3",
+      "variant": "GNN_twostage",
+      "faith": 100.0,
+      "thr": 56901.02774984564,
+      "loss": null
+    },
+    {
+      "code": "HP surface d=3",
+      "variant": "Hybrid_GNN",
+      "faith": 100.0,
+      "thr": 9860.579114168098,
+      "loss": 0.6065192651047505
+    },
+    {
+      "code": "HP surface d=3",
+      "variant": "Hybrid_batch",
+      "faith": 100.0,
+      "thr": 9860.579114168098,
+      "loss": null
+    },
+    {
+      "code": "HP surface d=3",
+      "variant": "Neural_faithful",
+      "faith": 100.0,
+      "thr": 42932.93674008921,
+      "loss": null
+    },
+    {
+      "code": "HP surface d=3",
+      "variant": "Neural_decode",
+      "faith": 100.0,
+      "thr": 42126.13222116827,
+      "loss": null
+    },
+    {
+      "code": "HP surface d=3",
+      "variant": "Neural_predict",
+      "faith": 56.25,
+      "thr": 91865.85285227487,
+      "loss": null
+    },
+    {
+      "code": "HP surface d=3",
+      "variant": "Neural_twostage",
+      "faith": 100.0,
+      "thr": 34263.443052575334,
+      "loss": null
+    },
+    {
+      "code": "HP surface d=3",
+      "variant": "Cascade_plus_w4",
+      "faith": 100.0,
+      "thr": 178925.38515975577,
+      "loss": null
+    },
+    {
+      "code": "HP surface d=3",
+      "variant": "BPOSD_min_sum_osd4",
+      "faith": 100.0,
+      "thr": 189205.8081935326,
+      "loss": null
+    },
+    {
+      "code": "HP surface d=3",
+      "variant": "Factory_qector_HybridCascade_w8_autopick",
+      "faith": 100.0,
+      "thr": 241269.98481571092,
+      "loss": null
+    }
+  ],
+  "gates": [
+    {
+      "name": "GNN_opt_rep7",
+      "passed": true,
+      "detail": "faith=100.0% thr=44885/s loss=nan cfg={'hidden': 32, 'learning_rate': 0.05, 'l2_lambda': 0.001, 'n_samples': 200, 'n_epochs': 12}",
+      "critical": true
+    },
+    {
+      "name": "GNN_saveload_rep7",
+      "passed": true,
+      "detail": "faith=100.0%",
+      "critical": true
+    },
+    {
+      "name": "GNN_twostage_rep7",
+      "passed": true,
+      "detail": "faith=100.0% thr=31656/s",
+      "critical": true
+    },
+    {
+      "name": "Hybrid_GNN_rep7",
+      "passed": true,
+      "detail": "faith=100.0% thr=30606/s loss=0.1073",
+      "critical": true
+    },
+    {
+      "name": "Hybrid_single_rep7",
+      "passed": true,
+      "detail": "faith=100.0% thr=8383/s",
+      "critical": false
+    },
+    {
+      "name": "Hybrid_batch_speedup_rep7",
+      "passed": true,
+      "detail": "batch med 38337/s vs single med 7518/s (x5.10)",
+      "critical": true
+    },
+    {
+      "name": "Neural_faithful_rep7",
+      "passed": true,
+      "detail": "faith=100.0% thr=77066/s",
+      "critical": true
+    },
+    {
+      "name": "Neural_decode_rep7",
+      "passed": true,
+      "detail": "faith=100.0% thr=73559/s",
+      "critical": false
+    },
+    {
+      "name": "Neural_predict_rep7",
+      "passed": true,
+      "detail": "faith=76.6% thr=88678/s",
+      "critical": false
+    },
+    {
+      "name": "Neural_weight_io_rep7",
+      "passed": true,
+      "detail": "faith=100.0%",
+      "critical": true
+    },
+    {
+      "name": "Neural_twostage_rep7",
+      "passed": true,
+      "detail": "faith=100.0% thr=56395/s",
+      "critical": true
+    },
+    {
+      "name": "Cascade_plus_rep7",
+      "passed": true,
+      "detail": "faith=100.0% thr=701331/s hit=1.000",
+      "critical": true
+    },
+    {
+      "name": "BPOSD_plus_rep7",
+      "passed": true,
+      "detail": "faith=100.0% thr=240556/s (qector_BPOSD_min_sum_osd0)",
+      "critical": true
+    },
+    {
+      "name": "Factory_speed_rep7",
+      "passed": true,
+      "detail": "faith=100.0% thr=524947/s (qector_CPUBatchDecoder)",
+      "critical": true
+    },
+    {
+      "name": "GNN_opt_hp3",
+      "passed": true,
+      "detail": "faith=100.0% thr=76481/s loss=nan cfg={'hidden': 32, 'learning_rate': 0.05, 'l2_lambda': 0.001, 'n_samples': 200, 'n_epochs': 12}",
+      "critical": true
+    },
+    {
+      "name": "GNN_saveload_hp3",
+      "passed": true,
+      "detail": "faith=100.0%",
+      "critical": true
+    },
+    {
+      "name": "GNN_twostage_hp3",
+      "passed": true,
+      "detail": "faith=100.0% thr=56901/s",
+      "critical": true
+    },
+    {
+      "name": "Hybrid_GNN_hp3",
+      "passed": true,
+      "detail": "faith=100.0% thr=9861/s loss=0.6065",
+      "critical": true
+    },
+    {
+      "name": "Hybrid_single_hp3",
+      "passed": true,
+      "detail": "faith=100.0% thr=3268/s",
+      "critical": false
+    },
+    {
+      "name": "Hybrid_batch_speedup_hp3",
+      "passed": true,
+      "detail": "batch med 9764/s vs single med 3989/s (x2.45)",
+      "critical": true
+    },
+    {
+      "name": "Neural_faithful_hp3",
+      "passed": true,
+      "detail": "faith=100.0% thr=42933/s",
+      "critical": true
+    },
+    {
+      "name": "Neural_decode_hp3",
+      "passed": true,
+      "detail": "faith=100.0% thr=42126/s",
+      "critical": false
+    },
+    {
+      "name": "Neural_predict_hp3",
+      "passed": true,
+      "detail": "faith=56.2% thr=91866/s",
+      "critical": false
+    },
+    {
+      "name": "Neural_weight_io_hp3",
+      "passed": true,
+      "detail": "faith=100.0%",
+      "critical": true
+    },
+    {
+      "name": "Neural_twostage_hp3",
+      "passed": true,
+      "detail": "faith=100.0% thr=34263/s",
+      "critical": true
+    },
+    {
+      "name": "Cascade_plus_hp3",
+      "passed": true,
+      "detail": "faith=100.0% thr=178925/s hit=0.880",
+      "critical": true
+    },
+    {
+      "name": "BPOSD_plus_hp3",
+      "passed": true,
+      "detail": "faith=100.0% thr=189206/s (qector_BPOSD_min_sum_osd0)",
+      "critical": true
+    },
+    {
+      "name": "Factory_speed_hp3",
+      "passed": true,
+      "detail": "faith=100.0% thr=241270/s (qector_HybridCascade_w8_autopick)",
+      "critical": true
+    }
+  ],
+  "summary": {
+    "n_gates": 28,
+    "n_passed": 28,
+    "critical_pass": true,
+    "all_pass": true,
+    "gnn_preset": {
+      "hidden": 32,
+      "learning_rate": 0.05,
+      "l2_lambda": 0.001,
+      "n_samples": 200,
+      "n_epochs": 12
+    },
+    "bposd_fast": {
+      "bp_method": "min_sum",
+      "osd_order": 0
+    },
+    "cascade_fast": {
+      "max_accept_weight": 4
+    },
+    "variants": [
+      "BPOSD_min_sum_osd4",
+      "Cascade_plus_w4",
+      "Factory_qector_CPUBatchDecoder",
+      "Factory_qector_HybridCascade_w8_autopick",
+      "GNN_optimized",
+      "GNN_twostage",
+      "Hybrid_GNN",
+      "Hybrid_batch",
+      "Neural_decode",
+      "Neural_faithful",
+      "Neural_predict",
+      "Neural_twostage"
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "score": "10/10",
+  "perfect": true,
+  "production_ready": true,
+  "board": [
+    {
+      "category": "wheel_acceptance",
+      "pass": true,
+      "returncode": 0,
+      "artifact": "wheel_acceptance.json",
+      "detail": "wheel_acceptance.json gate true"
+    },
+    {
+      "category": "master_certify",
+      "pass": true,
+      "returncode": 0,
+      "artifact": "master_certify_report.json",
+      "detail": "master_certify_report.json gate true"
+    },
+    {
+      "category": "decoder_matrix",
+      "pass": true,
+      "returncode": 0,
+      "artifact": "decoder_matrix_v2_results.json",
+      "detail": "decoder_matrix_v2_results.json gate true; benchmark: all_decoders_benchmark_results.json gate true"
+    },
+    {
+      "category": "logical_error",
+      "pass": true,
+      "returncode": 0,
+      "artifact": "logical_error_report.json",
+      "detail": "logical_error_report.json gate true"
+    },
+    {
+      "category": "maths_physics",
+      "pass": true,
+      "returncode": 0,
+      "artifact": "maths_physics_report_v2.json",
+      "detail": "maths_physics_report_v2.json gate true; base report: maths_physics_report.json gate true"
+    },
+    {
+      "category": "neural",
+      "pass": true,
+      "returncode": 0,
+      "artifact": "multiple",
+      "detail": "neural_plus_report.json gate true; production_neural_bposd.json gate true; neural_benchmark_standards.json gate true; gnn_optimization_report.json gate true"
+    },
+    {
+      "category": "performance",
+      "pass": true,
+      "returncode": 0,
+      "artifact": "speed_max_report.json",
+      "detail": "speed_max_report.json gate true; cpu_gpu_benchmark.json: present; family_speed_report.json: present"
+    },
+    {
+      "category": "ionq",
+      "pass": true,
+      "returncode": 0,
+      "artifact": "ionq_showcase.json",
+      "detail": "ionq_showcase.json gate true"
+    },
+    {
+      "category": "validation",
+      "pass": true,
+      "returncode": 0,
+      "artifact": "extended_validation.json",
+      "detail": "extended_validation.json gate true"
+    },
+    {
+      "category": "framework",
+      "pass": true,
+      "returncode": 0,
+      "artifact": "framework_report.json",
+      "detail": "framework_report.json gate true"
+    }
+  ],
+  "timestamp": "2026-09-23T14:54:22Z",
+  "package": "qector_mega 3.7.5",
+  "wheel": "3.7.5"
+}

@@ -1,0 +1,264 @@
+{
+  "rows": [
+    {
+      "label": "CSS planar surface d=3",
+      "decoder": "QECTOR_speed",
+      "backend": "qector_BPOSD_min_sum_osd0_autopick",
+      "median": 423890.1861802746,
+      "p99": 459993.99828618293,
+      "faith": 100.0
+    },
+    {
+      "label": "CSS planar surface d=3",
+      "decoder": "QECTOR_bposd_plus",
+      "backend": "qector_BPOSD_min_sum_osd0",
+      "median": 470247.6515889745,
+      "p99": 501913.5451446936,
+      "faith": 100.0
+    },
+    {
+      "label": "CSS planar surface d=3",
+      "decoder": "ldpc_BPOSD",
+      "backend": "ldpc_package",
+      "median": 272393.45544856193,
+      "p99": 308918.3276139174,
+      "faith": 100.0
+    },
+    {
+      "label": "CSS planar surface d=3",
+      "decoder": "QECTOR_cuda",
+      "backend": "qector_CUDA_T4",
+      "median": 172353.4322536711,
+      "p99": 174862.91011400832,
+      "faith": 100.0
+    },
+    {
+      "label": "CSS planar surface d=5",
+      "decoder": "QECTOR_speed",
+      "backend": "qector_BPOSD_min_sum_osd4_autopick",
+      "median": 66209.44219070321,
+      "p99": 105442.34915778751,
+      "faith": 100.0
+    },
+    {
+      "label": "CSS planar surface d=5",
+      "decoder": "QECTOR_bposd_plus",
+      "backend": "qector_BPOSD_min_sum_osd0",
+      "median": 97152.74154984445,
+      "p99": 101699.81708370228,
+      "faith": 100.0
+    },
+    {
+      "label": "CSS planar surface d=5",
+      "decoder": "ldpc_BPOSD",
+      "backend": "ldpc_package",
+      "median": 108715.5470546758,
+      "p99": 109697.799725821,
+      "faith": 100.0
+    },
+    {
+      "label": "CSS planar surface d=5",
+      "decoder": "QECTOR_cuda",
+      "backend": "qector_CUDA_T4",
+      "median": 40367.37464633084,
+      "p99": 42129.84814557263,
+      "faith": 100.0
+    },
+    {
+      "label": "HP surface d=3",
+      "decoder": "QECTOR_speed",
+      "backend": "qector_BPOSD_min_sum_osd0_autopick",
+      "median": 243702.99078824784,
+      "p99": 264252.06335360825,
+      "faith": 100.0
+    },
+    {
+      "label": "HP surface d=3",
+      "decoder": "QECTOR_bposd_plus",
+      "backend": "qector_BPOSD_min_sum_osd0",
+      "median": 265988.39628882793,
+      "p99": 279953.9825242918,
+      "faith": 100.0
+    },
+    {
+      "label": "HP surface d=3",
+      "decoder": "ldpc_BPOSD",
+      "backend": "ldpc_package",
+      "median": 286062.92484289163,
+      "p99": 286915.7456496225,
+      "faith": 100.0
+    },
+    {
+      "label": "HP surface d=3",
+      "decoder": "QECTOR_cuda",
+      "backend": "qector_CUDA_T4",
+      "median": 306388.3160675854,
+      "p99": 315623.0964301396,
+      "faith": 100.0
+    },
+    {
+      "label": "HP surface d=5",
+      "decoder": "QECTOR_speed",
+      "backend": "qector_BPOSD_min_sum_osd0_autopick",
+      "median": 97590.02205396899,
+      "p99": 100304.91127971368,
+      "faith": 100.0
+    },
+    {
+      "label": "HP surface d=5",
+      "decoder": "QECTOR_bposd_plus",
+      "backend": "qector_BPOSD_min_sum_osd0",
+      "median": 86928.82498927899,
+      "p99": 94680.68384512345,
+      "faith": 100.0
+    },
+    {
+      "label": "HP surface d=5",
+      "decoder": "ldpc_BPOSD",
+      "backend": "ldpc_package",
+      "median": 108249.27103658282,
+      "p99": 108515.68349002079,
+      "faith": 100.0
+    },
+    {
+      "label": "HP surface d=5",
+      "decoder": "QECTOR_cuda",
+      "backend": "qector_CUDA_T4",
+      "median": 43540.52499970966,
+      "p99": 46580.22880372723,
+      "faith": 100.0
+    },
+    {
+      "label": "CSS toric l=3",
+      "decoder": "QECTOR_speed",
+      "backend": "qector_HybridCascade_w8_autopick",
+      "median": 196925.50061090392,
+      "p99": 204081.6326356327,
+      "faith": 100.0
+    },
+    {
+      "label": "CSS toric l=3",
+      "decoder": "QECTOR_bposd_plus",
+      "backend": "qector_BPOSD_min_sum_osd0",
+      "median": 82426.93222314733,
+      "p99": 88461.38697323117,
+      "faith": 100.0
+    },
+    {
+      "label": "CSS toric l=3",
+      "decoder": "ldpc_BPOSD",
+      "backend": "ldpc_package",
+      "median": 212007.75485803882,
+      "p99": 213044.83523623188,
+      "faith": 100.0
+    },
+    {
+      "label": "CSS toric l=3",
+      "decoder": "QECTOR_cuda",
+      "backend": "qector_CUDA_T4",
+      "median": 308829.25970782025,
+      "p99": 310713.1716047888,
+      "faith": 100.0
+    },
+    {
+      "label": "CSS toric l=4",
+      "decoder": "QECTOR_speed",
+      "backend": "qector_BPOSD_min_sum_osd0_autopick",
+      "median": 66921.22875193358,
+      "p99": 69890.97008277863,
+      "faith": 100.0
+    },
+    {
+      "label": "CSS toric l=4",
+      "decoder": "QECTOR_bposd_plus",
+      "backend": "qector_BPOSD_min_sum_osd0",
+      "median": 67234.55351028102,
+      "p99": 69933.9288213077,
+      "faith": 100.0
+    },
+    {
+      "label": "CSS toric l=4",
+      "decoder": "ldpc_BPOSD",
+      "backend": "ldpc_package",
+      "median": 142681.25955270996,
+      "p99": 143720.50847232837,
+      "faith": 100.0
+    },
+    {
+      "label": "CSS toric l=4",
+      "decoder": "QECTOR_cuda",
+      "backend": "qector_CUDA_T4",
+      "median": 146979.11982554267,
+      "p99": 155546.2254519589,
+      "faith": 100.0
+    },
+    {
+      "label": "Classical Gallager (2,4) n=64",
+      "decoder": "QECTOR_speed",
+      "backend": "qector_CPUBatchDecoder",
+      "median": 486389.6394909001,
+      "p99": 500804.02509053017,
+      "faith": 100.0
+    },
+    {
+      "label": "Classical Gallager (2,4) n=64",
+      "decoder": "QECTOR_bposd_plus",
+      "backend": "qector_BPOSD_min_sum_osd0",
+      "median": 6358.550516740644,
+      "p99": 6766.835748648635,
+      "faith": 100.0
+    },
+    {
+      "label": "Classical Gallager (2,4) n=64",
+      "decoder": "ldpc_BPOSD",
+      "backend": "ldpc_package",
+      "median": 27565.77317106915,
+      "p99": 27839.02907990793,
+      "faith": 100.0
+    },
+    {
+      "label": "Classical Gallager (2,4) n=64",
+      "decoder": "QECTOR_cuda",
+      "backend": "qector_CUDA_T4",
+      "median": 498426.8404722819,
+      "p99": 531702.7775931668,
+      "faith": 100.0
+    }
+  ],
+  "summary": {
+    "wins": 2,
+    "competitive": 5,
+    "losses": 0,
+    "gap_closed": true,
+    "comparisons": [
+      {
+        "label": "CSS planar surface d=3",
+        "ratio": 1.5561687614052127
+      },
+      {
+        "label": "CSS planar surface d=5",
+        "ratio": 0.6090153982981368
+      },
+      {
+        "label": "HP surface d=3",
+        "ratio": 0.8519209223708096
+      },
+      {
+        "label": "HP surface d=5",
+        "ratio": 0.9015305241269335
+      },
+      {
+        "label": "CSS toric l=3",
+        "ratio": 0.9288598935579784
+      },
+      {
+        "label": "CSS toric l=4",
+        "ratio": 0.46902605823444693
+      },
+      {
+        "label": "Classical Gallager (2,4) n=64",
+        "ratio": 17.644694254445078
+      }
+    ]
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "rows": [
+    {
+      "suite": "CSS_surface",
+      "label": "CSS planar surface d=3",
+      "decoder": "ReferenceGF2",
+      "results": {
+        "status": "PASS",
+        "throughput_syn_per_sec": 7507.119593838993,
+        "mean_latency_us": 133.20688281304172,
+        "latency_is_derived": true,
+        "faithful_pct": 100.0,
+        "shots": 512,
+        "physical_p": 0.05,
+        "backend": "in_tree",
+        "notes": "faithful = H c \u2261 s (mod 2)"
+      },
+      "d": 3,
+      "css_commutes": true,
+      "k_css": 0
+    },
+    {
+      "suite": "CSS_surface",
+      "label": "CSS planar surface d=3",
+      "decoder": "QECTOR",
+      "results": {
+        "status": "PASS",
+        "throughput_syn_per_sec": 203538.06397893428,
+        "mean_latency_us": 4.91308593808526,
+        "latency_is_derived": true,
+        "faithful_pct": 100.0,
+        "shots": 512,
+        "physical_p": 0.05,
+        "backend": "qector_package",
+        "notes": "faithful = H c \u2261 s (mod 2)"
+      },
+      "d": 3,
+      "css_commutes": true,
+      "k_css": 0
+    },
+    {
+      "suite": "CSS_surface",
+      "label": "CSS planar surface d=3",
+      "decoder": "BP-OSD",
+      "results": {
+        "status": "PASS",
+        "throughput_syn_per_sec": 287658.06440656877,
+        "mean_latency_us": 3.4763496099543545,
+        "latency_is_derived": true,
+        "faithful_pct": 100.0,
+        "shots": 512,
+        "physical_p": 0.05,
+        "backend": "ldpc_package",
+        "notes": "faithful = H c \u2261 s (mod 2)"
+      },
+      "d": 3,
+      "css_commutes": true,
+      "k_css": 0
+    },
+    {
+      "suite": "CSS_surface",
+      "label": "CSS planar surface d=3",
+      "decoder": "PyMatching",
+      "results": {
+        "status": "PASS",
+        "throughput_syn_per_sec": 8202.097372456568,
+        "mean_latency_us": 121.92003515565375,
+        "latency_is_derived": true,
+        "faithful_pct": 100.0,
+        "shots": 512,
+        "physical_p": 0.05,
+        "backend": "in_tree_LocalMatching",
+        "notes": "faithful = H c \u2261 s (mod 2)"
+      },
+      "d": 3,
+      "css_commutes": true,
+      "k_css": 0
+    },
+    {
+      "suite": "CSS_surface",
+      "label": "CSS planar surface d=5",
+      "decoder": "ReferenceGF2",
+      "results": {
+        "status": "PASS",
+        "throughput_syn_per_sec": 1226.138265702179,
+        "mean_latency_us": 815.5687070310336,
+        "latency_is_derived": true,
+        "faithful_pct": 100.0,
+        "shots": 512,
+        "physical_p": 0.05,
+        "backend": "in_tree",
+        "notes": "faithful = H c \u2261 s (mod 2)"
+      },
+      "d": 5,
+      "css_commutes": true,
+      "k_css": 0
+    },
+    {
+      "suite": "CSS_surface",
+      "label": "CSS planar surface d=5",
+      "decoder": "QECTOR",
+      "results": {
+        "status": "PASS",
+        "throughput_syn_per_sec": 28864.0377532699,
+        "mean_latency_us": 34.64518750107004,
+        "latency_is_derived": true,
+        "faithful_pct": 100.0,
+        "shots": 512,
+        "physical_p": 0.05,
+        "backend": "qector_package",
+        "notes": "faithful = H c \u2261 s (mod 2)"
+      },
+      "d": 5,
+      "css_commutes": true,
+      "k_css": 0
+    },
+    {
+      "suite": "CSS_surface",
+      "label": "CSS planar surface d=5",
+      "decoder": "BP-OSD",
+      "results": {
+        "status": "PASS",
+        "throughput_syn_per_sec": 52576.08976983391,
+        "mean_latency_us": 19.020052734575188,
+        "latency_is_derived": true,
+        "faithful_pct": 100.0,
+        "shots": 512,
+        "physical_p": 0.05,
+        "backend": "ldpc_package",
+        "notes": "faithful = H c \u2261 s (mod 2)"
+      },
+      "d": 5,
+      "css_commutes": true,
+      "k_css": 0
+    },
+    {
+      "suite": "CSS_surface",
+      "label": "CSS planar surface d=5",
+      "decoder": "PyMatching",
+      "results": {
+        "status": "PASS",
+        "throughput_syn_per_sec": 1175.7572504765824,
+        "mean_latency_us": 850.515699218235,
+        "latency_is_derived": true,
+        "faithful_pct": 100.0,
+        "shots": 512,
+        "physical_p": 0.05,
+        "backend": "in_tree_LocalMatching",
+        "notes": "faithful = H c \u2261 s (mod 2)"
+      },
+      "d": 5,
+      "css_commutes": true,
+      "k_css": 0
+    },
+    {
+      "suite": "CSS_bicycle_like",
+      "label": "CSS bicycle-like l=6 m=6",
+      "decoder": "ReferenceGF2",
+      "results": {
+        "status": "PASS",
+        "throughput_syn_per_sec": 299.3274194730648,
+        "mean_latency_us": 3340.823242188762,
+        "latency_is_derived": true,
+        "faithful_pct": 100.0,
+        "shots": 512,
+        "physical_p": 0.05,
+        "backend": "in_tree",
+        "notes": "faithful = H c \u2261 s (mod 2)"
+      },
+      "css_commutes": true,
+      "k_css": 0
+    },
+    {
+      "suite": "CSS_bicycle_like",
+      "label": "CSS bicycle-like l=6 m=6",
+      "decoder": "QECTOR",
+      "results": {
+        "status": "PASS",
+        "throughput_syn_per_sec": 9636.996550267777,
+        "mean_latency_us": 103.76676953072206,
+        "latency_is_derived": true,
+        "faithful_pct": 100.0,
+        "shots": 512,
+        "physical_p": 0.05,
+        "backend": "qector_package",
+        "notes": "faithful = H c \u2261 s (mod 2)"
+      },
+      "css_commutes": true,
+      "k_css": 0
+    },
+    {
+      "suite": "CSS_bicycle_like",
+      "label": "CSS bicycle-like l=6 m=6",
+      "decoder": "BP-OSD",
+      "results": {
+        "status": "PASS",
+        "throughput_syn_per_sec": 49906.03142710583,
+        "mean_latency_us": 20.03765820290937,
+        "latency_is_derived": true,
+        "faithful_pct": 100.0,
+        "shots": 512,
+        "physical_p": 0.05,
+        "backend": "ldpc_package",
+        "notes": "faithful = H c \u2261 s (mod 2)"
+      },
+      "css_commutes": true,
+      "k_css": 0
+    },
+    {
+      "suite": "CSS_bicycle_like",
+      "label": "CSS bicycle-like l=6 m=6",
+      "decoder": "PyMatching",
+      "results": {
+        "status": "PASS",
+        "throughput_syn_per_sec": 314.08332521301793,
+        "mean_latency_us": 3183.8684824219145,
+        "latency_is_derived": true,
+        "faithful_pct": 100.0,
+        "shots": 512,
+        "physical_p": 0.05,
+        "backend": "in_tree_LocalMatching",
+        "notes": "faithful = H c \u2261 s (mod 2)"
+      },
+      "css_commutes": true,
+      "k_css": 0
+    },
+    {
+      "suite": "Classical_Gallager",
+      "label": "Classical Gallager (2,4) n=64",
+      "decoder": "ReferenceGF2",
+      "results": {
+        "status": "PASS",
+        "throughput_syn_per_sec": 1243.1955530719656,
+        "mean_latency_us": 804.3786816394061,
+        "latency_is_derived": true,
+        "faithful_pct": 100.0,
+        "shots": 512,
+        "physical_p": 0.05,
+        "backend": "in_tree",
+        "notes": "faithful = H c \u2261 s (mod 2)"
+      },
+      "css_commutes": true
+    },
+    {
+      "suite": "Classical_Gallager",
+      "label": "Classical Gallager (2,4) n=64",
+      "decoder": "QECTOR",
+      "results": {
+        "status": "PASS",
+        "throughput_syn_per_sec": 2131.368087621871,
+        "mean_latency_us": 469.18221484482103,
+        "latency_is_derived": true,
+        "faithful_pct": 100.0,
+        "shots": 512,
+        "physical_p": 0.05,
+        "backend": "qector_package",
+        "notes": "faithful = H c \u2261 s (mod 2)"
+      },
+      "css_commutes": true
+    },
+    {
+      "suite": "Classical_Gallager",
+      "label": "Classical Gallager (2,4) n=64",
+      "decoder": "BP-OSD",
+      "results": {
+        "status": "PASS",
+        "throughput_syn_per_sec": 26176.660041121446,
+        "mean_latency_us": 38.20197070325548,
+        "latency_is_derived": true,
+        "faithful_pct": 100.0,
+        "shots": 512,
+        "physical_p": 0.05,
+        "backend": "ldpc_package",
+        "notes": "faithful = H c \u2261 s (mod 2)"
+      },
+      "css_commutes": true
+    },
+    {
+      "suite": "Classical_Gallager",
+      "label": "Classical Gallager (2,4) n=64",
+      "decoder": "PyMatching",
+      "results": {
+        "status": "PASS",
+        "throughput_syn_per_sec": 505493.78940761887,
+        "mean_latency_us": 1.9782636719867241,
+        "latency_is_derived": true,
+        "faithful_pct": 100.0,
+        "shots": 512,
+        "physical_p": 0.05,
+        "backend": "pymatching_package",
+        "notes": "faithful = H c \u2261 s (mod 2)"
+      },
+      "css_commutes": true
+    }
+  ],
+  "status_counts": {
+    "PASS": 16
+  },
+  "all_pass": true,
+  "no_not_installed": true,
+  "all_faithful_100": true
+}

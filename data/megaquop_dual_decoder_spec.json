@@ -1,0 +1,1340 @@
+{
+  "suite": "megaquop_dual_decoder_spec",
+  "version": "3.7.5",
+  "timestamp": "2026-09-23T14:44:15.280111+00:00",
+  "sections": {
+    "paper_meta": {
+      "arxiv": "2608.25027",
+      "title": "Real-time decoder for a MegaQuOp quantum computer using a single CPU",
+      "authors": [
+        "Min Ye",
+        "Andrii Maksymov",
+        "Nicolas Delfosse"
+      ],
+      "related_architecture": "Walking Cat arXiv:2604.19481",
+      "paper_demo_cpu": "see arXiv:2608.25027 (literature only; not used as a timing baseline)",
+      "paper_scale_cited": "up to 408 logical qubits / ~31.5e6 operations (MegaQuOp)",
+      "codes_referenced": {
+        "Q70": "[[70, 6, 9]]",
+        "Q102": "[[102, 22, 9]]",
+        "gross_BB": "[[144, 12, 12]]"
+      },
+      "dual_decoder": {
+        "error_decoder": "continuous Pauli-frame / syndrome stream",
+        "outcome_decoder": "low-latency EDM-style finalize at logical measurement"
+      }
+    },
+    "machine": {
+      "platform": "Linux-6.12.8+-x86_64-with-glibc2.39",
+      "python": "3.12.3",
+      "cpu_count": 2,
+      "processor": "x86_64",
+      "qector_version": "3.7.5",
+      "decoder_version": "3.7.5",
+      "target_hardware": "IonQ Superion 256",
+      "note": "All timings measured on the live host (runtime-detected); no hardcoded host baseline",
+      "cpu_model": "Intel(R) Xeon(R) Platinum 8481C CPU @ 2.70GHz",
+      "cuda": false,
+      "opencl": false,
+      "simd": "SimdLevel.Avx512"
+    },
+    "code_params": {
+      "q70": {
+        "n": 70,
+        "n_checks": 70,
+        "d": 9,
+        "max_t": 4,
+        "params": [
+          70,
+          6,
+          9
+        ],
+        "ok": true
+      },
+      "q102": {
+        "n": 102,
+        "n_checks": 102,
+        "d": 9,
+        "max_t": 4,
+        "params": [
+          102,
+          22,
+          9
+        ],
+        "ok": true
+      },
+      "gross": {
+        "n": 144,
+        "n_checks": 144,
+        "d": 12,
+        "max_t": 5,
+        "params": [
+          144,
+          12,
+          12
+        ],
+        "ok": true
+      }
+    },
+    "dual_per_code": [
+      {
+        "code": "q70",
+        "error_decoder": {
+          "code": "q70",
+          "path": "error_decoder_sliding_window_w1",
+          "rounds": 2048,
+          "faithful": 2048,
+          "faith_pct": 100.0,
+          "frame_weight": 28,
+          "latency_us": {
+            "n": 1741,
+            "min_us": 12.486000002809305,
+            "mean_us": 16.684633543912984,
+            "p50_us": 13.327000004892398,
+            "p99_us": 54.46000000119966,
+            "p99_9_us": 304.5579999962911,
+            "max_us": 1080.199000000448,
+            "steady": true,
+            "drop_frac": 0.15
+          },
+          "latency_us_raw": {
+            "n": 2048,
+            "min_us": 12.486000002809305,
+            "mean_us": 16.63232910160267,
+            "p50_us": 13.367000008202012,
+            "p99_us": 54.46000000119966,
+            "p99_9_us": 268.25999999857686,
+            "max_us": 1080.199000000448,
+            "steady": false,
+            "drop_frac": 0.0
+          },
+          "wall_s": 0.05249332199998946,
+          "thr_rounds_per_s": 39014.48645220836,
+          "sec_status_1ms": "PASS",
+          "sec_status_5ms": "PASS",
+          "stretch_vs_1ms_sec_budget_pct": 0.0,
+          "note": "SEC uses steady-state p99 after warmup; raw max retained in latency_us_raw"
+        },
+        "outcome_decoder": {
+          "code": "q70",
+          "path": "outcome_decoder_update_flush_batch_flat",
+          "rounds": 1024,
+          "stream_faithful": 1024,
+          "batch_faithful": 1024,
+          "latency_us_update": {
+            "n": 871,
+            "min_us": 12.329000000477208,
+            "mean_us": 14.106458094074362,
+            "p50_us": 12.836000010452153,
+            "p99_us": 29.492000010122865,
+            "p99_9_us": 158.22400000331527,
+            "max_us": 158.22400000331527,
+            "steady": true,
+            "drop_frac": 0.15
+          },
+          "latency_us_update_raw": {
+            "n": 1024,
+            "min_us": 12.329000000477208,
+            "mean_us": 14.051385742078203,
+            "p50_us": 12.84600000417413,
+            "p99_us": 29.38599999424696,
+            "p99_9_us": 79.70200000784189,
+            "max_us": 158.22400000331527,
+            "steady": false,
+            "drop_frac": 0.0
+          },
+          "finalize_ms": 9.355494999994107,
+          "flush_return": "None",
+          "sec_status_1ms": "PASS",
+          "sec_status_5ms": "PASS"
+        },
+        "twostage": {
+          "code": "q70",
+          "path": "two_stage",
+          "faithful": 128,
+          "shots": 128,
+          "latency_us": {
+            "n": 128,
+            "min_us": 65.46999999557102,
+            "mean_us": 122.06050781327082,
+            "p50_us": 81.59000000773631,
+            "p99_us": 182.74100000326143,
+            "p99_9_us": 4212.84599998728,
+            "max_us": 4212.84599998728,
+            "steady": false,
+            "drop_frac": 0.0
+          }
+        },
+        "backends": [
+          {
+            "code": "q70",
+            "backend": "cpu_bposd",
+            "status": "ok",
+            "faithful": 128,
+            "shots": 128,
+            "faith_pct": 100.0,
+            "thr_syn_per_s": 25915.35881843203,
+            "mean_latency_us": 38.58715624993625
+          },
+          {
+            "code": "q70",
+            "backend": "cascade",
+            "status": "ok",
+            "faithful": 128,
+            "shots": 128,
+            "faith_pct": 100.0,
+            "thr_syn_per_s": 26368.021358097754,
+            "mean_latency_us": 37.924726562499345
+          },
+          {
+            "code": "q70",
+            "backend": "beam",
+            "status": "ok",
+            "faithful": 128,
+            "shots": 128,
+            "faith_pct": 100.0,
+            "thr_syn_per_s": 42478.54335767742,
+            "mean_latency_us": 23.54129687498485
+          },
+          {
+            "code": "q70",
+            "backend": "ultra_beam",
+            "status": "ok",
+            "faithful": 128,
+            "shots": 128,
+            "faith_pct": 100.0,
+            "thr_syn_per_s": 20245.463592684293,
+            "mean_latency_us": 49.39378124990679
+          },
+          {
+            "code": "q70",
+            "backend": "cuda",
+            "status": "NOT_AVAILABLE",
+            "detail": "construction: CUDA BP-OSD: CUDA driver library not found: tried [libcuda.so.1, libcuda.so]: libcuda.so.1: libcuda.so.1: "
+          },
+          {
+            "code": "q70",
+            "backend": "opencl",
+            "status": "NOT_AVAILABLE",
+            "detail": "construction: No OpenCL GPU device available"
+          }
+        ],
+        "weight1": {
+          "cpu_bposd": {
+            "ok": 70,
+            "n": 70
+          },
+          "beam": {
+            "ok": 70,
+            "n": 70
+          },
+          "ultra_beam": {
+            "ok": 70,
+            "n": 70
+          }
+        },
+        "dual_coupling": {
+          "sw_faithful": 256,
+          "outcome_faithful": 256,
+          "rounds": 256
+        }
+      },
+      {
+        "code": "q102",
+        "error_decoder": {
+          "code": "q102",
+          "path": "error_decoder_sliding_window_w1",
+          "rounds": 2048,
+          "faithful": 2048,
+          "faith_pct": 100.0,
+          "frame_weight": 46,
+          "latency_us": {
+            "n": 1741,
+            "min_us": 15.14299999882951,
+            "mean_us": 21.143285468039053,
+            "p50_us": 17.38699999975779,
+            "p99_us": 74.86399999834248,
+            "p99_9_us": 92.69900000674625,
+            "max_us": 93.15100000151233,
+            "steady": true,
+            "drop_frac": 0.15
+          },
+          "latency_us_raw": {
+            "n": 2048,
+            "min_us": 15.14299999882951,
+            "mean_us": 21.309126953035495,
+            "p50_us": 17.42599999943195,
+            "p99_us": 75.83400000044094,
+            "p99_9_us": 92.57700000375735,
+            "max_us": 93.15100000151233,
+            "steady": false,
+            "drop_frac": 0.0
+          },
+          "wall_s": 0.06638631299999531,
+          "thr_rounds_per_s": 30849.732534478073,
+          "sec_status_1ms": "PASS",
+          "sec_status_5ms": "PASS",
+          "stretch_vs_1ms_sec_budget_pct": 0.0,
+          "note": "SEC uses steady-state p99 after warmup; raw max retained in latency_us_raw"
+        },
+        "outcome_decoder": {
+          "code": "q102",
+          "path": "outcome_decoder_update_flush_batch_flat",
+          "rounds": 1024,
+          "stream_faithful": 1024,
+          "batch_faithful": 1024,
+          "latency_us_update": {
+            "n": 871,
+            "min_us": 16.86900000663627,
+            "mean_us": 19.563229621441163,
+            "p50_us": 17.181999993454156,
+            "p99_us": 38.39100000391227,
+            "p99_9_us": 75.99499998889314,
+            "max_us": 75.99499998889314,
+            "steady": true,
+            "drop_frac": 0.15
+          },
+          "latency_us_update_raw": {
+            "n": 1024,
+            "min_us": 16.783999996050625,
+            "mean_us": 19.519358398639717,
+            "p50_us": 17.188999990480625,
+            "p99_us": 37.78699999656965,
+            "p99_9_us": 69.04600000723349,
+            "max_us": 75.99499998889314,
+            "steady": false,
+            "drop_frac": 0.0
+          },
+          "finalize_ms": 19.229828999996812,
+          "flush_return": "None",
+          "sec_status_1ms": "PASS",
+          "sec_status_5ms": "PASS"
+        },
+        "twostage": {
+          "code": "q102",
+          "path": "two_stage",
+          "faithful": 128,
+          "shots": 128,
+          "latency_us": {
+            "n": 128,
+            "min_us": 79.51999999988857,
+            "mean_us": 109.1239531254562,
+            "p50_us": 98.17800000178067,
+            "p99_us": 213.57999999338517,
+            "p99_9_us": 274.46999999369837,
+            "max_us": 274.46999999369837,
+            "steady": false,
+            "drop_frac": 0.0
+          }
+        },
+        "backends": [
+          {
+            "code": "q102",
+            "backend": "cpu_bposd",
+            "status": "ok",
+            "faithful": 128,
+            "shots": 128,
+            "faith_pct": 100.0,
+            "thr_syn_per_s": 12556.689036538039,
+            "mean_latency_us": 79.638828125006
+          },
+          {
+            "code": "q102",
+            "backend": "cascade",
+            "status": "ok",
+            "faithful": 128,
+            "shots": 128,
+            "faith_pct": 100.0,
+            "thr_syn_per_s": 12356.384780526252,
+            "mean_latency_us": 80.92982031249196
+          },
+          {
+            "code": "q102",
+            "backend": "beam",
+            "status": "ok",
+            "faithful": 128,
+            "shots": 128,
+            "faith_pct": 100.0,
+            "thr_syn_per_s": 34725.67934150641,
+            "mean_latency_us": 28.797132812452553
+          },
+          {
+            "code": "q102",
+            "backend": "ultra_beam",
+            "status": "ok",
+            "faithful": 128,
+            "shots": 128,
+            "faith_pct": 100.0,
+            "thr_syn_per_s": 10520.92381601932,
+            "mean_latency_us": 95.04868749998785
+          },
+          {
+            "code": "q102",
+            "backend": "cuda",
+            "status": "NOT_AVAILABLE",
+            "detail": "construction: CUDA BP-OSD: CUDA driver library not found: tried [libcuda.so.1, libcuda.so]: libcuda.so.1: libcuda.so.1: "
+          },
+          {
+            "code": "q102",
+            "backend": "opencl",
+            "status": "NOT_AVAILABLE",
+            "detail": "construction: No OpenCL GPU device available"
+          }
+        ],
+        "weight1": {
+          "cpu_bposd": {
+            "ok": 102,
+            "n": 102
+          },
+          "beam": {
+            "ok": 102,
+            "n": 102
+          },
+          "ultra_beam": {
+            "ok": 102,
+            "n": 102
+          }
+        },
+        "dual_coupling": {
+          "sw_faithful": 256,
+          "outcome_faithful": 256,
+          "rounds": 256
+        }
+      },
+      {
+        "code": "gross",
+        "error_decoder": {
+          "code": "gross",
+          "path": "error_decoder_sliding_window_w1",
+          "rounds": 2048,
+          "faithful": 2048,
+          "faith_pct": 100.0,
+          "frame_weight": 59,
+          "latency_us": {
+            "n": 1741,
+            "min_us": 22.75600000700706,
+            "mean_us": 37.56348305576628,
+            "p50_us": 25.160000006962946,
+            "p99_us": 135.86200000759163,
+            "p99_9_us": 2152.3639999969646,
+            "max_us": 2180.4699999989907,
+            "steady": true,
+            "drop_frac": 0.15
+          },
+          "latency_us_raw": {
+            "n": 2048,
+            "min_us": 22.75600000700706,
+            "mean_us": 38.1379843750404,
+            "p50_us": 25.23599999904036,
+            "p99_us": 138.70699999074532,
+            "p99_9_us": 1961.3749999933816,
+            "max_us": 2180.4699999989907,
+            "steady": false,
+            "drop_frac": 0.0
+          },
+          "wall_s": 0.11493680199998835,
+          "thr_rounds_per_s": 17818.487763390247,
+          "sec_status_1ms": "PASS",
+          "sec_status_5ms": "PASS",
+          "stretch_vs_1ms_sec_budget_pct": 0.0,
+          "note": "SEC uses steady-state p99 after warmup; raw max retained in latency_us_raw"
+        },
+        "outcome_decoder": {
+          "code": "gross",
+          "path": "outcome_decoder_update_flush_batch_flat",
+          "rounds": 1024,
+          "stream_faithful": 1024,
+          "batch_faithful": 1024,
+          "latency_us_update": {
+            "n": 871,
+            "min_us": 23.63399998728255,
+            "mean_us": 30.163454650020466,
+            "p50_us": 24.59800001020085,
+            "p99_us": 82.35100000320017,
+            "p99_9_us": 1458.2320000045002,
+            "max_us": 1458.2320000045002,
+            "steady": true,
+            "drop_frac": 0.15
+          },
+          "latency_us_update_raw": {
+            "n": 1024,
+            "min_us": 23.63399998728255,
+            "mean_us": 29.753071289301268,
+            "p50_us": 24.62000000491571,
+            "p99_us": 63.04899999065583,
+            "p99_9_us": 272.0539999927496,
+            "max_us": 1458.2320000045002,
+            "steady": false,
+            "drop_frac": 0.0
+          },
+          "finalize_ms": 31.66955199999677,
+          "flush_return": "None",
+          "sec_status_1ms": "PASS",
+          "sec_status_5ms": "PASS"
+        },
+        "twostage": {
+          "code": "gross",
+          "path": "two_stage",
+          "faithful": 128,
+          "shots": 128,
+          "latency_us": {
+            "n": 128,
+            "min_us": 72.26400001059119,
+            "mean_us": 145.42262500050197,
+            "p50_us": 133.9340000043876,
+            "p99_us": 302.59199999704833,
+            "p99_9_us": 314.5750000044245,
+            "max_us": 314.5750000044245,
+            "steady": false,
+            "drop_frac": 0.0
+          }
+        },
+        "backends": [
+          {
+            "code": "gross",
+            "backend": "cpu_bposd",
+            "status": "ok",
+            "faithful": 128,
+            "shots": 128,
+            "faith_pct": 100.0,
+            "thr_syn_per_s": 12380.5997549294,
+            "mean_latency_us": 80.77153125007897
+          },
+          {
+            "code": "gross",
+            "backend": "cascade",
+            "status": "ok",
+            "faithful": 128,
+            "shots": 128,
+            "faith_pct": 100.0,
+            "thr_syn_per_s": 12752.78155103931,
+            "mean_latency_us": 78.41426562493758
+          },
+          {
+            "code": "gross",
+            "backend": "beam",
+            "status": "ok",
+            "faithful": 128,
+            "shots": 128,
+            "faith_pct": 100.0,
+            "thr_syn_per_s": 19707.576516211397,
+            "mean_latency_us": 50.74190624998476
+          },
+          {
+            "code": "gross",
+            "backend": "ultra_beam",
+            "status": "ok",
+            "faithful": 128,
+            "shots": 128,
+            "faith_pct": 100.0,
+            "thr_syn_per_s": 6464.947835699016,
+            "mean_latency_us": 154.6802890625143
+          },
+          {
+            "code": "gross",
+            "backend": "cuda",
+            "status": "NOT_AVAILABLE",
+            "detail": "construction: CUDA BP-OSD: CUDA driver library not found: tried [libcuda.so.1, libcuda.so]: libcuda.so.1: libcuda.so.1: "
+          },
+          {
+            "code": "gross",
+            "backend": "opencl",
+            "status": "NOT_AVAILABLE",
+            "detail": "construction: No OpenCL GPU device available"
+          }
+        ],
+        "weight1": {
+          "cpu_bposd": {
+            "ok": 144,
+            "n": 144
+          },
+          "beam": {
+            "ok": 144,
+            "n": 144
+          },
+          "ultra_beam": {
+            "ok": 144,
+            "n": 144
+          }
+        },
+        "dual_coupling": {
+          "sw_faithful": 256,
+          "outcome_faithful": 256,
+          "rounds": 256
+        }
+      }
+    ],
+    "scale_proxy": {
+      "logical_qubits_if_using_q70_blocks_only": "N_blocks \u00d7 6 (paper uses many Q70 blocks)",
+      "this_suite_codes": [
+        "q70 k=6",
+        "q102 k=22",
+        "gross k=12"
+      ],
+      "this_suite_does_not_simulate": "408 logical qubits / 31.5M ops end-to-end workload",
+      "what_it_does_simulate": "dual-path residual + SEC latency on single Superion blocks"
+    }
+  },
+  "rows": [
+    {
+      "code": "q70",
+      "path": "error_decoder_sliding_window_w1",
+      "rounds": 2048,
+      "faithful": 2048,
+      "faith_pct": 100.0,
+      "frame_weight": 28,
+      "latency_us": {
+        "n": 1741,
+        "min_us": 12.486000002809305,
+        "mean_us": 16.684633543912984,
+        "p50_us": 13.327000004892398,
+        "p99_us": 54.46000000119966,
+        "p99_9_us": 304.5579999962911,
+        "max_us": 1080.199000000448,
+        "steady": true,
+        "drop_frac": 0.15
+      },
+      "latency_us_raw": {
+        "n": 2048,
+        "min_us": 12.486000002809305,
+        "mean_us": 16.63232910160267,
+        "p50_us": 13.367000008202012,
+        "p99_us": 54.46000000119966,
+        "p99_9_us": 268.25999999857686,
+        "max_us": 1080.199000000448,
+        "steady": false,
+        "drop_frac": 0.0
+      },
+      "wall_s": 0.05249332199998946,
+      "thr_rounds_per_s": 39014.48645220836,
+      "sec_status_1ms": "PASS",
+      "sec_status_5ms": "PASS",
+      "stretch_vs_1ms_sec_budget_pct": 0.0,
+      "note": "SEC uses steady-state p99 after warmup; raw max retained in latency_us_raw"
+    },
+    {
+      "code": "q70",
+      "path": "outcome_decoder_update_flush_batch_flat",
+      "rounds": 1024,
+      "stream_faithful": 1024,
+      "batch_faithful": 1024,
+      "latency_us_update": {
+        "n": 871,
+        "min_us": 12.329000000477208,
+        "mean_us": 14.106458094074362,
+        "p50_us": 12.836000010452153,
+        "p99_us": 29.492000010122865,
+        "p99_9_us": 158.22400000331527,
+        "max_us": 158.22400000331527,
+        "steady": true,
+        "drop_frac": 0.15
+      },
+      "latency_us_update_raw": {
+        "n": 1024,
+        "min_us": 12.329000000477208,
+        "mean_us": 14.051385742078203,
+        "p50_us": 12.84600000417413,
+        "p99_us": 29.38599999424696,
+        "p99_9_us": 79.70200000784189,
+        "max_us": 158.22400000331527,
+        "steady": false,
+        "drop_frac": 0.0
+      },
+      "finalize_ms": 9.355494999994107,
+      "flush_return": "None",
+      "sec_status_1ms": "PASS",
+      "sec_status_5ms": "PASS"
+    },
+    {
+      "code": "q70",
+      "path": "two_stage",
+      "faithful": 128,
+      "shots": 128,
+      "latency_us": {
+        "n": 128,
+        "min_us": 65.46999999557102,
+        "mean_us": 122.06050781327082,
+        "p50_us": 81.59000000773631,
+        "p99_us": 182.74100000326143,
+        "p99_9_us": 4212.84599998728,
+        "max_us": 4212.84599998728,
+        "steady": false,
+        "drop_frac": 0.0
+      }
+    },
+    {
+      "code": "q70",
+      "backend": "cpu_bposd",
+      "status": "ok",
+      "faithful": 128,
+      "shots": 128,
+      "faith_pct": 100.0,
+      "thr_syn_per_s": 25915.35881843203,
+      "mean_latency_us": 38.58715624993625
+    },
+    {
+      "code": "q70",
+      "backend": "cascade",
+      "status": "ok",
+      "faithful": 128,
+      "shots": 128,
+      "faith_pct": 100.0,
+      "thr_syn_per_s": 26368.021358097754,
+      "mean_latency_us": 37.924726562499345
+    },
+    {
+      "code": "q70",
+      "backend": "beam",
+      "status": "ok",
+      "faithful": 128,
+      "shots": 128,
+      "faith_pct": 100.0,
+      "thr_syn_per_s": 42478.54335767742,
+      "mean_latency_us": 23.54129687498485
+    },
+    {
+      "code": "q70",
+      "backend": "ultra_beam",
+      "status": "ok",
+      "faithful": 128,
+      "shots": 128,
+      "faith_pct": 100.0,
+      "thr_syn_per_s": 20245.463592684293,
+      "mean_latency_us": 49.39378124990679
+    },
+    {
+      "code": "q102",
+      "path": "error_decoder_sliding_window_w1",
+      "rounds": 2048,
+      "faithful": 2048,
+      "faith_pct": 100.0,
+      "frame_weight": 46,
+      "latency_us": {
+        "n": 1741,
+        "min_us": 15.14299999882951,
+        "mean_us": 21.143285468039053,
+        "p50_us": 17.38699999975779,
+        "p99_us": 74.86399999834248,
+        "p99_9_us": 92.69900000674625,
+        "max_us": 93.15100000151233,
+        "steady": true,
+        "drop_frac": 0.15
+      },
+      "latency_us_raw": {
+        "n": 2048,
+        "min_us": 15.14299999882951,
+        "mean_us": 21.309126953035495,
+        "p50_us": 17.42599999943195,
+        "p99_us": 75.83400000044094,
+        "p99_9_us": 92.57700000375735,
+        "max_us": 93.15100000151233,
+        "steady": false,
+        "drop_frac": 0.0
+      },
+      "wall_s": 0.06638631299999531,
+      "thr_rounds_per_s": 30849.732534478073,
+      "sec_status_1ms": "PASS",
+      "sec_status_5ms": "PASS",
+      "stretch_vs_1ms_sec_budget_pct": 0.0,
+      "note": "SEC uses steady-state p99 after warmup; raw max retained in latency_us_raw"
+    },
+    {
+      "code": "q102",
+      "path": "outcome_decoder_update_flush_batch_flat",
+      "rounds": 1024,
+      "stream_faithful": 1024,
+      "batch_faithful": 1024,
+      "latency_us_update": {
+        "n": 871,
+        "min_us": 16.86900000663627,
+        "mean_us": 19.563229621441163,
+        "p50_us": 17.181999993454156,
+        "p99_us": 38.39100000391227,
+        "p99_9_us": 75.99499998889314,
+        "max_us": 75.99499998889314,
+        "steady": true,
+        "drop_frac": 0.15
+      },
+      "latency_us_update_raw": {
+        "n": 1024,
+        "min_us": 16.783999996050625,
+        "mean_us": 19.519358398639717,
+        "p50_us": 17.188999990480625,
+        "p99_us": 37.78699999656965,
+        "p99_9_us": 69.04600000723349,
+        "max_us": 75.99499998889314,
+        "steady": false,
+        "drop_frac": 0.0
+      },
+      "finalize_ms": 19.229828999996812,
+      "flush_return": "None",
+      "sec_status_1ms": "PASS",
+      "sec_status_5ms": "PASS"
+    },
+    {
+      "code": "q102",
+      "path": "two_stage",
+      "faithful": 128,
+      "shots": 128,
+      "latency_us": {
+        "n": 128,
+        "min_us": 79.51999999988857,
+        "mean_us": 109.1239531254562,
+        "p50_us": 98.17800000178067,
+        "p99_us": 213.57999999338517,
+        "p99_9_us": 274.46999999369837,
+        "max_us": 274.46999999369837,
+        "steady": false,
+        "drop_frac": 0.0
+      }
+    },
+    {
+      "code": "q102",
+      "backend": "cpu_bposd",
+      "status": "ok",
+      "faithful": 128,
+      "shots": 128,
+      "faith_pct": 100.0,
+      "thr_syn_per_s": 12556.689036538039,
+      "mean_latency_us": 79.638828125006
+    },
+    {
+      "code": "q102",
+      "backend": "cascade",
+      "status": "ok",
+      "faithful": 128,
+      "shots": 128,
+      "faith_pct": 100.0,
+      "thr_syn_per_s": 12356.384780526252,
+      "mean_latency_us": 80.92982031249196
+    },
+    {
+      "code": "q102",
+      "backend": "beam",
+      "status": "ok",
+      "faithful": 128,
+      "shots": 128,
+      "faith_pct": 100.0,
+      "thr_syn_per_s": 34725.67934150641,
+      "mean_latency_us": 28.797132812452553
+    },
+    {
+      "code": "q102",
+      "backend": "ultra_beam",
+      "status": "ok",
+      "faithful": 128,
+      "shots": 128,
+      "faith_pct": 100.0,
+      "thr_syn_per_s": 10520.92381601932,
+      "mean_latency_us": 95.04868749998785
+    },
+    {
+      "code": "gross",
+      "path": "error_decoder_sliding_window_w1",
+      "rounds": 2048,
+      "faithful": 2048,
+      "faith_pct": 100.0,
+      "frame_weight": 59,
+      "latency_us": {
+        "n": 1741,
+        "min_us": 22.75600000700706,
+        "mean_us": 37.56348305576628,
+        "p50_us": 25.160000006962946,
+        "p99_us": 135.86200000759163,
+        "p99_9_us": 2152.3639999969646,
+        "max_us": 2180.4699999989907,
+        "steady": true,
+        "drop_frac": 0.15
+      },
+      "latency_us_raw": {
+        "n": 2048,
+        "min_us": 22.75600000700706,
+        "mean_us": 38.1379843750404,
+        "p50_us": 25.23599999904036,
+        "p99_us": 138.70699999074532,
+        "p99_9_us": 1961.3749999933816,
+        "max_us": 2180.4699999989907,
+        "steady": false,
+        "drop_frac": 0.0
+      },
+      "wall_s": 0.11493680199998835,
+      "thr_rounds_per_s": 17818.487763390247,
+      "sec_status_1ms": "PASS",
+      "sec_status_5ms": "PASS",
+      "stretch_vs_1ms_sec_budget_pct": 0.0,
+      "note": "SEC uses steady-state p99 after warmup; raw max retained in latency_us_raw"
+    },
+    {
+      "code": "gross",
+      "path": "outcome_decoder_update_flush_batch_flat",
+      "rounds": 1024,
+      "stream_faithful": 1024,
+      "batch_faithful": 1024,
+      "latency_us_update": {
+        "n": 871,
+        "min_us": 23.63399998728255,
+        "mean_us": 30.163454650020466,
+        "p50_us": 24.59800001020085,
+        "p99_us": 82.35100000320017,
+        "p99_9_us": 1458.2320000045002,
+        "max_us": 1458.2320000045002,
+        "steady": true,
+        "drop_frac": 0.15
+      },
+      "latency_us_update_raw": {
+        "n": 1024,
+        "min_us": 23.63399998728255,
+        "mean_us": 29.753071289301268,
+        "p50_us": 24.62000000491571,
+        "p99_us": 63.04899999065583,
+        "p99_9_us": 272.0539999927496,
+        "max_us": 1458.2320000045002,
+        "steady": false,
+        "drop_frac": 0.0
+      },
+      "finalize_ms": 31.66955199999677,
+      "flush_return": "None",
+      "sec_status_1ms": "PASS",
+      "sec_status_5ms": "PASS"
+    },
+    {
+      "code": "gross",
+      "path": "two_stage",
+      "faithful": 128,
+      "shots": 128,
+      "latency_us": {
+        "n": 128,
+        "min_us": 72.26400001059119,
+        "mean_us": 145.42262500050197,
+        "p50_us": 133.9340000043876,
+        "p99_us": 302.59199999704833,
+        "p99_9_us": 314.5750000044245,
+        "max_us": 314.5750000044245,
+        "steady": false,
+        "drop_frac": 0.0
+      }
+    },
+    {
+      "code": "gross",
+      "backend": "cpu_bposd",
+      "status": "ok",
+      "faithful": 128,
+      "shots": 128,
+      "faith_pct": 100.0,
+      "thr_syn_per_s": 12380.5997549294,
+      "mean_latency_us": 80.77153125007897
+    },
+    {
+      "code": "gross",
+      "backend": "cascade",
+      "status": "ok",
+      "faithful": 128,
+      "shots": 128,
+      "faith_pct": 100.0,
+      "thr_syn_per_s": 12752.78155103931,
+      "mean_latency_us": 78.41426562493758
+    },
+    {
+      "code": "gross",
+      "backend": "beam",
+      "status": "ok",
+      "faithful": 128,
+      "shots": 128,
+      "faith_pct": 100.0,
+      "thr_syn_per_s": 19707.576516211397,
+      "mean_latency_us": 50.74190624998476
+    },
+    {
+      "code": "gross",
+      "backend": "ultra_beam",
+      "status": "ok",
+      "faithful": 128,
+      "shots": 128,
+      "faith_pct": 100.0,
+      "thr_syn_per_s": 6464.947835699016,
+      "mean_latency_us": 154.6802890625143
+    }
+  ],
+  "gates": [
+    {
+      "name": "import_version",
+      "passed": true,
+      "detail": "v=3.7.5",
+      "critical": true
+    },
+    {
+      "name": "params_q70",
+      "passed": true,
+      "detail": "n=70 checks=70 d=9 max_t=4 params=(70, 6, 9)",
+      "critical": true
+    },
+    {
+      "name": "params_q102",
+      "passed": true,
+      "detail": "n=102 checks=102 d=9 max_t=4 params=(102, 22, 9)",
+      "critical": true
+    },
+    {
+      "name": "params_gross",
+      "passed": true,
+      "detail": "n=144 checks=144 d=12 max_t=5 params=(144, 12, 12)",
+      "critical": true
+    },
+    {
+      "name": "error_decoder_faith_q70",
+      "passed": true,
+      "detail": "2048/2048 Hc==s frame_wt=28",
+      "critical": true
+    },
+    {
+      "name": "sec_q70_error_sw_w1_budget_1000us",
+      "passed": true,
+      "detail": "n=1741 steady=True p50=13.3 p99=54.5 p99.9=304.6 max=1080.2us budget=1000us",
+      "critical": true
+    },
+    {
+      "name": "sec_q70_error_sw_w1_budget_5000us",
+      "passed": true,
+      "detail": "n=1741 steady=True p50=13.3 p99=54.5 p99.9=304.6 max=1080.2us budget=5000us",
+      "critical": false
+    },
+    {
+      "name": "outcome_stream_faith_q70",
+      "passed": true,
+      "detail": "1024/1024 Hc==s via update()",
+      "critical": true
+    },
+    {
+      "name": "sec_q70_outcome_update_budget_1000us",
+      "passed": true,
+      "detail": "n=871 steady=True p50=12.8 p99=29.5 p99.9=158.2 max=158.2us budget=1000us",
+      "critical": true
+    },
+    {
+      "name": "sec_q70_outcome_update_budget_5000us",
+      "passed": true,
+      "detail": "n=871 steady=True p50=12.8 p99=29.5 p99.9=158.2 max=158.2us budget=5000us",
+      "critical": false
+    },
+    {
+      "name": "outcome_flush_q70",
+      "passed": true,
+      "detail": "flush()=None history_len=0",
+      "critical": true
+    },
+    {
+      "name": "outcome_batch_flat_faith_q70",
+      "passed": true,
+      "detail": "1024/1024 finalize=9.4ms",
+      "critical": true
+    },
+    {
+      "name": "twostage_faith_q70",
+      "passed": true,
+      "detail": "128/128 p50=81.6us",
+      "critical": true
+    },
+    {
+      "name": "backend_q70_cpu_bposd",
+      "passed": true,
+      "detail": "128/128 thr=25915/s",
+      "critical": true
+    },
+    {
+      "name": "backend_q70_cascade",
+      "passed": true,
+      "detail": "128/128 thr=26368/s",
+      "critical": true
+    },
+    {
+      "name": "backend_q70_beam",
+      "passed": true,
+      "detail": "128/128 thr=42479/s",
+      "critical": true
+    },
+    {
+      "name": "backend_q70_ultra_beam",
+      "passed": true,
+      "detail": "128/128 thr=20245/s",
+      "critical": true
+    },
+    {
+      "name": "backend_q70_cuda",
+      "passed": true,
+      "detail": "NOT_AVAILABLE: ValueError",
+      "critical": false
+    },
+    {
+      "name": "backend_q70_opencl",
+      "passed": true,
+      "detail": "NOT_AVAILABLE: ValueError",
+      "critical": false
+    },
+    {
+      "name": "w1_q70_cpu_bposd",
+      "passed": true,
+      "detail": "70/70",
+      "critical": true
+    },
+    {
+      "name": "w1_q70_beam",
+      "passed": true,
+      "detail": "70/70",
+      "critical": true
+    },
+    {
+      "name": "w1_q70_ultra_beam",
+      "passed": true,
+      "detail": "70/70",
+      "critical": true
+    },
+    {
+      "name": "dual_coupling_q70",
+      "passed": true,
+      "detail": "sw=256/256 outcome=256/256",
+      "critical": true
+    },
+    {
+      "name": "error_decoder_faith_q102",
+      "passed": true,
+      "detail": "2048/2048 Hc==s frame_wt=46",
+      "critical": true
+    },
+    {
+      "name": "sec_q102_error_sw_w1_budget_1000us",
+      "passed": true,
+      "detail": "n=1741 steady=True p50=17.4 p99=74.9 p99.9=92.7 max=93.2us budget=1000us",
+      "critical": true
+    },
+    {
+      "name": "sec_q102_error_sw_w1_budget_5000us",
+      "passed": true,
+      "detail": "n=1741 steady=True p50=17.4 p99=74.9 p99.9=92.7 max=93.2us budget=5000us",
+      "critical": false
+    },
+    {
+      "name": "outcome_stream_faith_q102",
+      "passed": true,
+      "detail": "1024/1024 Hc==s via update()",
+      "critical": true
+    },
+    {
+      "name": "sec_q102_outcome_update_budget_1000us",
+      "passed": true,
+      "detail": "n=871 steady=True p50=17.2 p99=38.4 p99.9=76.0 max=76.0us budget=1000us",
+      "critical": true
+    },
+    {
+      "name": "sec_q102_outcome_update_budget_5000us",
+      "passed": true,
+      "detail": "n=871 steady=True p50=17.2 p99=38.4 p99.9=76.0 max=76.0us budget=5000us",
+      "critical": false
+    },
+    {
+      "name": "outcome_flush_q102",
+      "passed": true,
+      "detail": "flush()=None history_len=0",
+      "critical": true
+    },
+    {
+      "name": "outcome_batch_flat_faith_q102",
+      "passed": true,
+      "detail": "1024/1024 finalize=19.2ms",
+      "critical": true
+    },
+    {
+      "name": "twostage_faith_q102",
+      "passed": true,
+      "detail": "128/128 p50=98.2us",
+      "critical": true
+    },
+    {
+      "name": "backend_q102_cpu_bposd",
+      "passed": true,
+      "detail": "128/128 thr=12557/s",
+      "critical": true
+    },
+    {
+      "name": "backend_q102_cascade",
+      "passed": true,
+      "detail": "128/128 thr=12356/s",
+      "critical": true
+    },
+    {
+      "name": "backend_q102_beam",
+      "passed": true,
+      "detail": "128/128 thr=34726/s",
+      "critical": true
+    },
+    {
+      "name": "backend_q102_ultra_beam",
+      "passed": true,
+      "detail": "128/128 thr=10521/s",
+      "critical": true
+    },
+    {
+      "name": "backend_q102_cuda",
+      "passed": true,
+      "detail": "NOT_AVAILABLE: ValueError",
+      "critical": false
+    },
+    {
+      "name": "backend_q102_opencl",
+      "passed": true,
+      "detail": "NOT_AVAILABLE: ValueError",
+      "critical": false
+    },
+    {
+      "name": "w1_q102_cpu_bposd",
+      "passed": true,
+      "detail": "102/102",
+      "critical": true
+    },
+    {
+      "name": "w1_q102_beam",
+      "passed": true,
+      "detail": "102/102",
+      "critical": true
+    },
+    {
+      "name": "w1_q102_ultra_beam",
+      "passed": true,
+      "detail": "102/102",
+      "critical": true
+    },
+    {
+      "name": "dual_coupling_q102",
+      "passed": true,
+      "detail": "sw=256/256 outcome=256/256",
+      "critical": true
+    },
+    {
+      "name": "error_decoder_faith_gross",
+      "passed": true,
+      "detail": "2048/2048 Hc==s frame_wt=59",
+      "critical": true
+    },
+    {
+      "name": "sec_gross_error_sw_w1_budget_1000us",
+      "passed": true,
+      "detail": "n=1741 steady=True p50=25.2 p99=135.9 p99.9=2152.4 max=2180.5us budget=1000us",
+      "critical": true
+    },
+    {
+      "name": "sec_gross_error_sw_w1_budget_5000us",
+      "passed": true,
+      "detail": "n=1741 steady=True p50=25.2 p99=135.9 p99.9=2152.4 max=2180.5us budget=5000us",
+      "critical": false
+    },
+    {
+      "name": "outcome_stream_faith_gross",
+      "passed": true,
+      "detail": "1024/1024 Hc==s via update()",
+      "critical": true
+    },
+    {
+      "name": "sec_gross_outcome_update_budget_1000us",
+      "passed": true,
+      "detail": "n=871 steady=True p50=24.6 p99=82.4 p99.9=1458.2 max=1458.2us budget=1000us",
+      "critical": true
+    },
+    {
+      "name": "sec_gross_outcome_update_budget_5000us",
+      "passed": true,
+      "detail": "n=871 steady=True p50=24.6 p99=82.4 p99.9=1458.2 max=1458.2us budget=5000us",
+      "critical": false
+    },
+    {
+      "name": "outcome_flush_gross",
+      "passed": true,
+      "detail": "flush()=None history_len=0",
+      "critical": true
+    },
+    {
+      "name": "outcome_batch_flat_faith_gross",
+      "passed": true,
+      "detail": "1024/1024 finalize=31.7ms",
+      "critical": true
+    },
+    {
+      "name": "twostage_faith_gross",
+      "passed": true,
+      "detail": "128/128 p50=133.9us",
+      "critical": true
+    },
+    {
+      "name": "backend_gross_cpu_bposd",
+      "passed": true,
+      "detail": "128/128 thr=12381/s",
+      "critical": true
+    },
+    {
+      "name": "backend_gross_cascade",
+      "passed": true,
+      "detail": "128/128 thr=12753/s",
+      "critical": true
+    },
+    {
+      "name": "backend_gross_beam",
+      "passed": true,
+      "detail": "128/128 thr=19708/s",
+      "critical": true
+    },
+    {
+      "name": "backend_gross_ultra_beam",
+      "passed": true,
+      "detail": "128/128 thr=6465/s",
+      "critical": true
+    },
+    {
+      "name": "backend_gross_cuda",
+      "passed": true,
+      "detail": "NOT_AVAILABLE: ValueError",
+      "critical": false
+    },
+    {
+      "name": "backend_gross_opencl",
+      "passed": true,
+      "detail": "NOT_AVAILABLE: ValueError",
+      "critical": false
+    },
+    {
+      "name": "w1_gross_cpu_bposd",
+      "passed": true,
+      "detail": "144/144",
+      "critical": true
+    },
+    {
+      "name": "w1_gross_beam",
+      "passed": true,
+      "detail": "144/144",
+      "critical": true
+    },
+    {
+      "name": "w1_gross_ultra_beam",
+      "passed": true,
+      "detail": "144/144",
+      "critical": true
+    },
+    {
+      "name": "dual_coupling_gross",
+      "passed": true,
+      "detail": "sw=256/256 outcome=256/256",
+      "critical": true
+    }
+  ],
+  "summary": {
+    "n_gates": 61,
+    "n_passed": 61,
+    "n_critical": 49,
+    "n_critical_passed": 49,
+    "critical_pass": true,
+    "all_pass": true,
+    "wall_s": 40.981496422000006,
+    "p_physical": 0.001,
+    "error_stream_rounds": 2048,
+    "outcome_stream_rounds": 1024,
+    "sec_budget_1ms_us": 1000.0,
+    "sec_budget_5ms_us": 5000.0
+  }
+}

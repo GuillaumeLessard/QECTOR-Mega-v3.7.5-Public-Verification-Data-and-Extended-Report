@@ -1,0 +1,511 @@
+{
+  "suite": "production_neural_bposd",
+  "version": "1.0",
+  "timestamp": "2026-09-23T14:53:46Z",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "rows": [
+    {
+      "code": "CSS repetition Z d=7",
+      "engine": "GNN_residual_safe",
+      "faith": 100.0,
+      "thr": 73620.95161081108,
+      "unf": 0,
+      "backend": "GNN_residual_safe",
+      "repairs": 0
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "engine": "Neural_residual_safe",
+      "faith": 100.0,
+      "thr": 62060.4706584147,
+      "unf": 0,
+      "backend": "Neural_faithful_safe",
+      "repairs": 0
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "engine": "BPOSD_min_sum_osd0",
+      "faith": 100.0,
+      "thr": 738066.9567388418,
+      "unf": 0,
+      "backend": "BPOSD_min_sum_osd0",
+      "repairs": 0
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "engine": "BPOSD_min_sum_osd4",
+      "faith": 100.0,
+      "thr": 885075.0778322337,
+      "unf": 0,
+      "backend": "BPOSD_min_sum_osd4",
+      "repairs": 0
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "engine": "BPOSD_exact_osd0",
+      "faith": 100.0,
+      "thr": 562918.2025830135,
+      "unf": 0,
+      "backend": "BPOSD_exact_osd0",
+      "repairs": 0
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "engine": "BPOSD_exact_osd4",
+      "faith": 100.0,
+      "thr": 570534.5646127108,
+      "unf": 0,
+      "backend": "BPOSD_exact_osd4",
+      "repairs": 0
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "engine": "BPOSD_best",
+      "faith": 100.0,
+      "thr": 885075.0778322337,
+      "unf": 0,
+      "backend": "BPOSD_min_sum_osd4",
+      "repairs": 0
+    },
+    {
+      "code": "CSS repetition Z d=7",
+      "engine": "Cascade_w4",
+      "faith": 100.0,
+      "thr": 1741520.2955926214,
+      "unf": 0,
+      "backend": "HybridCascade_w4",
+      "repairs": 0
+    },
+    {
+      "code": "HP surface d=3",
+      "engine": "Neural_residual_safe",
+      "faith": 100.0,
+      "thr": 39159.98168100093,
+      "unf": 0,
+      "backend": "Neural_faithful_safe",
+      "repairs": 0
+    },
+    {
+      "code": "HP surface d=3",
+      "engine": "BPOSD_min_sum_osd0",
+      "faith": 100.0,
+      "thr": 335808.1697108286,
+      "unf": 0,
+      "backend": "BPOSD_min_sum_osd0",
+      "repairs": 0
+    },
+    {
+      "code": "HP surface d=3",
+      "engine": "BPOSD_min_sum_osd4",
+      "faith": 100.0,
+      "thr": 298107.0202232875,
+      "unf": 0,
+      "backend": "BPOSD_min_sum_osd4",
+      "repairs": 0
+    },
+    {
+      "code": "HP surface d=3",
+      "engine": "BPOSD_exact_osd0",
+      "faith": 100.0,
+      "thr": 150027.13382553737,
+      "unf": 0,
+      "backend": "BPOSD_exact_osd0",
+      "repairs": 0
+    },
+    {
+      "code": "HP surface d=3",
+      "engine": "BPOSD_exact_osd4",
+      "faith": 100.0,
+      "thr": 149664.89096872896,
+      "unf": 0,
+      "backend": "BPOSD_exact_osd4",
+      "repairs": 0
+    },
+    {
+      "code": "HP surface d=3",
+      "engine": "BPOSD_best",
+      "faith": 100.0,
+      "thr": 335808.1697108286,
+      "unf": 0,
+      "backend": "BPOSD_min_sum_osd0",
+      "repairs": 0
+    },
+    {
+      "code": "HP surface d=3",
+      "engine": "Cascade_w4",
+      "faith": 100.0,
+      "thr": 237539.60925158992,
+      "unf": 0,
+      "backend": "HybridCascade_w4",
+      "repairs": 0
+    },
+    {
+      "code": "CSS toric l=3",
+      "engine": "Neural_residual_safe",
+      "faith": 100.0,
+      "thr": 40104.798854235545,
+      "unf": 0,
+      "backend": "Neural_faithful_safe",
+      "repairs": 0
+    },
+    {
+      "code": "CSS toric l=3",
+      "engine": "BPOSD_min_sum_osd0",
+      "faith": 100.0,
+      "thr": 72046.10952380471,
+      "unf": 0,
+      "backend": "BPOSD_min_sum_osd0",
+      "repairs": 0
+    },
+    {
+      "code": "CSS toric l=3",
+      "engine": "BPOSD_min_sum_osd4",
+      "faith": 100.0,
+      "thr": 70775.9085486546,
+      "unf": 0,
+      "backend": "BPOSD_min_sum_osd4",
+      "repairs": 0
+    },
+    {
+      "code": "CSS toric l=3",
+      "engine": "BPOSD_exact_osd0",
+      "faith": 100.0,
+      "thr": 77674.87542857356,
+      "unf": 0,
+      "backend": "BPOSD_exact_osd0",
+      "repairs": 0
+    },
+    {
+      "code": "CSS toric l=3",
+      "engine": "BPOSD_exact_osd4",
+      "faith": 100.0,
+      "thr": 80252.2679982519,
+      "unf": 0,
+      "backend": "BPOSD_exact_osd4",
+      "repairs": 0
+    },
+    {
+      "code": "CSS toric l=3",
+      "engine": "BPOSD_best",
+      "faith": 100.0,
+      "thr": 80252.2679982519,
+      "unf": 0,
+      "backend": "BPOSD_exact_osd4",
+      "repairs": 0
+    },
+    {
+      "code": "CSS toric l=3",
+      "engine": "Cascade_w4",
+      "faith": 100.0,
+      "thr": 125197.08761373645,
+      "unf": 0,
+      "backend": "HybridCascade_w4",
+      "repairs": 0
+    },
+    {
+      "code": "Classical Gallager (2,4) n=64",
+      "engine": "Neural_residual_safe",
+      "faith": 100.0,
+      "thr": 18297.841834442945,
+      "unf": 0,
+      "backend": "Neural_faithful_safe",
+      "repairs": 0
+    },
+    {
+      "code": "Classical Gallager (2,4) n=64",
+      "engine": "BPOSD_min_sum_osd0",
+      "faith": 100.0,
+      "thr": 7061.399252646799,
+      "unf": 0,
+      "backend": "BPOSD_min_sum_osd0",
+      "repairs": 0
+    },
+    {
+      "code": "Classical Gallager (2,4) n=64",
+      "engine": "BPOSD_min_sum_osd4",
+      "faith": 100.0,
+      "thr": 6017.612470397404,
+      "unf": 0,
+      "backend": "BPOSD_min_sum_osd4",
+      "repairs": 0
+    },
+    {
+      "code": "Classical Gallager (2,4) n=64",
+      "engine": "BPOSD_exact_osd0",
+      "faith": 100.0,
+      "thr": 2495.0029282173696,
+      "unf": 0,
+      "backend": "BPOSD_exact_osd0",
+      "repairs": 0
+    },
+    {
+      "code": "Classical Gallager (2,4) n=64",
+      "engine": "BPOSD_exact_osd4",
+      "faith": 100.0,
+      "thr": 2328.8066486970265,
+      "unf": 0,
+      "backend": "BPOSD_exact_osd4",
+      "repairs": 0
+    },
+    {
+      "code": "Classical Gallager (2,4) n=64",
+      "engine": "BPOSD_best",
+      "faith": 100.0,
+      "thr": 7061.399252646799,
+      "unf": 0,
+      "backend": "BPOSD_min_sum_osd0",
+      "repairs": 0
+    },
+    {
+      "code": "Classical Gallager (2,4) n=64",
+      "engine": "Cascade_w4",
+      "faith": 100.0,
+      "thr": 91366.93135832719,
+      "unf": 0,
+      "backend": "HybridCascade_w4",
+      "repairs": 0
+    }
+  ],
+  "gates": [
+    {
+      "name": "GNN_safe_CSS repetition Z d=7",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=73621/s repairs=0/256 loss=nan",
+      "critical": true
+    },
+    {
+      "name": "Neural_safe_CSS repetition Z d=7",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=62060/s",
+      "critical": true
+    },
+    {
+      "name": "BPOSD_min_sum_osd0_CSS repetition Z d=7",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=738067/s",
+      "critical": false
+    },
+    {
+      "name": "BPOSD_min_sum_osd4_CSS repetition Z d=7",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=885075/s",
+      "critical": false
+    },
+    {
+      "name": "BPOSD_exact_osd0_CSS repetition Z d=7",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=562918/s",
+      "critical": false
+    },
+    {
+      "name": "BPOSD_exact_osd4_CSS repetition Z d=7",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=570535/s",
+      "critical": false
+    },
+    {
+      "name": "BPOSD_best_CSS repetition Z d=7",
+      "passed": true,
+      "detail": "BPOSD_min_sum_osd4 thr=885075/s faith=100.0%",
+      "critical": true
+    },
+    {
+      "name": "Cascade_plus_CSS repetition Z d=7",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=1741520/s hit=1.000",
+      "critical": true
+    },
+    {
+      "name": "PROD_path_CSS repetition Z d=7",
+      "passed": true,
+      "detail": "faithful_engines=8",
+      "critical": true
+    },
+    {
+      "name": "GNN_safe_HP surface d=3",
+      "passed": true,
+      "detail": "skipped (large n)",
+      "critical": false
+    },
+    {
+      "name": "Neural_safe_HP surface d=3",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=39160/s",
+      "critical": true
+    },
+    {
+      "name": "BPOSD_min_sum_osd0_HP surface d=3",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=335808/s",
+      "critical": false
+    },
+    {
+      "name": "BPOSD_min_sum_osd4_HP surface d=3",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=298107/s",
+      "critical": false
+    },
+    {
+      "name": "BPOSD_exact_osd0_HP surface d=3",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=150027/s",
+      "critical": false
+    },
+    {
+      "name": "BPOSD_exact_osd4_HP surface d=3",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=149665/s",
+      "critical": false
+    },
+    {
+      "name": "BPOSD_best_HP surface d=3",
+      "passed": true,
+      "detail": "BPOSD_min_sum_osd0 thr=335808/s faith=100.0%",
+      "critical": true
+    },
+    {
+      "name": "Cascade_plus_HP surface d=3",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=237540/s hit=0.869",
+      "critical": true
+    },
+    {
+      "name": "PROD_path_HP surface d=3",
+      "passed": true,
+      "detail": "faithful_engines=7",
+      "critical": true
+    },
+    {
+      "name": "GNN_safe_CSS toric l=3",
+      "passed": true,
+      "detail": "skipped (large n)",
+      "critical": false
+    },
+    {
+      "name": "Neural_safe_CSS toric l=3",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=40105/s",
+      "critical": true
+    },
+    {
+      "name": "BPOSD_min_sum_osd0_CSS toric l=3",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=72046/s",
+      "critical": false
+    },
+    {
+      "name": "BPOSD_min_sum_osd4_CSS toric l=3",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=70776/s",
+      "critical": false
+    },
+    {
+      "name": "BPOSD_exact_osd0_CSS toric l=3",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=77675/s",
+      "critical": false
+    },
+    {
+      "name": "BPOSD_exact_osd4_CSS toric l=3",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=80252/s",
+      "critical": false
+    },
+    {
+      "name": "BPOSD_best_CSS toric l=3",
+      "passed": true,
+      "detail": "BPOSD_exact_osd4 thr=80252/s faith=100.0%",
+      "critical": true
+    },
+    {
+      "name": "Cascade_plus_CSS toric l=3",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=125197/s hit=0.625",
+      "critical": true
+    },
+    {
+      "name": "PROD_path_CSS toric l=3",
+      "passed": true,
+      "detail": "faithful_engines=7",
+      "critical": true
+    },
+    {
+      "name": "GNN_safe_Classical Gallager (2,4) n=64",
+      "passed": true,
+      "detail": "skipped (large n)",
+      "critical": false
+    },
+    {
+      "name": "Neural_safe_Classical Gallager (2,4) n=64",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=18298/s",
+      "critical": true
+    },
+    {
+      "name": "BPOSD_min_sum_osd0_Classical Gallager (2,4) n=64",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=7061/s",
+      "critical": false
+    },
+    {
+      "name": "BPOSD_min_sum_osd4_Classical Gallager (2,4) n=64",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=6018/s",
+      "critical": false
+    },
+    {
+      "name": "BPOSD_exact_osd0_Classical Gallager (2,4) n=64",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=2495/s",
+      "critical": false
+    },
+    {
+      "name": "BPOSD_exact_osd4_Classical Gallager (2,4) n=64",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=2329/s",
+      "critical": false
+    },
+    {
+      "name": "BPOSD_best_Classical Gallager (2,4) n=64",
+      "passed": true,
+      "detail": "BPOSD_min_sum_osd0 thr=7061/s faith=100.0%",
+      "critical": true
+    },
+    {
+      "name": "Cascade_plus_Classical Gallager (2,4) n=64",
+      "passed": true,
+      "detail": "faith=100.00% unf=0 thr=91367/s hit=0.761",
+      "critical": true
+    },
+    {
+      "name": "PROD_path_Classical Gallager (2,4) n=64",
+      "passed": true,
+      "detail": "faithful_engines=7",
+      "critical": true
+    }
+  ],
+  "summary": {
+    "n_gates": 36,
+    "n_passed": 36,
+    "critical_pass": true,
+    "all_pass": true,
+    "production_ready": true,
+    "zero_unfaithful": true,
+    "bposd_variants": [
+      "min_sum_osd0",
+      "min_sum_osd4",
+      "exact_osd0",
+      "exact_osd4"
+    ],
+    "engines": [
+      "BPOSD_best",
+      "BPOSD_exact_osd0",
+      "BPOSD_exact_osd4",
+      "BPOSD_min_sum_osd0",
+      "BPOSD_min_sum_osd4",
+      "Cascade_w4",
+      "GNN_residual_safe",
+      "Neural_residual_safe"
+    ]
+  }
+}

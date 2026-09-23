@@ -1,0 +1,626 @@
+{
+  "suite": "extended_validation",
+  "version": "1.0",
+  "timestamp": "2026-09-23T14:54:18Z",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "wheel": "3.7.5",
+  "target_hardware": "IonQ Superion 256",
+  "summary": {
+    "n_gates": 15,
+    "n_passed": 15,
+    "critical_pass": true,
+    "all_pass": true,
+    "elapsed_s": 19.374118471000656,
+    "package": "qector_mega 3.7.5"
+  },
+  "gates": [
+    {
+      "name": "A_planar_construct_d3_d15",
+      "passed": true,
+      "detail": "commutation certified d=3..15 (k=0 by generator construction)",
+      "critical": false
+    },
+    {
+      "name": "A_hp_k1_d3_d7",
+      "passed": true,
+      "detail": "HP surface k==1, commutes, d=3/5/7",
+      "critical": true
+    },
+    {
+      "name": "A_toric_k2_l2_l6",
+      "passed": true,
+      "detail": "toric k==2 for l=2..6",
+      "critical": true
+    },
+    {
+      "name": "A_zero_unfaithful_scaling",
+      "passed": true,
+      "detail": "unf=0",
+      "critical": true
+    },
+    {
+      "name": "A_suppression_d3_to_d7",
+      "passed": true,
+      "detail": "HP LER d=3:0.05054 -> d=7:0.01270 mono~True",
+      "critical": true
+    },
+    {
+      "name": "B_rep100k_matches_exact",
+      "passed": true,
+      "detail": "exact=5.336e-06 in 99% CI=[3.904e-06,1.024e-04] fails=2/100000",
+      "critical": true
+    },
+    {
+      "name": "B_zero_unfaithful_highshot",
+      "passed": true,
+      "detail": "unf=0",
+      "critical": true
+    },
+    {
+      "name": "B_oracle_monotone",
+      "passed": true,
+      "detail": "exact tails strictly decrease p=1e-2->1e-4 per distance",
+      "critical": true
+    },
+    {
+      "name": "C_probes_recorded",
+      "passed": true,
+      "detail": "9 probe rows; cuda=True opencl=True simd=SimdLevel.Avx512",
+      "critical": false
+    },
+    {
+      "name": "D_zero_unfaithful_all",
+      "passed": true,
+      "detail": "75612 vectors, unf=0",
+      "critical": true
+    },
+    {
+      "name": "D_ionq_weight1_exhaustive",
+      "passed": true,
+      "detail": "weight-1 exhaustive on q70/q102/gross",
+      "critical": true
+    },
+    {
+      "name": "F1_depolarizing_faithful",
+      "passed": true,
+      "detail": "X unf=0 Z unf=0 / 4096",
+      "critical": true
+    },
+    {
+      "name": "F2_phenomenological_faithful",
+      "passed": true,
+      "detail": "unf=0/4096 on noisy syndromes",
+      "critical": true
+    },
+    {
+      "name": "F3_stim_circuit_faithful",
+      "passed": true,
+      "detail": "unf=0/2048 circuit-level detectors",
+      "critical": true
+    },
+    {
+      "name": "F4_dynamic_erasure",
+      "passed": true,
+      "detail": "512/512 masked-verified",
+      "critical": true
+    }
+  ],
+  "sections": {
+    "distance": {
+      "construction": [
+        {
+          "code": "CSS planar surface proper d=3",
+          "family": "css_surface_proper",
+          "d": 3,
+          "n": 24,
+          "k_css": 0,
+          "rank_Hx": 15,
+          "rank_Hz": 9,
+          "commute": true,
+          "odd_entries": 0,
+          "cert_s": 0.0006219450006028637
+        },
+        {
+          "code": "CSS planar surface proper d=5",
+          "family": "css_surface_proper",
+          "d": 5,
+          "n": 60,
+          "k_css": 0,
+          "rank_Hx": 35,
+          "rank_Hz": 25,
+          "commute": true,
+          "odd_entries": 0,
+          "cert_s": 0.001703819999420375
+        },
+        {
+          "code": "CSS planar surface proper d=7",
+          "family": "css_surface_proper",
+          "d": 7,
+          "n": 112,
+          "k_css": 0,
+          "rank_Hx": 63,
+          "rank_Hz": 49,
+          "commute": true,
+          "odd_entries": 0,
+          "cert_s": 0.004539790999842808
+        },
+        {
+          "code": "CSS planar surface proper d=9",
+          "family": "css_surface_proper",
+          "d": 9,
+          "n": 180,
+          "k_css": 0,
+          "rank_Hx": 99,
+          "rank_Hz": 81,
+          "commute": true,
+          "odd_entries": 0,
+          "cert_s": 0.011963537999690743
+        },
+        {
+          "code": "CSS planar surface proper d=11",
+          "family": "css_surface_proper",
+          "d": 11,
+          "n": 264,
+          "k_css": 0,
+          "rank_Hx": 143,
+          "rank_Hz": 121,
+          "commute": true,
+          "odd_entries": 0,
+          "cert_s": 0.027937707000091905
+        },
+        {
+          "code": "CSS planar surface proper d=13",
+          "family": "css_surface_proper",
+          "d": 13,
+          "n": 364,
+          "k_css": 0,
+          "rank_Hx": 195,
+          "rank_Hz": 169,
+          "commute": true,
+          "odd_entries": 0,
+          "cert_s": 0.03708472400012397
+        },
+        {
+          "code": "CSS planar surface proper d=15",
+          "family": "css_surface_proper",
+          "d": 15,
+          "n": 480,
+          "k_css": 0,
+          "rank_Hx": 255,
+          "rank_Hz": 225,
+          "commute": true,
+          "odd_entries": 0,
+          "cert_s": 0.05833153499952459
+        },
+        {
+          "code": "HP surface d=3",
+          "family": "css_hp_surface",
+          "d": 3,
+          "n": 13,
+          "k_css": 1,
+          "commute": true,
+          "odd_entries": 0,
+          "cert_s": 0.0
+        },
+        {
+          "code": "HP surface d=5",
+          "family": "css_hp_surface",
+          "d": 5,
+          "n": 41,
+          "k_css": 1,
+          "commute": true,
+          "odd_entries": 0,
+          "cert_s": 0.0
+        },
+        {
+          "code": "HP surface d=7",
+          "family": "css_hp_surface",
+          "d": 7,
+          "n": 85,
+          "k_css": 1,
+          "commute": true,
+          "odd_entries": 0,
+          "cert_s": 0.0
+        },
+        {
+          "code": "CSS toric l=2",
+          "family": "css_toric",
+          "l": 2,
+          "n": 8,
+          "k_css": 2,
+          "commute": true,
+          "odd_entries": 0,
+          "cert_s": 0.0
+        },
+        {
+          "code": "CSS toric l=3",
+          "family": "css_toric",
+          "l": 3,
+          "n": 18,
+          "k_css": 2,
+          "commute": true,
+          "odd_entries": 0,
+          "cert_s": 0.0
+        },
+        {
+          "code": "CSS toric l=4",
+          "family": "css_toric",
+          "l": 4,
+          "n": 32,
+          "k_css": 2,
+          "commute": true,
+          "odd_entries": 0,
+          "cert_s": 0.0
+        },
+        {
+          "code": "CSS toric l=5",
+          "family": "css_toric",
+          "l": 5,
+          "n": 50,
+          "k_css": 2,
+          "commute": true,
+          "odd_entries": 0,
+          "cert_s": 0.0
+        },
+        {
+          "code": "CSS toric l=6",
+          "family": "css_toric",
+          "l": 6,
+          "n": 72,
+          "k_css": 2,
+          "commute": true,
+          "odd_entries": 0,
+          "cert_s": 0.0
+        }
+      ],
+      "ler_scaling": [
+        {
+          "p": 0.05,
+          "shots": 4096,
+          "logical_fails": 207,
+          "ler": 0.050537109375,
+          "ci_lo": 0.04423977127177684,
+          "ci_hi": 0.057676751551934205,
+          "unfaithful": 0,
+          "backend": "qector_BPOSDDecoder",
+          "wall_s": 0.10000251799920079,
+          "thr_per_s": 40958.96865349665,
+          "n": 13,
+          "code": "HP surface d=3",
+          "d": 3
+        },
+        {
+          "p": 0.05,
+          "shots": 4096,
+          "logical_fails": 109,
+          "ler": 0.026611328125,
+          "ci_lo": 0.0221083519356823,
+          "ci_hi": 0.032001445867237695,
+          "unfaithful": 0,
+          "backend": "qector_BPOSDDecoder",
+          "wall_s": 0.3953485580004781,
+          "thr_per_s": 10360.477905157926,
+          "n": 41,
+          "code": "HP surface d=5",
+          "d": 5
+        },
+        {
+          "p": 0.05,
+          "shots": 1024,
+          "logical_fails": 13,
+          "ler": 0.0126953125,
+          "ci_lo": 0.0074339733643849866,
+          "ci_hi": 0.0215992940184491,
+          "unfaithful": 0,
+          "backend": "qector_BPOSDDecoder",
+          "wall_s": 0.43249312799980544,
+          "thr_per_s": 2367.6676777173225,
+          "n": 85,
+          "code": "HP surface d=7",
+          "d": 7
+        }
+      ]
+    },
+    "highshot": {
+      "measured": [
+        {
+          "p": 0.02,
+          "shots": 100000,
+          "logical_fails": 2,
+          "ler": 2e-05,
+          "ci_lo": 5.484623709886815e-06,
+          "ci_hi": 7.292836397677822e-05,
+          "unfaithful": 0,
+          "backend": "qector_BPOSDDecoder",
+          "wall_s": 1.5214819600005285,
+          "thr_per_s": 65725.39315547669,
+          "n": 7,
+          "code": "CSS repetition Z d=7",
+          "kind": "measured_100k"
+        },
+        {
+          "p": 0.02,
+          "shots": 20000,
+          "logical_fails": 166,
+          "ler": 0.0083,
+          "ci_lo": 0.0071336165284801075,
+          "ci_hi": 0.009655238668213714,
+          "unfaithful": 0,
+          "backend": "qector_BPOSDDecoder",
+          "wall_s": 0.3439516320004259,
+          "thr_per_s": 58147.71072223096,
+          "n": 13,
+          "code": "HP surface d=3",
+          "kind": "measured_20000"
+        },
+        {
+          "p": 0.02,
+          "shots": 10000,
+          "logical_fails": 92,
+          "ler": 0.0092,
+          "ci_lo": 0.00750806534356159,
+          "ci_hi": 0.011268881304614047,
+          "unfaithful": 0,
+          "backend": "qector_BPOSDDecoder",
+          "wall_s": 0.22023389100013446,
+          "thr_per_s": 45406.27218902423,
+          "n": 18,
+          "code": "CSS toric l=3",
+          "kind": "measured_10000"
+        }
+      ],
+      "oracle_1e7": [
+        {
+          "code": "rep d=5",
+          "p": 0.01,
+          "ler_exact": 9.850600000000002e-06,
+          "kind": "PROJECTION_exact_binomial",
+          "wilson_width_1e4": 0.00038401247776654115,
+          "wilson_width_1e7": 3.9192030437321006e-06
+        },
+        {
+          "code": "rep d=5",
+          "p": 0.001,
+          "ler_exact": 9.985006e-09,
+          "kind": "PROJECTION_exact_binomial",
+          "wilson_width_1e4": 0.00038401247776654115,
+          "wilson_width_1e7": 3.8415985242115104e-07
+        },
+        {
+          "code": "rep d=5",
+          "p": 0.0001,
+          "ler_exact": 9.998500060000002e-12,
+          "kind": "PROJECTION_exact_binomial",
+          "wilson_width_1e4": 0.00038401247776654115,
+          "wilson_width_1e7": 3.8415985242115104e-07
+        },
+        {
+          "code": "rep d=7",
+          "p": 0.01,
+          "ler_exact": 3.416698e-07,
+          "kind": "PROJECTION_exact_binomial",
+          "wilson_width_1e4": 0.00038401247776654115,
+          "wilson_width_1e7": 7.801091588525143e-07
+        },
+        {
+          "code": "rep d=7",
+          "p": 0.001,
+          "ler_exact": 3.491606998000001e-11,
+          "kind": "PROJECTION_exact_binomial",
+          "wilson_width_1e4": 0.00038401247776654115,
+          "wilson_width_1e7": 3.8415985242115104e-07
+        },
+        {
+          "code": "rep d=7",
+          "p": 0.0001,
+          "ler_exact": 3.499160069998001e-15,
+          "kind": "PROJECTION_exact_binomial",
+          "wilson_width_1e4": 0.00038401247776654115,
+          "wilson_width_1e7": 3.8415985242115104e-07
+        },
+        {
+          "code": "rep d=9",
+          "p": 0.01,
+          "ler_exact": 1.2185368570000002e-08,
+          "kind": "PROJECTION_exact_binomial",
+          "wilson_width_1e4": 0.00038401247776654115,
+          "wilson_width_1e7": 3.8415985242115104e-07
+        },
+        {
+          "code": "rep d=9",
+          "p": 0.001,
+          "ler_exact": 1.2558053968507003e-13,
+          "kind": "PROJECTION_exact_binomial",
+          "wilson_width_1e4": 0.00038401247776654115,
+          "wilson_width_1e7": 3.8415985242115104e-07
+        },
+        {
+          "code": "rep d=9",
+          "p": 0.0001,
+          "ler_exact": 1.2595800539968502e-18,
+          "kind": "PROJECTION_exact_binomial",
+          "wilson_width_1e4": 0.00038401247776654115,
+          "wilson_width_1e7": 3.8415985242115104e-07
+        }
+      ]
+    },
+    "hardware": {
+      "rows": [
+        {
+          "device": "cuda_is_available",
+          "status": "measured",
+          "value": true
+        },
+        {
+          "device": "opencl_is_available",
+          "status": "measured",
+          "value": true
+        },
+        {
+          "device": "simd",
+          "status": "measured",
+          "value": "SimdLevel.Avx512"
+        },
+        {
+          "device": "probe_backends",
+          "status": "measured",
+          "value": "[('cutlass_tensor_core', False, 'CUTLASS_PATH / cutlass/cutlass.h not found; using reference GEMM'), ('cuda_nvrtc', True, 'cooperative_groups.h via /usr/local/cuda/include'), ('open_cl', True, 'opencl available devices=1 gpu=1 preferred=\"Tesla T4\"'), ('fpga_relay', False, 'no FPGA PCI function (set "
+        },
+        {
+          "device": "opencl_devices",
+          "status": "measured",
+          "value": "[('cutlass_tensor_core', False, 'CUTLASS_PATH / cutlass/cutlass.h not found; using reference GEMM'), ('cuda_nvrtc', True, 'cooperative_groups.h via /usr/local/cuda/include'), ('open_cl', True, 'opencl available devices=1 gpu=1 preferred=\"Tesla T4\"'), ('fpga_relay', False, 'no FPGA PCI function (set "
+        },
+        {
+          "device": "CUDABatchDecoder",
+          "status": "measured",
+          "value": "constructs+decodes faithful=True"
+        },
+        {
+          "device": "CUDABpOsdDecoder",
+          "status": "measured",
+          "value": "constructs+decodes faithful=True"
+        },
+        {
+          "device": "fpga",
+          "status": "measured",
+          "value": "backend=FpgaBpOsd"
+        },
+        {
+          "device": "QECTOR_FPGA_PCI_ADDR",
+          "status": "measured",
+          "value": "unset (expected)"
+        }
+      ],
+      "cuda": true,
+      "opencl": true,
+      "simd": "SimdLevel.Avx512"
+    },
+    "residual": {
+      "suite": "residual_exhaustive_proof",
+      "version": "1.0",
+      "timestamp": "2026-09-23T14:54:16Z",
+      "rows": [
+        {
+          "code": "rep_d7",
+          "n": 7,
+          "m": 6,
+          "exhaustive_weights": "0..2",
+          "n_exhaustive": 29,
+          "n_random": 20000,
+          "tested": 20029,
+          "unfaithful": 0,
+          "backend": "qector_BPOSDDecoder",
+          "wall_s": 0.15570281600048475
+        },
+        {
+          "code": "hp_d3",
+          "n": 13,
+          "m": 12,
+          "exhaustive_weights": "0..2",
+          "n_exhaustive": 92,
+          "n_random": 20000,
+          "tested": 20092,
+          "unfaithful": 0,
+          "backend": "qector_BPOSDDecoder",
+          "wall_s": 0.2713065190000634
+        },
+        {
+          "code": "toric_l3",
+          "n": 18,
+          "m": 18,
+          "exhaustive_weights": "0..2",
+          "n_exhaustive": 172,
+          "n_random": 20000,
+          "tested": 20172,
+          "unfaithful": 0,
+          "backend": "qector_BPOSDDecoder",
+          "wall_s": 0.4830863880006291
+        },
+        {
+          "code": "ionq_q70",
+          "n": 70,
+          "m": 70,
+          "exhaustive_weights": "0..1",
+          "n_exhaustive": 71,
+          "n_random": 5000,
+          "tested": 5071,
+          "unfaithful": 0,
+          "backend": "qector_IonQSuperion_q70",
+          "wall_s": 1.3431676580003113
+        },
+        {
+          "code": "ionq_q102",
+          "n": 102,
+          "m": 102,
+          "exhaustive_weights": "0..1",
+          "n_exhaustive": 103,
+          "n_random": 5000,
+          "tested": 5103,
+          "unfaithful": 0,
+          "backend": "qector_IonQSuperion_q102",
+          "wall_s": 6.872105942999951
+        },
+        {
+          "code": "ionq_gross",
+          "n": 144,
+          "m": 144,
+          "exhaustive_weights": "0..1",
+          "n_exhaustive": 145,
+          "n_random": 5000,
+          "tested": 5145,
+          "unfaithful": 0,
+          "backend": "qector_IonQSuperion_gross",
+          "wall_s": 2.6613634499999534
+        }
+      ],
+      "summary": {
+        "tested": 75612,
+        "unfaithful": 0,
+        "all_faithful": true
+      }
+    },
+    "formal": {
+      "status": "omitted_by_user",
+      "note": "Lean 4 / Isabelle compiled separately in Colab"
+    },
+    "noise": {
+      "depolarizing": {
+        "p_dep": 0.03,
+        "px": 0.02,
+        "pz": 0.02,
+        "shots": 4096,
+        "unfaithful_x": 0,
+        "unfaithful_z": 0,
+        "code": "HP surface d=3"
+      },
+      "phenomenological": {
+        "p_data": 0.02,
+        "q_meas": 0.01,
+        "shots": 4096,
+        "unfaithful_noisy_syn": 0
+      },
+      "stim_circuit": {
+        "status": "measured",
+        "shots": 2048,
+        "n_detectors": 4,
+        "unfaithful": 0,
+        "backend": "qector_BPOSDDecoder"
+      },
+      "erasure_dynamic": {
+        "code": "gross",
+        "shots": 512,
+        "erasure_rate": 0.05,
+        "masked_verified": 512,
+        "total": 512
+      }
+    }
+  },
+  "graphs": [
+    "/content/Tests/qector_results/graphs/validation_ler_vs_distance.png",
+    "/content/Tests/qector_results/graphs/validation_oracle_1e7.png",
+    "/content/Tests/qector_results/graphs/validation_wilson_width.png",
+    "/content/Tests/qector_results/graphs/validation_throughput.png",
+    "/content/Tests/qector_results/graphs/validation_gates.png"
+  ]
+}

@@ -1,0 +1,30 @@
+fixture,family,method,status,shots,median_syn_per_s,mean_latency_us,faithful,faithful_pct,detail
+rep_d7_graphlike,BPOSDDecoder,decode,PASS,64,377476.4518652181,2.6491718756460614,64,100.0,
+rep_d7_graphlike,UnionFindDecoder,decode,PASS,64,346795.12599539664,2.883546869725251,64,100.0,
+rep_d7_graphlike,FastUnionFindDecoder,decode,PASS,64,345315.0461405175,2.895906249023028,64,100.0,
+rep_d7_graphlike,BlossomDecoder,decode,PASS,64,453331.63355737756,2.2058906239408316,64,100.0,
+rep_d7_graphlike,SparseBlossomDecoder,decode,PASS,64,435623.0779586327,2.2955624956466636,64,100.0,
+rep_d7_graphlike,BeamSearchDecoder,decode,PASS,64,476573.43543007533,2.0983125068596564,64,100.0,
+rep_d7_graphlike,TensorNetworkDecoder,decode,PASS,64,132278.1394303166,7.559828134162672,64,100.0,
+rep_d7_graphlike,LookupTableDecoder,decode,PASS,64,527830.699805915,1.8945468696074386,64,100.0,
+rep_d7_graphlike,TwoStageDecoder,decode,PASS,64,80573.07600849238,12.411093749165047,64,100.0,
+rep_d7_graphlike,SlidingWindowDecoder,decode,PASS,64,306860.24451875227,3.2588124980748034,64,100.0,
+rep_d7_graphlike,StreamingDecoder,update,PASS,64,220881.59374725373,4.5273124982259105,64,100.0,
+rep_d7_graphlike,HybridDecoder,decode_hybrid,PASS,16,19767.655915558484,50.58768749677256,16,100.0,
+rep_d7_graphlike,AmbiguityClusterDecoder,decode,PASS,64,238864.79544785433,4.186468743228033,64,100.0,
+hp_d3_hyperedge,BPOSDDecoder,decode,PASS,64,177873.13720830917,5.6219843855842555,64,100.0,
+hp_d3_hyperedge,UnionFindDecoder,decode,NOT_AVAILABLE,,,,,,"ValueError: UnionFindDecoder / FastUnionFindDecoder only support stabilizer codes with checks of weight ≤ 2.
+Qubit 1 participates in 3 checks (hyperedge"
+hp_d3_hyperedge,FastUnionFindDecoder,decode,NOT_AVAILABLE,,,,,,"ValueError: UnionFindDecoder / FastUnionFindDecoder only support stabilizer codes with checks of weight ≤ 2.
+Qubit 1 participates in 3 checks (hyperedge"
+hp_d3_hyperedge,BlossomDecoder,decode,PASS,64,136421.2861151417,7.330234367941557,64,100.0,
+hp_d3_hyperedge,SparseBlossomDecoder,decode,PASS,64,72559.47897753729,13.78179686639669,64,100.0,
+hp_d3_hyperedge,BeamSearchDecoder,decode,PASS,64,241073.68144034027,4.148109383095289,64,100.0,
+hp_d3_hyperedge,TensorNetworkDecoder,decode,PASS,64,42227.72355530266,23.681125000507564,64,100.0,
+hp_d3_hyperedge,LookupTableDecoder,decode,NOT_AVAILABLE,,,,,,"ValueError: ""UnionFindDecoder / FastUnionFindDecoder only support stabilizer codes with checks of weight ≤ 2.\nQubit 1 participates in 3 checks (hypered"
+hp_d3_hyperedge,TwoStageDecoder,decode,PASS,64,25806.80542051003,38.749468743048965,64,100.0,
+hp_d3_hyperedge,SlidingWindowDecoder,decode,PASS,64,114679.10451843898,8.719984379013113,64,100.0,
+hp_d3_hyperedge,StreamingDecoder,update,NOT_AVAILABLE,,,,,,"ValueError: UnionFindDecoder / FastUnionFindDecoder only support stabilizer codes with checks of weight ≤ 2.
+Qubit 1 participates in 3 checks (hyperedge"
+hp_d3_hyperedge,HybridDecoder,decode_hybrid,PASS,16,7088.261703803362,141.07831253795666,16,100.0,
+hp_d3_hyperedge,AmbiguityClusterDecoder,decode,PASS,64,44629.62640182132,22.406640624694774,64,100.0,

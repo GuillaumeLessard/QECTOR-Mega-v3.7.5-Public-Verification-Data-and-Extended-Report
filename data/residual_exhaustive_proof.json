@@ -1,0 +1,84 @@
+{
+  "suite": "residual_exhaustive_proof",
+  "version": "1.0",
+  "timestamp": "2026-09-23T14:54:16Z",
+  "rows": [
+    {
+      "code": "rep_d7",
+      "n": 7,
+      "m": 6,
+      "exhaustive_weights": "0..2",
+      "n_exhaustive": 29,
+      "n_random": 20000,
+      "tested": 20029,
+      "unfaithful": 0,
+      "backend": "qector_BPOSDDecoder",
+      "wall_s": 0.15570281600048475
+    },
+    {
+      "code": "hp_d3",
+      "n": 13,
+      "m": 12,
+      "exhaustive_weights": "0..2",
+      "n_exhaustive": 92,
+      "n_random": 20000,
+      "tested": 20092,
+      "unfaithful": 0,
+      "backend": "qector_BPOSDDecoder",
+      "wall_s": 0.2713065190000634
+    },
+    {
+      "code": "toric_l3",
+      "n": 18,
+      "m": 18,
+      "exhaustive_weights": "0..2",
+      "n_exhaustive": 172,
+      "n_random": 20000,
+      "tested": 20172,
+      "unfaithful": 0,
+      "backend": "qector_BPOSDDecoder",
+      "wall_s": 0.4830863880006291
+    },
+    {
+      "code": "ionq_q70",
+      "n": 70,
+      "m": 70,
+      "exhaustive_weights": "0..1",
+      "n_exhaustive": 71,
+      "n_random": 5000,
+      "tested": 5071,
+      "unfaithful": 0,
+      "backend": "qector_IonQSuperion_q70",
+      "wall_s": 1.3431676580003113
+    },
+    {
+      "code": "ionq_q102",
+      "n": 102,
+      "m": 102,
+      "exhaustive_weights": "0..1",
+      "n_exhaustive": 103,
+      "n_random": 5000,
+      "tested": 5103,
+      "unfaithful": 0,
+      "backend": "qector_IonQSuperion_q102",
+      "wall_s": 6.872105942999951
+    },
+    {
+      "code": "ionq_gross",
+      "n": 144,
+      "m": 144,
+      "exhaustive_weights": "0..1",
+      "n_exhaustive": 145,
+      "n_random": 5000,
+      "tested": 5145,
+      "unfaithful": 0,
+      "backend": "qector_IonQSuperion_gross",
+      "wall_s": 2.6613634499999534
+    }
+  ],
+  "summary": {
+    "tested": 75612,
+    "unfaithful": 0,
+    "all_faithful": true
+  }
+}

@@ -1,0 +1,325 @@
+{
+  "suite": "megaquop_408_logical_qubits",
+  "version": "3.7.5",
+  "timestamp": "2026-09-23T14:52:56.407128+00:00",
+  "paper_ref": "arXiv:2608.25027 dual-decoder / 408 LQ scale",
+  "sections": {
+    "scale": {
+      "logical_qubits_target": 408,
+      "k_per_q70": 6,
+      "n_blocks": 68,
+      "physical_qubits": 4760,
+      "checks_per_round": 4760,
+      "p_physical": 0.001,
+      "error_rounds": 256,
+      "outcome_rounds": 128
+    },
+    "machine": {
+      "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+      "python": "3.12.3",
+      "cpu_count": 2,
+      "processor": "x86_64",
+      "qector_version": "3.7.5",
+      "note": "All timings measured on the live host (runtime-detected); no hardcoded host baseline",
+      "cpu_model": "Intel(R) Xeon(R) CPU @ 2.00GHz",
+      "cuda": true,
+      "opencl": true,
+      "simd": "SimdLevel.Avx512",
+      "rss_kb_start": 45864
+    },
+    "error_path": {
+      "path": "error_decoder_68x_q70",
+      "n_blocks": 68,
+      "logical_qubits": 408,
+      "rounds": 256,
+      "faithful": 17408,
+      "faith_expected": 17408,
+      "frame_weight_total": 1631,
+      "latency_us_fullsystem_round": {
+        "n": 256,
+        "min_us": 1949.7829998726957,
+        "mean_us": 2359.4607070478446,
+        "p50_us": 2251.36199969711,
+        "p99_us": 4374.357999950007,
+        "p99_9_us": 4645.439000341867,
+        "max_us": 4645.439000341867
+      },
+      "wall_s": 0.6041975680000178,
+      "thr_logical_qubit_rounds_per_s": 172870.60645698747,
+      "thr_physical_qubit_rounds_per_s": 2016823.7419981873,
+      "sec_1ms": "FAIL_HOST",
+      "sec_5ms": "PASS",
+      "parallel_workers": 2,
+      "parallel_rounds": 64,
+      "parallel_faithful": 4352,
+      "parallel_latency_us": {
+        "n": 64,
+        "min_us": 3886.490999320813,
+        "mean_us": 4291.965453148805,
+        "p50_us": 4208.290999486053,
+        "p99_us": 5293.810999319248,
+        "p99_9_us": 5293.810999319248,
+        "max_us": 5293.810999319248
+      },
+      "rss_kb": 61264
+    },
+    "outcome_path": {
+      "path": "outcome_68x_q70",
+      "n_blocks": 68,
+      "rounds": 128,
+      "stream_faithful": 8704,
+      "finalize_faithful": 8704,
+      "latency_us_fullsystem_round": {
+        "n": 128,
+        "min_us": 3612.4309999649995,
+        "mean_us": 4030.989218705372,
+        "p50_us": 3942.0980001523276,
+        "p99_us": 6027.772999914305,
+        "p99_9_us": 6030.186000316462,
+        "max_us": 6030.186000316462
+      },
+      "stream_wall_s": 0.5160513719993105,
+      "finalize_wall_s": 0.47930945600000996,
+      "sec_1ms": "FAIL_HOST",
+      "sec_5ms": "FAIL_HOST",
+      "rss_kb": 62848
+    },
+    "weight1": {
+      "total_ok": 560,
+      "total_n": 560,
+      "per_block": {
+        "block_0": {
+          "ok": 70,
+          "n": 70
+        },
+        "block_1": {
+          "ok": 70,
+          "n": 70
+        },
+        "block_2": {
+          "ok": 70,
+          "n": 70
+        },
+        "block_3": {
+          "ok": 70,
+          "n": 70
+        },
+        "block_4": {
+          "ok": 70,
+          "n": 70
+        },
+        "block_5": {
+          "ok": 70,
+          "n": 70
+        },
+        "block_6": {
+          "ok": 70,
+          "n": 70
+        },
+        "block_7": {
+          "ok": 70,
+          "n": 70
+        }
+      }
+    },
+    "dual_coupling": {
+      "sw_ok": 2176,
+      "outcome_ok": 2176,
+      "expected": 2176,
+      "rounds": 32
+    },
+    "mixed_factories": {
+      "ok": 22,
+      "total": 22,
+      "blocks": [
+        "q70",
+        "q70",
+        "q70",
+        "q70",
+        "q70",
+        "q70",
+        "q70",
+        "q70",
+        "q102",
+        "q102",
+        "gross"
+      ]
+    },
+    "rss_kb_end": 66568
+  },
+  "rows": [
+    {
+      "path": "error_decoder_68x_q70",
+      "n_blocks": 68,
+      "logical_qubits": 408,
+      "rounds": 256,
+      "faithful": 17408,
+      "faith_expected": 17408,
+      "frame_weight_total": 1631,
+      "latency_us_fullsystem_round": {
+        "n": 256,
+        "min_us": 1949.7829998726957,
+        "mean_us": 2359.4607070478446,
+        "p50_us": 2251.36199969711,
+        "p99_us": 4374.357999950007,
+        "p99_9_us": 4645.439000341867,
+        "max_us": 4645.439000341867
+      },
+      "wall_s": 0.6041975680000178,
+      "thr_logical_qubit_rounds_per_s": 172870.60645698747,
+      "thr_physical_qubit_rounds_per_s": 2016823.7419981873,
+      "sec_1ms": "FAIL_HOST",
+      "sec_5ms": "PASS",
+      "parallel_workers": 2,
+      "parallel_rounds": 64,
+      "parallel_faithful": 4352,
+      "parallel_latency_us": {
+        "n": 64,
+        "min_us": 3886.490999320813,
+        "mean_us": 4291.965453148805,
+        "p50_us": 4208.290999486053,
+        "p99_us": 5293.810999319248,
+        "p99_9_us": 5293.810999319248,
+        "max_us": 5293.810999319248
+      },
+      "rss_kb": 61264
+    },
+    {
+      "path": "outcome_68x_q70",
+      "n_blocks": 68,
+      "rounds": 128,
+      "stream_faithful": 8704,
+      "finalize_faithful": 8704,
+      "latency_us_fullsystem_round": {
+        "n": 128,
+        "min_us": 3612.4309999649995,
+        "mean_us": 4030.989218705372,
+        "p50_us": 3942.0980001523276,
+        "p99_us": 6027.772999914305,
+        "p99_9_us": 6030.186000316462,
+        "max_us": 6030.186000316462
+      },
+      "stream_wall_s": 0.5160513719993105,
+      "finalize_wall_s": 0.47930945600000996,
+      "sec_1ms": "FAIL_HOST",
+      "sec_5ms": "FAIL_HOST",
+      "rss_kb": 62848
+    }
+  ],
+  "gates": [
+    {
+      "name": "import",
+      "passed": true,
+      "detail": "v=3.7.5",
+      "critical": true
+    },
+    {
+      "name": "q70_params",
+      "passed": true,
+      "detail": "params=(70, 6, 9)",
+      "critical": true
+    },
+    {
+      "name": "build_68_blocks",
+      "passed": true,
+      "detail": "blocks=68 phys_qubits=4760 checks=4760 build_s=0.04 rss_kb=52156",
+      "critical": true
+    },
+    {
+      "name": "logical_qubit_count",
+      "passed": true,
+      "detail": "68\u00d76=408",
+      "critical": true
+    },
+    {
+      "name": "error_path_faith_408",
+      "passed": true,
+      "detail": "17408/17408 Hc==s across 68 blocks \u00d7 256 rounds",
+      "critical": true
+    },
+    {
+      "name": "sec_error_fullsystem_budget_1000us",
+      "passed": false,
+      "detail": "bound not met on this host: n=256 p50=2251.4 p99=4374.4 p99.9=4645.4 max=4645.4us vs 1000us (68 blocks/tick)",
+      "critical": false
+    },
+    {
+      "name": "sec_error_fullsystem_budget_5000us",
+      "passed": true,
+      "detail": "n=256 p50=2251.4 p99=4374.4 p99.9=4645.4 max=4645.4us vs 5000us (68 blocks/tick)",
+      "critical": true
+    },
+    {
+      "name": "error_path_parallel_faith_408",
+      "passed": true,
+      "detail": "4352/4352 workers=2 p50=4208us p99.9=5294us",
+      "critical": true
+    },
+    {
+      "name": "outcome_stream_faith_408",
+      "passed": true,
+      "detail": "8704/8704 Hc==s",
+      "critical": true
+    },
+    {
+      "name": "sec_outcome_fullsystem_budget_1000us",
+      "passed": false,
+      "detail": "bound not met on this host: n=128 p50=3942.1 p99.9=6030.2 max=6030.2us vs 1000us",
+      "critical": false
+    },
+    {
+      "name": "sec_outcome_fullsystem_budget_5000us",
+      "passed": false,
+      "detail": "bound not met on this host: n=128 p50=3942.1 p99.9=6030.2 max=6030.2us vs 5000us",
+      "critical": false
+    },
+    {
+      "name": "outcome_finalize_faith_408",
+      "passed": true,
+      "detail": "8704/8704 finalize_wall=0.48s",
+      "critical": true
+    },
+    {
+      "name": "weight1_sample_blocks",
+      "passed": true,
+      "detail": "560/560 over 8 blocks",
+      "critical": true
+    },
+    {
+      "name": "dual_coupling_408",
+      "passed": true,
+      "detail": "sw=2176/2176 outcome=2176/2176",
+      "critical": true
+    },
+    {
+      "name": "mixed_factories_faith",
+      "passed": true,
+      "detail": "22/22",
+      "critical": true
+    }
+  ],
+  "summary": {
+    "n_gates": 15,
+    "n_passed": 12,
+    "n_critical": 12,
+    "n_critical_passed": 12,
+    "critical_pass": true,
+    "all_pass": false,
+    "wall_s": 2.665395486000307,
+    "logical_qubits": 408,
+    "n_blocks": 68
+  },
+  "machine": {
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "cpu_count": 2,
+    "processor": "x86_64",
+    "qector_version": "3.7.5",
+    "note": "All timings measured on the live host (runtime-detected); no hardcoded host baseline",
+    "cpu_model": "Intel(R) Xeon(R) CPU @ 2.00GHz",
+    "cuda": true,
+    "opencl": true,
+    "simd": "SimdLevel.Avx512",
+    "rss_kb_start": 45864
+  }
+}

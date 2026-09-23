@@ -1,0 +1,247 @@
+{
+  "suite": "cpu_vs_gpu",
+  "version": "1.0",
+  "backends": {
+    "cuda_is_available": true,
+    "opencl_is_available": true,
+    "simd": "SimdLevel.Avx512",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "probe": [
+      [
+        "cutlass_tensor_core",
+        false,
+        "CUTLASS_PATH / cutlass/cutlass.h not found; using reference GEMM"
+      ],
+      [
+        "cuda_nvrtc",
+        true,
+        "cooperative_groups.h via /usr/local/cuda/include"
+      ],
+      [
+        "open_cl",
+        true,
+        "opencl available devices=1 gpu=1 preferred=\"Tesla T4\""
+      ],
+      [
+        "fpga_relay",
+        false,
+        "no FPGA PCI function (set QECTOR_FPGA_PCI_ADDR)"
+      ],
+      [
+        "avx512",
+        true,
+        "avx512f"
+      ],
+      [
+        "avx2",
+        true,
+        "avx2"
+      ],
+      [
+        "gf2_simd",
+        true,
+        "xor_rows avx512f"
+      ],
+      [
+        "cpu_scalar",
+        true,
+        "gemm_f32 2x2 identity"
+      ]
+    ],
+    "probe_source": "py_probe_backends"
+  },
+  "rows": [
+    {
+      "device": "CPU",
+      "engine": "ReferenceGF2",
+      "mode": "single_shot",
+      "status": "PASS",
+      "wall_s": 0.007870537000599143,
+      "throughput_syn_per_sec": 25411.226703435237,
+      "mean_latency_us": 39.35268500299571,
+      "shots": 200
+    },
+    {
+      "device": "CPU",
+      "engine": "ReferenceGF2",
+      "mode": "batch",
+      "status": "PASS",
+      "method": "decode_batch",
+      "wall_s": 0.03577820200007409,
+      "throughput_syn_per_sec": 28620.778651701938,
+      "mean_latency_us": 34.93965039069735,
+      "batch": 1024
+    },
+    {
+      "device": "CPU",
+      "engine": "LocalBPOSD",
+      "mode": "single_shot",
+      "status": "PASS",
+      "wall_s": 0.0019294799994895584,
+      "throughput_syn_per_sec": 103654.87076979796,
+      "mean_latency_us": 9.647399997447792,
+      "shots": 200
+    },
+    {
+      "device": "CPU",
+      "engine": "LocalBPOSD",
+      "mode": "batch",
+      "status": "PASS",
+      "method": "decode_batch",
+      "wall_s": 0.024758185999417037,
+      "throughput_syn_per_sec": 41360.0576400917,
+      "mean_latency_us": 24.1779160150557,
+      "batch": 1024
+    },
+    {
+      "device": "CPU",
+      "engine": "CPUBatchDecoder",
+      "mode": "single_shot",
+      "status": "PASS",
+      "wall_s": 7.207699945865897e-05,
+      "throughput_syn_per_sec": 2774810.2931880997,
+      "mean_latency_us": 0.3603849972932949,
+      "shots": 200
+    },
+    {
+      "device": "CPU",
+      "engine": "CPUBatchDecoder",
+      "mode": "batch",
+      "status": "PASS",
+      "method": "batch_decode_simd",
+      "wall_s": 0.00017242600006284192,
+      "throughput_syn_per_sec": 5938779.532244532,
+      "mean_latency_us": 0.16838476568636906,
+      "batch": 1024
+    },
+    {
+      "device": "CPU",
+      "engine": "BatchDecoder",
+      "mode": "batch",
+      "status": "PASS",
+      "method": "batch_decode",
+      "wall_s": 0.00018287999955646228,
+      "throughput_syn_per_sec": 5599300.101069012,
+      "mean_latency_us": 0.1785937495668577,
+      "batch": 1024
+    },
+    {
+      "device": "CPU",
+      "engine": "IonQSuperionDecoder_q70",
+      "mode": "single_shot",
+      "status": "PASS",
+      "wall_s": 0.012785525000253983,
+      "throughput_syn_per_sec": 15642.689681966678,
+      "mean_latency_us": 63.927625001269924,
+      "shots": 200
+    },
+    {
+      "device": "CPU",
+      "engine": "IonQSuperionDecoder_q70",
+      "mode": "batch",
+      "status": "PASS",
+      "method": "decode_loop",
+      "wall_s": 0.04969971499940584,
+      "throughput_syn_per_sec": 20603.739880847243,
+      "mean_latency_us": 48.53487792910727,
+      "batch": 1024
+    },
+    {
+      "device": "CPU",
+      "engine": "BPOSDDecoder",
+      "mode": "single_shot",
+      "status": "PASS",
+      "wall_s": 0.0002584250005384092,
+      "throughput_syn_per_sec": 773918.9303794715,
+      "mean_latency_us": 1.292125002692046,
+      "shots": 200
+    },
+    {
+      "device": "CPU",
+      "engine": "BPOSDDecoder",
+      "mode": "batch",
+      "status": "PASS",
+      "method": "batch_decode",
+      "wall_s": 0.001131852000071376,
+      "throughput_syn_per_sec": 904711.9234099734,
+      "mean_latency_us": 1.1053242188197032,
+      "batch": 1024
+    },
+    {
+      "device": "GPU",
+      "engine": "CUDABatchDecoder",
+      "mode": "single_shot",
+      "status": "PASS",
+      "backend_kind": "cuda",
+      "wall_s": 0.0005312150005920557,
+      "throughput_syn_per_sec": 376495.3922180167,
+      "mean_latency_us": 2.6560750029602787,
+      "shots": 200
+    },
+    {
+      "device": "GPU",
+      "engine": "CUDABatchDecoder",
+      "mode": "batch",
+      "status": "PASS",
+      "backend_kind": "cuda",
+      "method": "batch_decode",
+      "wall_s": 0.00018300099964108085,
+      "throughput_syn_per_sec": 5595597.849237803,
+      "mean_latency_us": 0.17871191371199302,
+      "batch": 1024
+    },
+    {
+      "device": "GPU",
+      "engine": "CUDABpOsdDecoder",
+      "mode": "single_shot",
+      "status": "PASS",
+      "backend_kind": "cuda",
+      "wall_s": 0.00046378400020330446,
+      "throughput_syn_per_sec": 431235.2300043295,
+      "mean_latency_us": 2.3189200010165223,
+      "shots": 200
+    },
+    {
+      "device": "GPU",
+      "engine": "CUDABpOsdDecoder",
+      "mode": "batch",
+      "status": "PASS",
+      "backend_kind": "cuda",
+      "method": "batch_decode",
+      "wall_s": 0.0007858029994167737,
+      "throughput_syn_per_sec": 1303125.5935139179,
+      "mean_latency_us": 0.767385741617943,
+      "batch": 1024
+    },
+    {
+      "device": "GPU",
+      "engine": "OpenCLBatchDecoder",
+      "status": "ERROR",
+      "detail": "AttributeError: 'builtins.OpenCLBatchDecoder' object has no attribute 'decode'",
+      "backend_kind": "opencl"
+    }
+  ],
+  "comparison": {
+    "cpu_engines_pass": 11,
+    "gpu_engines_pass": 4,
+    "gpu_not_available": 0,
+    "best_cpu": {
+      "engine": "CPUBatchDecoder",
+      "mode": "batch",
+      "throughput_syn_per_sec": 5938779.532244532,
+      "mean_latency_us": 0.16838476568636906
+    },
+    "best_gpu": {
+      "engine": "CUDABatchDecoder",
+      "mode": "batch",
+      "throughput_syn_per_sec": 5595597.849237803,
+      "mean_latency_us": 0.17871191371199302
+    },
+    "gpu_available": true,
+    "speedup_gpu_over_cpu": 0.9422134327190581,
+    "note": "GPU rows marked NOT_AVAILABLE when cuda_is_available/opencl_is_available is False. CPU path uses AVX-512 SIMD when reported by py_detect_simd."
+  },
+  "shots_single": 200,
+  "batch_size": 1024
+}
