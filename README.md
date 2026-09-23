@@ -1,4 +1,4 @@
-# QECTOR MEGA v3.7.5 Extended Zenodo Report
+# QECTOR MEGA v3.7.5 Extended Report
 
 **Frozen package DOI:** https://doi.org/10.5281/zenodo.22920764  
 **Author:** Guillaume Lessard  
