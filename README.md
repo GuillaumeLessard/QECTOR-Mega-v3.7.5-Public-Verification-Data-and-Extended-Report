@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/GuillaumeLessard/.github/main/profile/logo_banner.png" alt="QECTOR" width="70%" />
+</p>
+
 # QECTOR MEGA v3.7.5 Extended Report
 
 **Frozen package DOI:** https://doi.org/10.5281/zenodo.22920764  
