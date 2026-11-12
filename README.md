@@ -3,7 +3,7 @@
 **Frozen package DOI:** https://doi.org/10.5281/zenodo.22920764  
 **Author:** Guillaume Lessard  
 **Organization:** iD01t Productions  
-**ORCID:** https://orcid.org/0000-0000-3465-3753  
+**ORCID:** https://orcid.org/0009-0000-3465-3753  
 **Website:** https://qector.store  
 
 ## Primary document
@@ -26,3 +26,6 @@ Lessard, G. (2026). QECTOR MEGA v3.7.5 (frozen package). Zenodo. https://doi.org
 - Ultimate production gate 10/10, production_ready=true
 - Dual-decoder suite 61/61, all_pass=true
 - 408 logical-qubit stress, critical_pass=true (68xQ70)
+
+## Trademark and affiliation notice
+This is independent work by Guillaume Lessard (iD01t Productions). It is not affiliated with, endorsed by, or sponsored by IonQ, Inc. IonQ and Superion are trademarks of IonQ, Inc.; references to IonQ hardware describe target compatibility only.
