@@ -4,7 +4,7 @@
 
 # QECTOR MEGA v3.7.5 Extended Report
 
-**Frozen package DOI:** https://doi.org/10.5281/zenodo.22920764  
+**Frozen package DOI:** https://doi.org/10.5281/zenodo.22931571  
 **Author:** Guillaume Lessard  
 **Organization:** iD01t Productions  
 **ORCID:** https://orcid.org/0009-0000-3465-3753  
@@ -15,8 +15,10 @@
 
 Extended full execution results, decoding throughput benchmark, dual-decoder MegaQuOp validation, mathematical and physical validation, and Zenodo archival report.
 
+> **Correction:** the report's cover page and abstract cite DOI 10.5281/zenodo.22920764, which was never registered, and print the ORCID as 0000-0000-3465-3753. The frozen package is published on Zenodo as [10.5281/zenodo.22931571](https://doi.org/10.5281/zenodo.22931571), and the correct ORCID is 0009-0000-3465-3753.
+
 ## Cite the software
-Lessard, G. (2026). QECTOR MEGA v3.7.5 (frozen package). Zenodo. https://doi.org/10.5281/zenodo.22920764
+Lessard, G. (2026). *Qector Mega: IonQ Superion / Walking Cat Decoder (v3.7.5 Frozen Release)* (v3.7.5). Zenodo. https://doi.org/10.5281/zenodo.22931571
 
 ## Contents
 | Path | Description |
